@@ -1,0 +1,10 @@
+Manifest.txt
+pkg
+*.gem
+*.tgz
+derby*
+test.*
+doc
+build.xml
+nbproject
+*~
