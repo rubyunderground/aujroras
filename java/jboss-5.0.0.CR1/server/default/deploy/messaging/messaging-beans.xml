@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Messaging beans
+    $Id: messaging-beans.xml 68282 2007-12-14 13:43:52Z alex.loubyansky@jboss.com $
+-->
+<deployment xmlns="urn:jboss:bean-deployer:2.0">
+
+   <bean name="QueueTemplate" class="org.jboss.profileservice.management.templates.JmsDestinationTemplate">
+      <property name="info"><inject bean="QueueTemplateInfo"/></property>
+   </bean>
+   <bean name="QueueTemplateInfo"
+      class="org.jboss.profileservice.management.templates.JmsDestinationTemplateInfo">
+      <constructor>
+         <parameter>QueueTemplate</parameter>
+         <parameter>A template for JMS queue *-service.xml deployments</parameter>
+         <parameter>queue</parameter>
+      </constructor>
+   </bean>
+
+   <bean name="TopicTemplate" class="org.jboss.profileservice.management.templates.JmsDestinationTemplate">
+      <property name="info"><inject bean="TopicTemplateInfo"/></property>
+   </bean>
+   <bean name="TopicTemplateInfo"
+      class="org.jboss.profileservice.management.templates.JmsDestinationTemplateInfo">
+      <constructor>
+         <parameter>TopicTemplate</parameter>
+         <parameter>A template for JMS topic *-service.xml deployments</parameter>
+         <parameter>topic</parameter>
+      </constructor>
+   </bean>   
+</deployment>

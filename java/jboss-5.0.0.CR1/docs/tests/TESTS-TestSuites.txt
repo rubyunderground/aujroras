@@ -1,0 +1,417 @@
+
+
+JBoss daily test results
+
+SUMMARY
+
+Number of tests run:   3176
+
+--------------------------------------------
+
+Successful tests:      3135
+
+Errors:                15
+
+Failures:              26
+
+--------------------------------------------
+
+
+
+[time of test: 2008-06-30.22-42 GMT]
+[java.version: 1.5.0_15]
+[java.vendor: Sun Microsystems Inc.]
+[java.vm.version: 1.5.0_15-b04]
+[java.vm.name: Java HotSpot(TM) Server VM]
+[java.vm.info: mixed mode]
+[os.name: Linux]
+[os.arch: i386]
+[os.version: 2.6.9-67.0.1.ELsmp]
+
+Useful resources:
+
+- http://jboss.sourceforge.net/junit-results/32/2008-06-30.22-42 for
+the junit report of this test.
+
+
+NOTE: If there are any errors shown above - this mail is only highlighting 
+them - it is NOT indicating that they are being looked at by anyone.
+
+It is assumed that whoever makes change(s) to jboss that 
+break the test will be fixing the test or jboss, as appropriate!
+
+--------------------------------------------
+
+
+
+DETAILS OF ERRORS
+
+
+
+Suite:       org.jboss.test.cluster.classloader.leak.test.ClassloaderLeakUnitTestCase(ClusteredClassLoaderLeak)
+Test:        testSimpleWar
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     Classloaders unregistered: node0/SERVLET 
+---------------------------------
+
+
+
+Suite:       org.jboss.test.cluster.classloader.leak.test.ClassloaderLeakUnitTestCase(ClusteredClassLoaderLeak)
+Test:        testNoPassivationWar
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     Classloaders unregistered: node0/SERVLET 
+---------------------------------
+
+
+
+Suite:       org.jboss.test.cluster.classloader.leak.test.FieldGranularityClassloaderLeakUnitTestCase(ClusteredClassLoaderLeak)
+Test:        testSimpleReplicableWar
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     Classloaders unregistered: node1/WEBAPP 
+---------------------------------
+
+
+
+Suite:       org.jboss.test.cluster.classloader.leak.test.FieldGranularityClassloaderLeakUnitTestCase(ClusteredClassLoaderLeak)
+Test:        testFieldWar
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     Classloaders unregistered: node0/SERVLET 
+---------------------------------
+
+
+
+Suite:       org.jboss.test.cluster.classloader.leak.test.FieldGranularityClassloaderLeakUnitTestCase(ClusteredClassLoaderLeak)
+Test:        testFieldNoReplicableWar
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     Classloaders unregistered: node0/SERVLET 
+---------------------------------
+
+
+
+Suite:       org.jboss.test.cluster.defaultcfg.test.PartitionRestartUnitTestCase(Default-udp)
+Test:        testStatefulBeanFailover
+Type:        error
+Exception:   org.jboss.invocation.ServiceUnavailableException
+Message:     Service unavailable for -2005652733 calling method public abstract org.jboss.test.cluster.ejb2.basic.interfaces.NodeAnswer org.jboss.test.cluster.ejb2.basic.interfaces.StatefulSession.getNodeState() throws java.rmi.RemoteException; nested exception is:   org.jboss.ha.framework.interfaces.GenericClusteringException: Test failover from server interceptor
+---------------------------------
+
+
+
+Suite:       org.jboss.test.cluster.defaultcfg.web.test.CrossContextCallsTestCase(Default-udp)
+Test:        testInvalidate
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     Should not be OK code with url: http://10.18.6.97:8080/http-cross-ctx-first/getAttribute.jsp responseCode: 200
+---------------------------------
+
+
+
+Suite:       org.jboss.test.cluster.multicfg.test.HAJndiTestCase(Default-udp)
+Test:        testHAJndiBinding
+Type:        error
+Exception:   javax.naming.NameAlreadyBoundException
+Message:     org.jboss.test.cluster.test.Global0Key
+---------------------------------
+
+
+
+Suite:       org.jboss.test.cluster.multicfg.test.HAJndiTestCase(Default-udp)
+Test:        testHAJndiSubcontexts
+Type:        error
+Exception:   javax.naming.NameAlreadyBoundException
+Message:     
+---------------------------------
+
+
+
+Suite:       org.jboss.test.cluster.multicfg.test.HAJndiTestCase(Default-udp)
+Test:        testAutoDiscovery
+Type:        error
+Exception:   javax.naming.NameAlreadyBoundException
+Message:     org.jboss.test.cluster.test.JNDIKey3
+---------------------------------
+
+
+
+Suite:       org.jboss.test.cluster.multicfg.web.test.WebSessionTestCase(SyncModeNUseJvm-tcp)
+Test:        testServletSessionFailover
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     X-AccessCount  expected:<3> but was:<2>
+---------------------------------
+
+
+
+Suite:       org.jboss.test.compatibility.test.SerialVersionUIDUnitTestCase(tests-compatibility)
+Test:        test401Compatibility
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     There are no serialVersionUID mismatches(326)
+---------------------------------
+
+
+
+Suite:       org.jboss.test.compatibility.test.SerialVersionUIDUnitTestCase(tests-compatibility)
+Test:        testJ2EERI141Compatibility
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     There are no serialVersionUID mismatches(7)
+---------------------------------
+
+
+
+Suite:       org.jboss.test.jacc.test.EJBSpecUnitTestCase(JACC)
+Test:        testMDBDeepRunAs
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     Recevied exception reply, info=Failed, ex=Failed to invoke Callee.invokeEcho
+---------------------------------
+
+
+
+Suite:       org.jboss.test.jacc.test.EJBSpecUnitTestCase(JACC)
+Test:        testRunAsWithRoles
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     Recevied exception reply, info=Failed, ex=Failed to invoke Callee.invokeEcho
+---------------------------------
+
+
+
+Suite:       org.jboss.test.jacc.test.FormAuthUnitTestCase(JACC)
+Test:        testPostDataFormAuth
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     Get OK
+---------------------------------
+
+
+
+Suite:       org.jboss.test.jbossmessaging.clustertest.ClusteredTestCase(tests-jbossmessaging-cluster)
+Test:        testSimpleCluster
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     message not received
+---------------------------------
+
+
+
+Suite:       org.jboss.test.jcaprops.test.JBossRaXmlOverrideUnitTestCase
+Test:        testJBossRaXmlOverride
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     Did not expect: [StringRAR=StringFromRARProperties, BooleanRAR=true] expected [StringRAR=XMLOVERRIDE, BooleanRAR=false, ByteRAR=1, CharacterRAR=A, ShortRAR=2, IntegerRAR=3, LongRAR=4, FloatRAR=5000000.0, DoubleRAR=7.0E8]
+---------------------------------
+
+
+
+Suite:       org.jboss.test.jmx.test.DeployXMBeanUnitTestCase
+Test:        testSecuredJndiXMBean
+Type:        error
+Exception:   java.lang.SecurityException
+Message:     Failed to authenticate principal: null
+---------------------------------
+
+
+
+Suite:       org.jboss.test.jmx.test.DeployXMBeanUnitTestCase
+Test:        testPersistentJndiXMBean
+Type:        error
+Exception:   java.lang.SecurityException
+Message:     Failed to authenticate principal: null
+---------------------------------
+
+
+
+Suite:       org.jboss.test.jmx.test.JMXConnectorUnitTestCase
+Test:        testNotification
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     Received 10 notifications, count=0
+---------------------------------
+
+
+
+Suite:       org.jboss.test.jmx.test.JMXConnectorUnitTestCase
+Test:        testNotificationWithBadListener
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     Received 10 notifications from Listener, count=0
+---------------------------------
+
+
+
+Suite:       org.jboss.test.naming.test.EjbLinkUnitTestCase
+Test:        testEjbNoLink
+Type:        failure
+Exception:   junit.framework.ComparisonFailure
+Message:     expected:<Works> but was:<Failed>
+---------------------------------
+
+
+
+Suite:       org.jboss.test.naming.test.InternalNamingClassReplacementUnitTestCase
+Test:        testEjbNoLink
+Type:        failure
+Exception:   junit.framework.ComparisonFailure
+Message:     expected:<Works> but was:<Failed>
+---------------------------------
+
+
+
+Suite:       org.jboss.test.naming.test.NamingRestartUnitTestCase
+Test:        testLookupLink
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     Could not lookup link
+---------------------------------
+
+
+
+Suite:       org.jboss.test.refs.test.CircularRefResolutionUnitTestCase
+Test:        testClientSessionRefByInterface
+Type:        error
+Exception:   javax.naming.NameNotFoundException
+Message:     refs_client not bound
+---------------------------------
+
+
+
+Suite:       org.jboss.test.refs.test.RefResolutionUnitTestCase
+Test:        testClientSessionRefByInterface
+Type:        error
+Exception:   java.lang.reflect.InvocationTargetException
+Message:     
+---------------------------------
+
+
+
+Suite:       org.jboss.test.security.test.EJBSpecUnitTestCase(tests-security-basic-unit)
+Test:        testMDBDeepRunAs
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     Recevied exception reply, info=Failed, ex=Failed to invoke Callee.invokeEcho
+---------------------------------
+
+
+
+Suite:       org.jboss.test.security.test.EJBSpecUnitTestCase(tests-security-basic-unit)
+Test:        testRunAsWithRoles
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     Recevied exception reply, info=Failed, ex=Failed to invoke Callee.invokeEcho
+---------------------------------
+
+
+
+Suite:       org.jboss.test.timer.test.BasicTimerUnitTestCase
+Test:        testMDBTimer
+Type:        error
+Exception:   java.lang.NumberFormatException
+Message:     Message property 'UNIQUE_ID' not set.
+---------------------------------
+
+
+
+Suite:       org.jboss.test.web.security.AuthenticatorsExternalizationTestCase(tomcat-federation)
+Test:        testHeaderBasedAuthentication
+Type:        error
+Exception:   org.jboss.deployment.DeploymentException
+Message:     Failed to deploy: file:/qa/home/rrajasekaran/jboss-5.0.0.CR1-release/5.0.0.CR1-testing/trunk/testsuite/output/lib/auth-ext-header-web.war
+---------------------------------
+
+
+
+Suite:       org.jboss.test.web.test.FormAuthUnitTestCase(tomcat-federation)
+Test:        testPostDataFormAuth
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     Get OK
+---------------------------------
+
+
+
+Suite:       org.jboss.test.web.test.FormAuthUnitTestCase
+Test:        testPostDataFormAuth
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     Get OK
+---------------------------------
+
+
+
+Suite:       org.jboss.test.web.test.JASPIFormAuthUnitTestCase
+Test:        unknown
+Type:        error
+Exception:   javax.management.InstanceNotFoundException
+Message:     jboss.web:host=10.18.6.97,name=ExtendedJASPIFormAuthenticator,path=/form-auth,type=Valve not registered.
+---------------------------------
+
+
+
+Suite:       org.jboss.test.web.test.WebIntegrationUnitTestCase
+Test:        unknown
+Type:        error
+Exception:   org.jboss.deployment.DeploymentException
+Message:     Failed to deploy: file:/qa/home/rrajasekaran/jboss-5.0.0.CR1-release/5.0.0.CR1-testing/trunk/testsuite/output/lib/jbosstest-web.ear
+---------------------------------
+
+
+
+Suite:       org.jboss.test.webservice.jbws309.JBWS309TestCase(JACC)
+Test:        testRoleSecuredSLSB
+Type:        error
+Exception:   java.rmi.AccessException
+Message:     SecurityException; nested exception is:   java.lang.SecurityException: Authentication exception, principal=jduke
+---------------------------------
+
+
+
+Suite:       org.jboss.test.webservice.jbws309.JBWS309TestCase(JACC)
+Test:        testBasicSecuredSLSB
+Type:        error
+Exception:   java.rmi.AccessException
+Message:     SecurityException; nested exception is:   java.lang.SecurityException: Authentication exception, principal=jduke
+---------------------------------
+
+
+
+Suite:       org.jboss.test.webservice.jbws309.JBWS309TestCase(JACC)
+Test:        testBasicSecuredServiceAccess
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     Security exception expected
+---------------------------------
+
+
+
+Suite:       org.jboss.test.webservice.jbws309.JBWS309TestCase(JACC)
+Test:        testBasicSecuredDIIAccess
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     Security exception expected
+---------------------------------
+
+
+
+Suite:       org.jboss.test.webservice.jbws309.JBWS309TestCase(JACC)
+Test:        testRoleSecuredServiceAccess
+Type:        failure
+Exception:   junit.framework.AssertionFailedError
+Message:     Security exception expected
+---------------------------------
+
+
+
+Suite:       .
+Test:        AsynchTestCase
+Type:        error
+Exception:   java.lang.Error
+Message:     Error transforming the class org.jboss.test.asynch.AsynchTestCase
+---------------------------------
+

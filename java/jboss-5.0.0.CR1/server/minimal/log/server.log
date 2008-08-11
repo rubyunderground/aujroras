@@ -1,0 +1,142 @@
+2008-08-11 12:17:23,246 DEBUG [org.jboss.logging.Log4jService] (main) Installed System.out adapter
+2008-08-11 12:17:23,247 DEBUG [org.jboss.logging.Log4jService] (main) Installed System.err adapter
+2008-08-11 12:17:23,249 DEBUG [org.jboss.logging.Log4jService] (main) Added ThrowableListener: org.jboss.logging.Log4jService$ThrowableListenerLoggingAdapter@c95e39
+2008-08-11 12:17:23,249 DEBUG [org.jboss.logging.Log4jService] (main) Created jboss.system:type=Log4jService,service=Logging
+2008-08-11 12:17:23,257 DEBUG [org.jboss.system.ServiceController] (main) starting service jboss.system:type=Log4jService,service=Logging
+2008-08-11 12:17:23,257 DEBUG [org.jboss.logging.Log4jService] (main) Starting jboss.system:type=Log4jService,service=Logging
+2008-08-11 12:17:23,257 DEBUG [org.jboss.logging.Log4jService] (main) Started jboss.system:type=Log4jService,service=Logging
+2008-08-11 12:17:23,258 DEBUG [org.jboss.system.ServiceCreator] (main) About to create bean: jboss.system:service=ThreadPool with code: org.jboss.util.threadpool.BasicThreadPool
+2008-08-11 12:17:23,267 DEBUG [org.jboss.system.ServiceCreator] (main) Created mbean: jboss.system:service=ThreadPool
+2008-08-11 12:17:23,268 DEBUG [org.jboss.system.ServiceConfigurator] (main) Name set to JBoss System Threads in jboss.system:service=ThreadPool
+2008-08-11 12:17:23,269 DEBUG [org.jboss.system.ServiceConfigurator] (main) ThreadGroupName set to System Threads in jboss.system:service=ThreadPool
+2008-08-11 12:17:23,270 DEBUG [org.jboss.system.ServiceConfigurator] (main) KeepAliveTime set to 60000 in jboss.system:service=ThreadPool
+2008-08-11 12:17:23,270 DEBUG [org.jboss.system.ServiceConfigurator] (main) MaximumPoolSize set to 10 in jboss.system:service=ThreadPool
+2008-08-11 12:17:23,270 DEBUG [org.jboss.system.ServiceConfigurator] (main) MaximumQueueSize set to 1000 in jboss.system:service=ThreadPool
+2008-08-11 12:17:23,271 DEBUG [org.jboss.system.ServiceConfigurator] (main) BlockingMode set to run in jboss.system:service=ThreadPool
+2008-08-11 12:17:23,272 DEBUG [org.jboss.system.ServiceController] (main) Creating service jboss.system:service=ThreadPool
+2008-08-11 12:17:23,272 DEBUG [org.jboss.system.ServiceController] (main) starting service jboss.system:service=ThreadPool
+2008-08-11 12:17:23,274 DEBUG [org.jboss.system.ServiceCreator] (main) About to create xmbean object: jboss:service=NamingBeanImpl with code: org.jnp.server.NamingBeanImpl with descriptor: resource:xmdesc/NamingBean-xmbean.xml
+2008-08-11 12:17:23,321 DEBUG [org.jboss.system.ServiceCreator] (main) Created mbean: jboss:service=NamingBeanImpl
+2008-08-11 12:17:23,321 DEBUG [org.jboss.system.ServiceController] (main) Creating service jboss:service=NamingBeanImpl
+2008-08-11 12:17:23,321 DEBUG [org.jboss.system.ServiceController] (main) starting service jboss:service=NamingBeanImpl
+2008-08-11 12:17:23,341 DEBUG [org.jnp.server.NamingBeanImpl] (main) Using NamingServer: org.jnp.server.NamingServer@4708f5
+2008-08-11 12:17:23,342 DEBUG [org.jnp.server.NamingBeanImpl] (main) Installed global NamingServer: org.jnp.server.NamingServer@4708f5
+2008-08-11 12:17:23,348 DEBUG [org.jnp.server.NamingBeanImpl] (main) InitialContext Environment: 
+2008-08-11 12:17:23,348 DEBUG [org.jnp.server.NamingBeanImpl] (main) key=java.naming.factory.initial, value(java.lang.String)=org.jnp.interfaces.NamingContextFactory
+2008-08-11 12:17:23,348 DEBUG [org.jnp.server.NamingBeanImpl] (main) key=java.naming.factory.url.pkgs, value(java.lang.String)=org.jboss.naming:org.jnp.interfaces
+2008-08-11 12:17:23,353 DEBUG [org.jboss.system.ServiceCreator] (main) About to create xmbean object: jboss:service=Naming with code: org.jboss.naming.NamingService with descriptor: resource:xmdesc/NamingService-xmbean.xml
+2008-08-11 12:17:23,394 DEBUG [org.jboss.mx.modelmbean.ModelMBeanInvoker] (main) Ignoring obsolete legacy interceptor: org.jboss.mx.interceptor.PersistenceInterceptor2
+2008-08-11 12:17:23,394 DEBUG [org.jboss.mx.modelmbean.ModelMBeanInvoker] (main) Ignoring obsolete legacy interceptor: org.jboss.mx.interceptor.ModelMBeanInterceptor
+2008-08-11 12:17:23,394 DEBUG [org.jboss.mx.modelmbean.ModelMBeanInvoker] (main) Ignoring obsolete legacy interceptor: org.jboss.mx.interceptor.ObjectReferenceInterceptor
+2008-08-11 12:17:23,395 DEBUG [org.jboss.system.ServiceCreator] (main) Created mbean: jboss:service=Naming
+2008-08-11 12:17:23,395 DEBUG [org.jboss.system.ServiceConfigurator] (main) CallByValue set to false in jboss:service=Naming
+2008-08-11 12:17:23,396 DEBUG [org.jboss.system.ServiceConfigurator] (main) Port set to 1099 in jboss:service=Naming
+2008-08-11 12:17:23,397 DEBUG [org.jboss.system.ServiceConfigurator] (main) BindAddress set to 127.0.0.1 in jboss:service=Naming
+2008-08-11 12:17:23,397 DEBUG [org.jboss.system.ServiceConfigurator] (main) RmiPort set to 1098 in jboss:service=Naming
+2008-08-11 12:17:23,398 DEBUG [org.jboss.system.ServiceConfigurator] (main) RmiBindAddress set to 127.0.0.1 in jboss:service=Naming
+2008-08-11 12:17:23,402 DEBUG [org.jboss.system.ServiceConfigurator] (main) LookupPool set to MBeanProxyExt[jboss.system:service=ThreadPool] in jboss:service=Naming
+2008-08-11 12:17:23,404 DEBUG [org.jboss.system.ServiceConfigurator] (main) Naming set to MBeanProxyExt[jboss:service=NamingBeanImpl] in jboss:service=Naming
+2008-08-11 12:17:23,404 DEBUG [org.jboss.system.ServiceController] (main) Creating service jboss:service=Naming
+2008-08-11 12:17:23,404 DEBUG [org.jboss.naming.NamingService] (main) Creating jboss:service=Naming
+2008-08-11 12:17:23,404 DEBUG [org.jboss.naming.NamingService] (main) Created jboss:service=Naming
+2008-08-11 12:17:23,404 DEBUG [org.jboss.system.ServiceController] (main) starting service jboss:service=Naming
+2008-08-11 12:17:23,405 DEBUG [org.jboss.naming.NamingService] (main) Starting jboss:service=Naming
+2008-08-11 12:17:23,405 DEBUG [org.jboss.naming.NamingService] (main) System.setProperty, key=java.naming.factory.initial, value=org.jnp.interfaces.NamingContextFactory
+2008-08-11 12:17:23,406 DEBUG [org.jboss.naming.NamingService] (main) System.setProperty, key=java.naming.factory.url.pkgs, value=org.jboss.naming:org.jnp.interfaces
+2008-08-11 12:17:23,406 DEBUG [org.jboss.naming.Naming] (main) Creating NamingServer stub, theServer=MBeanProxyExt[jboss:service=NamingBeanImpl],rmiPort=1098,clientSocketFactory=null,serverSocketFactory=org.jboss.net.sockets.DefaultSocketFactory@e048aaa4[bindAddress=/127.0.0.1]
+2008-08-11 12:17:23,426 DEBUG [org.jboss.naming.Naming] (main) NamingServer stub: Proxy[Naming,RemoteObjectInvocationHandler[UnicastRef2 [liveRef: [endpoint:[127.0.0.1:1098,org.jboss.net.sockets.DefaultSocketFactory@e048aaa4[bindAddress=/127.0.0.1]](local),objID:[0]]]]]
+2008-08-11 12:17:23,440 DEBUG [org.jboss.naming.Naming] (main) JNDI bootstrap JNP=/127.0.0.1:1099, RMI=/127.0.0.1:1098, backlog=50, no client SocketFactory, Server SocketFactory=org.jboss.net.sockets.DefaultSocketFactory@e048aaa4[bindAddress=/127.0.0.1]
+2008-08-11 12:17:23,447 DEBUG [org.jboss.naming.NamingService] (main) Started jboss:service=Naming
+2008-08-11 12:17:23,448 DEBUG [org.jboss.deployers.plugins.deployers.DeployersImpl] (main) Fully Deployed vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml
+2008-08-11 12:17:23,448 DEBUG [org.jboss.deployers.plugins.main.MainDeployerImpl] (main) Asked to process() when there is nothing to do.
+2008-08-11 12:17:23,448 DEBUG [org.jboss.deployers.plugins.main.MainDeployerImpl] (main) Asked to process() when there is nothing to do.
+2008-08-11 12:17:23,449 DEBUG [org.jboss.bootstrap.microcontainer.ServerImpl] (main) Installing life thread Thread[JBossLifeThread,5,jboss]
+2008-08-11 12:17:23,449 INFO  [org.jboss.bootstrap.microcontainer.ServerImpl] (main) JBoss (Microcontainer) [5.0.0.CR1 (build: SVNTag=JBoss_5_0_0_CR1 date=200806301254)] Started in 3s:363ms
+2008-08-11 12:17:37,045 INFO  [org.jboss.bootstrap.microcontainer.ServerImpl] (JBoss Shutdown Hook) Runtime shutdown hook called, forceHalt: true
+2008-08-11 12:17:37,045 DEBUG [org.jboss.deployers.plugins.main.MainDeployerImpl] (JBoss Shutdown Hook) Remove deployment context: vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml
+2008-08-11 12:17:37,045 DEBUG [org.jboss.deployers.plugins.main.MainDeployerImpl] (JBoss Shutdown Hook) Scheduling undeployment: vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml parent=null
+2008-08-11 12:17:37,046 DEBUG [org.jboss.deployers.plugins.deployers.DeployersImpl] (JBoss Shutdown Hook) Undeploying vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml
+2008-08-11 12:17:37,047 DEBUG [org.jboss.system.ServiceController] (JBoss Shutdown Hook) stopping service: jboss:service=Naming
+2008-08-11 12:17:37,047 DEBUG [org.jboss.naming.NamingService] (JBoss Shutdown Hook) Stopping jboss:service=Naming
+2008-08-11 12:17:37,048 DEBUG [org.jboss.naming.NamingService] (JBoss Shutdown Hook) JNP server stopped
+2008-08-11 12:17:37,048 DEBUG [org.jboss.naming.NamingService] (JBoss Shutdown Hook) Stopped jboss:service=Naming
+2008-08-11 12:17:37,048 DEBUG [org.jboss.system.ServiceController] (JBoss Shutdown Hook) destroying service: jboss:service=Naming
+2008-08-11 12:17:37,048 DEBUG [org.jboss.naming.NamingService] (JBoss Shutdown Hook) Destroying jboss:service=Naming
+2008-08-11 12:17:37,048 DEBUG [org.jboss.naming.NamingService] (JBoss Shutdown Hook) Destroyed jboss:service=Naming
+2008-08-11 12:17:37,049 DEBUG [org.jboss.system.ServiceController] (JBoss Shutdown Hook) removing service: jboss:service=Naming
+2008-08-11 12:17:37,049 DEBUG [org.jboss.system.ServiceCreator] (JBoss Shutdown Hook) Removing mbean from server: jboss:service=Naming
+2008-08-11 12:17:37,052 DEBUG [org.jboss.system.ServiceController] (JBoss Shutdown Hook) stopping service: jboss:service=NamingBeanImpl
+2008-08-11 12:17:37,052 DEBUG [org.jboss.system.ServiceController] (JBoss Shutdown Hook) destroying service: jboss:service=NamingBeanImpl
+2008-08-11 12:17:37,052 DEBUG [org.jboss.system.ServiceController] (JBoss Shutdown Hook) removing service: jboss:service=NamingBeanImpl
+2008-08-11 12:17:37,052 DEBUG [org.jboss.system.ServiceCreator] (JBoss Shutdown Hook) Removing mbean from server: jboss:service=NamingBeanImpl
+2008-08-11 12:17:37,053 DEBUG [org.jboss.system.ServiceController] (JBoss Shutdown Hook) stopping service: jboss.system:service=ThreadPool
+2008-08-11 12:17:37,053 DEBUG [org.jboss.util.threadpool.BasicThreadPool] (JBoss Shutdown Hook) stop, immediate=false
+2008-08-11 12:17:37,053 DEBUG [org.jboss.system.ServiceController] (JBoss Shutdown Hook) destroying service: jboss.system:service=ThreadPool
+2008-08-11 12:17:37,053 DEBUG [org.jboss.system.ServiceController] (JBoss Shutdown Hook) removing service: jboss.system:service=ThreadPool
+2008-08-11 12:17:37,054 DEBUG [org.jboss.system.ServiceCreator] (JBoss Shutdown Hook) Removing mbean from server: jboss.system:service=ThreadPool
+2008-08-11 12:17:37,054 DEBUG [org.jboss.system.ServiceController] (JBoss Shutdown Hook) stopping service: jboss.system:type=Log4jService,service=Logging
+2008-08-11 12:17:37,055 DEBUG [org.jboss.logging.Log4jService] (JBoss Shutdown Hook) Stopping jboss.system:type=Log4jService,service=Logging
+2008-08-11 12:17:37,055 DEBUG [org.jboss.logging.Log4jService] (JBoss Shutdown Hook) Removed System.out adapter
+2008-08-11 12:17:37,055 DEBUG [org.jboss.logging.Log4jService] (JBoss Shutdown Hook) Removed System.err adapter
+2008-08-11 12:17:37,055 DEBUG [org.jboss.logging.Log4jService] (JBoss Shutdown Hook) Stopped jboss.system:type=Log4jService,service=Logging
+2008-08-11 12:17:37,055 DEBUG [org.jboss.system.ServiceController] (JBoss Shutdown Hook) destroying service: jboss.system:type=Log4jService,service=Logging
+2008-08-11 12:17:37,055 DEBUG [org.jboss.logging.Log4jService] (JBoss Shutdown Hook) Destroying jboss.system:type=Log4jService,service=Logging
+2008-08-11 12:17:37,055 DEBUG [org.jboss.logging.Log4jService] (JBoss Shutdown Hook) Destroyed jboss.system:type=Log4jService,service=Logging
+2008-08-11 12:17:37,055 DEBUG [org.jboss.system.ServiceController] (JBoss Shutdown Hook) removing service: jboss.system:type=Log4jService,service=Logging
+2008-08-11 12:17:37,055 DEBUG [org.jboss.system.ServiceCreator] (JBoss Shutdown Hook) Removing mbean from server: jboss.system:type=Log4jService,service=Logging
+2008-08-11 12:17:37,059 DEBUG [org.jboss.deployers.structure.spi.helpers.AbstractDeploymentContext] (JBoss Shutdown Hook) Removed component jboss.system:service=Logging,type=Log4jService from vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml
+2008-08-11 12:17:37,059 DEBUG [org.jboss.deployers.structure.spi.helpers.AbstractDeploymentContext] (JBoss Shutdown Hook) Removed component jboss.system:service=ThreadPool from vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml
+2008-08-11 12:17:37,059 DEBUG [org.jboss.deployers.structure.spi.helpers.AbstractDeploymentContext] (JBoss Shutdown Hook) Removed component jboss:service=NamingBeanImpl from vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml
+2008-08-11 12:17:37,060 DEBUG [org.jboss.deployers.structure.spi.helpers.AbstractDeploymentContext] (JBoss Shutdown Hook) Removed component jboss:service=Naming from vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml
+2008-08-11 12:17:37,062 DEBUG [org.jboss.classloader.spi.base.BaseClassLoaderDomain] (JBoss Shutdown Hook) ClassLoaderDomain@4721c7{<DEFAULT>} unregisterClassLoader BaseClassLoader@f4acd1{vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml}
+2008-08-11 12:17:37,062 DEBUG [org.jboss.mx.loading.UnifiedLoaderRepository3] (JBoss Shutdown Hook) UnifiedLoaderRepository removed(false) null
+2008-08-11 12:17:37,063 DEBUG [org.jboss.classloader.spi.base.BaseClassLoaderPolicy] (JBoss Shutdown Hook) VFSClassLoaderPolicy@7e0e74{vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml} shutdown!
+2008-08-11 12:17:37,063 DEBUG [org.jboss.classloader.spi.base.BaseClassLoader] (JBoss Shutdown Hook) BaseClassLoader@f4acd1{vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml} shutdown!
+2008-08-11 12:17:37,065 DEBUG [org.jboss.deployers.vfs.plugins.classloader.InMemoryClassesDeployer] (JBoss Shutdown Hook) Removing dynamic class root for vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml
+2008-08-11 12:17:37,065 DEBUG [org.jboss.deployers.plugins.deployers.DeployersImpl] (JBoss Shutdown Hook) Fully Undeployed vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml
+2008-08-11 12:17:37,110 DEBUG [org.jboss.classloader.spi.base.BaseClassLoaderDomain] (JBoss Shutdown Hook) ClassLoaderDomain@4721c7{<DEFAULT>} unregisterClassLoader BaseClassLoader@674e3{profile-service-classloader:0.0.0$MODULE}
+2008-08-11 12:17:37,110 DEBUG [org.jboss.mx.loading.UnifiedLoaderRepository3] (JBoss Shutdown Hook) UnifiedLoaderRepository removed(false) null
+2008-08-11 12:17:37,110 DEBUG [org.jboss.classloader.spi.base.BaseClassLoaderPolicy] (JBoss Shutdown Hook) VFSClassLoaderPolicy@e41769{profile-service-classloader:0.0.0$MODULE} shutdown!
+2008-08-11 12:17:37,110 DEBUG [org.jboss.classloader.spi.base.BaseClassLoader] (JBoss Shutdown Hook) BaseClassLoader@674e3{profile-service-classloader:0.0.0$MODULE} shutdown!
+2008-08-11 12:17:37,124 DEBUG [org.jboss.deployers.plugins.deployers.DeployersImpl] (JBoss Shutdown Hook) Removed deployer org.jboss.deployers.plugins.classloading.AbstractLevelClassLoaderSystemDeployer@86062a from stage ClassLoader
+2008-08-11 12:17:37,131 DEBUG [org.jboss.deployers.plugins.deployers.DeployersImpl] (JBoss Shutdown Hook) Removed deployer org.jboss.deployers.vfs.plugins.classloader.VFSClassLoaderDescribeDeployer@d059e5 from stage Describe
+2008-08-11 12:17:37,144 DEBUG [org.jboss.deployers.plugins.deployers.DeployersImpl] (JBoss Shutdown Hook) Removed deployer org.jboss.deployers.vfs.plugins.classloader.InMemoryClassesDeployer@734645 from stage Describe
+2008-08-11 12:17:37,152 DEBUG [org.jboss.deployers.plugins.deployers.DeployersImpl] (JBoss Shutdown Hook) Removed deployer org.jboss.deployers.plugins.classloading.ClassLoadingDefaultDeployer@568614 from stage PreDescribe
+2008-08-11 12:17:37,163 DEBUG [org.jboss.deployers.plugins.deployers.DeployersImpl] (JBoss Shutdown Hook) Removed deployer org.jboss.deployers.vfs.spi.deployer.SchemaResolverDeployer@ee568c from stage Parse
+2008-08-11 12:17:37,183 DEBUG [org.jboss.deployers.plugins.deployers.DeployersImpl] (JBoss Shutdown Hook) Removed deployer org.jboss.system.deployers.HackClassloaderMetaDataDeployer@3d3774 from stage PostParse
+2008-08-11 12:17:37,196 DEBUG [org.jboss.deployers.plugins.deployers.DeployersImpl] (JBoss Shutdown Hook) Removed deployer org.jboss.system.deployers.ServiceDeployer@84a312 from stage Real
+2008-08-11 12:17:37,203 DEBUG [org.jboss.deployers.plugins.deployers.DeployersImpl] (JBoss Shutdown Hook) Removed deployer org.jboss.system.deployers.ServiceDeploymentDeployer@9b25f from stage Real
+2008-08-11 12:17:37,211 DEBUG [org.jboss.deployers.plugins.deployers.DeployersImpl] (JBoss Shutdown Hook) Removed deployer org.jboss.system.deployers.SARDeployer@44f84 from stage Parse
+2008-08-11 12:17:37,234 DEBUG [org.jboss.deployers.plugins.deployers.DeployersImpl] (JBoss Shutdown Hook) Removed deployer org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer@11ba0a from stage Real
+2008-08-11 12:17:37,243 DEBUG [org.jboss.deployers.plugins.deployers.DeployersImpl] (JBoss Shutdown Hook) Removed deployer org.jboss.deployers.vfs.deployer.kernel.KernelDeploymentDeployer@f4300e from stage Real
+2008-08-11 12:17:37,244 DEBUG [org.jboss.deployers.plugins.managed.TypedManagedDeploymentCreator] (JBoss Shutdown Hook) removeAttachmentType, interface org.jboss.kernel.spi.deployment.KernelDeployment
+2008-08-11 12:17:37,253 DEBUG [org.jboss.deployers.plugins.deployers.DeployersImpl] (JBoss Shutdown Hook) Removed deployer org.jboss.deployers.vfs.deployer.kernel.BeanDeployer@442e06 from stage Parse
+2008-08-11 12:17:37,279 DEBUG [org.jboss.deployers.plugins.deployers.DeployersImpl] (JBoss Shutdown Hook) Removed deployer org.jboss.aop.deployers.AspectDeployer@12139e from stage PostClassLoader
+2008-08-11 12:17:37,286 DEBUG [org.jboss.deployers.plugins.deployers.DeployersImpl] (JBoss Shutdown Hook) Removed deployer org.jboss.aop.asintegration.jboss5.AspectAppParsingDeployer@9ce2c2 from stage Describe
+2008-08-11 12:17:37,309 DEBUG [org.jboss.deployers.vfs.plugins.structure.VFSStructuralDeployersImpl] (JBoss Shutdown Hook) Removed structure deployer org.jboss.deployers.vfs.plugins.structure.file.FileStructure@c0ad7
+2008-08-11 12:17:37,312 DEBUG [org.jboss.deployers.vfs.plugins.structure.VFSStructuralDeployersImpl] (JBoss Shutdown Hook) Removed structure deployer org.jboss.deployers.vfs.plugins.structure.jar.JARStructure@eed1b8
+2008-08-11 12:17:37,317 DEBUG [org.jboss.deployers.vfs.plugins.structure.VFSStructuralDeployersImpl] (JBoss Shutdown Hook) Removed structure deployer org.jboss.deployers.vfs.plugins.structure.war.WARStructure@257b52
+2008-08-11 12:17:37,321 DEBUG [org.jboss.deployers.vfs.plugins.structure.VFSStructuralDeployersImpl] (JBoss Shutdown Hook) Removed structure deployer org.jboss.deployers.vfs.plugins.structure.explicit.DeclaredStructure@1cf25c
+2008-08-11 12:17:37,339 DEBUG [org.jboss.classloader.spi.base.BaseClassLoaderDomain] (JBoss Shutdown Hook) ClassLoaderDomain@4721c7{<DEFAULT>} unregisterClassLoader BaseClassLoader@b229b0{deployers-classloader:0.0.0$MODULE}
+2008-08-11 12:17:37,339 DEBUG [org.jboss.mx.loading.UnifiedLoaderRepository3] (JBoss Shutdown Hook) UnifiedLoaderRepository removed(false) null
+2008-08-11 12:17:37,339 DEBUG [org.jboss.classloader.spi.base.BaseClassLoaderPolicy] (JBoss Shutdown Hook) VFSClassLoaderPolicy@cee4bb{deployers-classloader:0.0.0$MODULE} shutdown!
+2008-08-11 12:17:37,339 DEBUG [org.jboss.classloader.spi.base.BaseClassLoader] (JBoss Shutdown Hook) BaseClassLoader@b229b0{deployers-classloader:0.0.0$MODULE} shutdown!
+2008-08-11 12:17:37,357 DEBUG [org.jboss.aop.deployers.AspectManagerJMXRegistrar] (JBoss Shutdown Hook) Unregistering AspectManagerService in JMX under: jboss.aop:service=AspectManager
+2008-08-11 12:17:37,357 DEBUG [org.jboss.system.server.jmx.JMXKernel] (JBoss Shutdown Hook) Shutting down all services
+2008-08-11 12:17:37,357 DEBUG [org.jboss.system.ServiceController] (JBoss Shutdown Hook) Stopping 0 services
+2008-08-11 12:17:37,357 DEBUG [org.jboss.system.ServiceController] (JBoss Shutdown Hook) Stopped 0 services
+2008-08-11 12:17:37,358 DEBUG [org.jboss.system.ServiceCreator] (JBoss Shutdown Hook) Removing mbean from server: jboss.system:service=ServiceController
+2008-08-11 12:17:37,365 DEBUG [org.jboss.classloader.spi.base.BaseClassLoaderDomain] (JBoss Shutdown Hook) ClassLoaderDomain@4721c7{<DEFAULT>} unregisterClassLoader BaseClassLoader@d29ed8{jmx-classloader:0.0.0$MODULE}
+2008-08-11 12:17:37,365 DEBUG [org.jboss.mx.loading.UnifiedLoaderRepository3] (JBoss Shutdown Hook) UnifiedLoaderRepository removed(false) null
+2008-08-11 12:17:37,365 DEBUG [org.jboss.classloader.spi.base.BaseClassLoaderPolicy] (JBoss Shutdown Hook) VFSClassLoaderPolicy@ba8426{jmx-classloader:0.0.0$MODULE} shutdown!
+2008-08-11 12:17:37,365 DEBUG [org.jboss.classloader.spi.base.BaseClassLoader] (JBoss Shutdown Hook) BaseClassLoader@d29ed8{jmx-classloader:0.0.0$MODULE} shutdown!
+2008-08-11 12:17:37,386 DEBUG [org.jboss.aop.deployment.AspectManagerServiceJDK5] (JBoss Shutdown Hook) Stopping AspectManagerServiceJDK5
+2008-08-11 12:17:37,386 DEBUG [org.jboss.aop.deployment.AspectManagerServiceJDK5] (JBoss Shutdown Hook) Stopped AspectManagerServiceJDK5
+2008-08-11 12:17:37,390 DEBUG [org.jboss.aop.deployment.AspectManagerServiceJDK5] (JBoss Shutdown Hook) Destroying AspectManagerServiceJDK5
+2008-08-11 12:17:37,390 DEBUG [org.jboss.aop.deployment.AspectManagerServiceJDK5] (JBoss Shutdown Hook) Destroyed AspectManagerServiceJDK5
+2008-08-11 12:17:37,398 DEBUG [org.jboss.classloader.spi.ClassLoaderSystem] (JBoss Shutdown Hook) DefaultClassLoaderSystem@b41c19 set translator to null
+2008-08-11 12:17:37,400 DEBUG [org.jboss.classloader.spi.base.BaseClassLoaderDomain] (JBoss Shutdown Hook) ClassLoaderDomain@4721c7{<DEFAULT>} unregisterClassLoader BaseClassLoader@d00d24{aop-classloader:0.0.0$MODULE}
+2008-08-11 12:17:37,400 DEBUG [org.jboss.mx.loading.UnifiedLoaderRepository3] (JBoss Shutdown Hook) UnifiedLoaderRepository removed(false) null
+2008-08-11 12:17:37,400 DEBUG [org.jboss.classloader.spi.base.BaseClassLoaderPolicy] (JBoss Shutdown Hook) VFSClassLoaderPolicy@ed39f{aop-classloader:0.0.0$MODULE} shutdown!
+2008-08-11 12:17:37,400 DEBUG [org.jboss.classloader.spi.base.BaseClassLoader] (JBoss Shutdown Hook) BaseClassLoader@d00d24{aop-classloader:0.0.0$MODULE} shutdown!
+2008-08-11 12:17:37,418 INFO  [org.jboss.bootstrap.microcontainer.ServerImpl] (JBoss Shutdown Hook) Shutdown complete

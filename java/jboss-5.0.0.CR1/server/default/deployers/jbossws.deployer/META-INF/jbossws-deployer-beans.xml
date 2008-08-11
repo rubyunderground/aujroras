@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<deployment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="urn:jboss:bean-deployer bean-deployer_2_0.xsd"
+            xmlns="urn:jboss:bean-deployer:2.0">
+
+   <!--
+   *********************************************************************************************************************
+   Web Service deployment
+
+   There are two deployers registered with the JBoss Main Deployer.
+   The order of which is important
+
+   1) EJBDeployer < WebServiceDeployerEJB < WarDeployer
+   2) WebServiceDeployerPreJSE < WarDeployer
+   3) WarDeployer < WebServiceDeployerPostJSE
+
+   Each WebServiceDeployer has a number of DeployerHooks registered with it
+
+   - WebServiceDeployerEJB
+      - WSDeployerHook_JAXRPC_EJB21
+      - WSDeployerHook_JAXWS_EJB3
+
+   - WebServiceDeployerPreJSE
+      - WSDeployerHook_JAXRPC_JSE
+      - WSDeployerHook_JAXWS_JSE
+
+   Conceptually, each of these hooks implements the following pattern:
+
+   DeployerHook.deploy(unit)
+   if(isWebServiceDeployment)
+      Deployment dep = createDeployment(unit)
+      DeploymentAspectManager.deploy(dep)
+
+   DeployerHook.undeploy(unit)
+      Deployment dep = getDeployment(unit)
+      WSFRuntime.start(dep)
+
+   Each deployer hook has a web service WSFRuntime injected into it.
+    
+   ********************************************************************************************************************* -->
+
+   <!--
+   A web service deployer that hooks in after the EJB deployers
+   -->
+   <bean name="WebServiceDeployerEJB" class="org.jboss.wsf.container.jboss50.deployer.WebServiceDeployerEJB">
+      <depends>EJB2xDeployer</depends>
+      <depends>Ejb3Deployer</depends>
+   </bean>
+
+   <!--
+   A web service deployer that hooks in before the WAR deployer
+   -->
+   <bean name="WebServiceDeployerPreJSE" class="org.jboss.wsf.container.jboss50.deployer.WebServiceDeployerPreJSE">
+      <property name="relOrderWar"><inject bean="WarDeployer" property="relativeOrder"/></property>
+      <depends>WebAppParsingDeployer</depends>
+   </bean>
+
+   <!--
+   A web service deployer that hooks in after the WAR deployer
+   -->
+   <bean name="WebServiceDeployerPostJSE" class="org.jboss.wsf.container.jboss50.deployer.WebServiceDeployerPostJSE">
+      <depends>WarDeployer</depends>
+   </bean>
+
+   <!--
+   Register DeployerHooks with JBoss deployers
+   -->
+
+   <!-- Phase 1 of JSE JAX-RPC -->
+   <bean name="WSDeployerHook_JAXRPC_PRE_JSE" class="org.jboss.wsf.container.jboss50.deployer.JAXRPCDeployerHookPreJSE">
+      <property name="runtimeName">WebserviceJSERuntime</property>
+      <install bean="WebServiceDeployerPreJSE" method="addDeployerHook">
+         <parameter>
+            <this/>
+         </parameter>
+      </install>
+      <uninstall bean="WebServiceDeployerPreJSE" method="removeDeployerHook">
+         <parameter>
+            <this/>
+         </parameter>
+      </uninstall>
+      <depends>WebServiceDeployerPreJSE</depends>
+   </bean>
+   <!-- Phase 2 of JSE JAX-RPC -->
+   <bean name="WSDeployerHook_JAXRPC_POST_JSE" class="org.jboss.wsf.container.jboss50.deployer.JAXRPCDeployerHookPostJSE">
+      <property name="runtimeName">WebserviceJSERuntime</property>
+      <install bean="WebServiceDeployerPostJSE" method="addDeployerHook">
+         <parameter>
+            <this/>
+         </parameter>
+      </install>
+      <uninstall bean="WebServiceDeployerPostJSE" method="removeDeployerHook">
+         <parameter>
+            <this/>
+         </parameter>
+      </uninstall>
+      <depends>WebServiceDeployerPostJSE</depends>
+   </bean>
+
+   <bean name="WSDeployerHook_JAXRPC_EJB21" class="org.jboss.wsf.container.jboss50.deployer.JAXRPCDeployerHookEJB21">
+      <property name="runtimeName">WebserviceEJBRuntime</property>
+      <install bean="WebServiceDeployerEJB" method="addDeployerHook">
+         <parameter>
+            <this/>
+         </parameter>
+      </install>
+      <uninstall bean="WebServiceDeployerEJB" method="removeDeployerHook">
+         <parameter>
+            <this/>
+         </parameter>
+      </uninstall>
+      <depends>WebServiceDeployerEJB</depends>
+   </bean>
+
+   <!-- Phase 1 of JSE JAX-WS-->
+   <bean name="WSDeployerHook_JAXWS_PRE_JSE" class="org.jboss.wsf.container.jboss50.deployer.JAXWSDeployerHookPreJSE">
+      <property name="runtimeName">WebserviceJSERuntime</property>
+      <install bean="WebServiceDeployerPreJSE" method="addDeployerHook">
+         <parameter>
+            <this/>
+         </parameter>
+      </install>
+      <uninstall bean="WebServiceDeployerPreJSE" method="removeDeployerHook">
+         <parameter>
+            <this/>
+         </parameter>
+      </uninstall>
+      <depends>WebServiceDeployerPreJSE</depends>
+   </bean>
+   <!-- Phase 2 of JSE JAX-WS -->
+   <bean name="WSDeployerHook_JAXWS_POST_JSE" class="org.jboss.wsf.container.jboss50.deployer.JAXWSDeployerHookPostJSE">
+      <property name="runtimeName">WebserviceJSERuntime</property>
+      <install bean="WebServiceDeployerPostJSE" method="addDeployerHook">
+         <parameter>
+            <this/>
+         </parameter>
+      </install>
+      <uninstall bean="WebServiceDeployerPostJSE" method="removeDeployerHook">
+         <parameter>
+            <this/>
+         </parameter>
+      </uninstall>
+      <depends>WebServiceDeployerPostJSE</depends>
+   </bean>
+
+   <bean name="WSDeployerHook_JAXWS_EJB3" class="org.jboss.wsf.container.jboss50.deployer.JAXWSDeployerHookEJB3">
+      <property name="runtimeName">WebserviceEJBRuntime</property>
+      <install bean="WebServiceDeployerEJB" method="addDeployerHook">
+         <parameter>
+            <this/>
+         </parameter>
+      </install>
+      <uninstall bean="WebServiceDeployerEJB" method="removeDeployerHook">
+         <parameter>
+            <this/>
+         </parameter>
+      </uninstall>
+      <depends>WebServiceDeployerEJB</depends>
+   </bean>
+
+</deployment>

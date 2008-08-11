@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- $Id: jboss-service.xml 24151 2004-09-28 05:10:16Z telrod $ -->
+
+<!-- ===================================================================== -->
+<!--                                                                       -->
+<!--  MBeanConfigurator will listen for any mbeans to be registered                  -->
+<!--                                                                       -->
+<!-- ===================================================================== -->
+
+<server>
+   <mbean code="org.jboss.jmx.examples.configuration.MBeanConfigurator"
+      name="jboss.jmx:service=MBeanConfigurator">
+      <depends>jboss.system:service=ServiceBindingManager</depends>
+   </mbean>
+
+
+   <!-- ServiceBindingManager required by MBeanConfigurator -->
+   <!-- The StoreURL can be used for any mbean              -->
+   <mbean code="org.jboss.services.binding.ServiceBindingManager"
+      name="jboss.system:service=ServiceBindingManager">
+      <attribute name="ServerName">config-example</attribute>
+      <attribute name="StoreURL">../docs/examples/jmx/mbean-configurator.sar/sample-binding.xml</attribute>
+      <attribute name="StoreFactoryClassName">
+       org.jboss.services.binding.XMLServicesStoreFactory
+      </attribute>
+   </mbean>
+
+   <!-- Sample service mbean whose only task is to create another -->
+   <!-- sample mbean (not a service) and register it with the     -->
+   <!-- mbean server, which is referenced in the                  -->
+   <!-- sample-binding.xml, and thus it's attribute set.          -->
+   <mbean code="org.jboss.jmx.examples.configuration.SampleService"
+      name="sample:service=SampleService">
+      <depends>jboss.jmx:service=MBeanConfigurator</depends>
+   </mbean>
+
+
+</server>

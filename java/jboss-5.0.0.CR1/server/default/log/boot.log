@@ -1,0 +1,50 @@
+12:16:57,656 INFO  [ServerImpl] Starting JBoss (Microcontainer)...
+12:16:57,657 INFO  [ServerImpl] Release ID: JBoss [Morpheus] 5.0.0.CR1 (build: SVNTag=JBoss_5_0_0_CR1 date=200806301254)
+12:16:57,657 DEBUG [ServerImpl] Using config: org.jboss.bootstrap.BaseServerConfig@6cbd97
+12:16:57,657 DEBUG [ServerImpl] Server type: class org.jboss.bootstrap.microcontainer.ServerImpl
+12:16:57,657 DEBUG [ServerImpl] Server loaded through: org.jboss.system.NoAnnotationURLClassLoader
+12:16:57,657 DEBUG [ServerImpl] Boot URLs:
+12:16:57,657 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/endorsed/resolver.jar
+12:16:57,657 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/endorsed/serializer.jar
+12:16:57,657 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/endorsed/xalan.jar
+12:16:57,657 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/endorsed/xercesImpl.jar
+12:16:57,657 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/concurrent.jar
+12:16:57,658 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/log4j-boot.jar
+12:16:57,658 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-logging-spi.jar
+12:16:57,658 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-logging-log4j.jar
+12:16:57,662 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-logging-jdk.jar
+12:16:57,662 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-common-core.jar
+12:16:57,662 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-xml-binding.jar
+12:16:57,662 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jaxb-api.jar
+12:16:57,662 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-bootstrap.jar
+12:16:57,662 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/javassist.jar
+12:16:57,662 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-reflect.jar
+12:16:57,662 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-mdr.jar
+12:16:57,662 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-dependency.jar
+12:16:57,662 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-kernel.jar
+12:16:57,662 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-metatype.jar
+12:16:57,662 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-managed.jar
+12:16:57,662 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-vfs.jar
+12:16:57,662 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-classloading-spi.jar
+12:16:57,662 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-classloader.jar
+12:16:57,662 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-classloading.jar
+12:16:57,662 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-classloading-vfs.jar
+12:16:57,662 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-aop-jdk50.jar
+12:16:57,662 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-aop-mc-int.jar
+12:16:57,662 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/trove.jar
+12:16:57,663 INFO  [ServerImpl] Home Dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1
+12:16:57,663 INFO  [ServerImpl] Home URL: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/
+12:16:57,663 INFO  [ServerImpl] Library URL: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/
+12:16:57,663 INFO  [ServerImpl] Patch URL: null
+12:16:57,663 INFO  [ServerImpl] Server Name: default
+12:16:57,663 INFO  [ServerImpl] Server Home Dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/default
+12:16:57,664 INFO  [ServerImpl] Server Home URL: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/default/
+12:16:57,664 INFO  [ServerImpl] Server Data Dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/default/data
+12:16:57,664 INFO  [ServerImpl] Server Temp Dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/default/tmp
+12:16:57,664 INFO  [ServerImpl] Server Config URL: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/default/conf/
+12:16:57,664 INFO  [ServerImpl] Server Library URL: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/default/lib/
+12:16:57,664 INFO  [ServerImpl] Root Deployment Filename: jboss-service.xml
+12:16:57,667 DEBUG [ServerImpl] Shutdown hook added Thread[JBoss Shutdown Hook,5,jboss]
+12:16:57,679 DEBUG [KernelFactory] Starting JBoss Kernel construction...
+12:16:57,857 INFO  [ServerImpl] Runtime shutdown hook called, forceHalt: true
+12:16:57,859 INFO  [ServerImpl] Shutdown complete

@@ -1,0 +1,97 @@
+/* From http://www.jboss.com/themes/jbosstheme/style/common.css */
+
+body { font: 11px Helvetica, Arial, sans-serif; }
+
+h1 { color: #000000; line-height: 22px; font: 20px Helvetica, Arial, sans-serif; }
+h2 { color: #000000; line-height: 18px; font: bold 16px Helvetica, Arial, sans-serif; margin-top: 16px; }
+h3 { color: #000000; line-height: 16px; font: bold 14px Helvetica, Arial, sans-serif; margin-top: 8px; }
+h4 { color: #000000; line-height: 16px; font: 14px Helvetica, Arial, sans-serif; margin-top: 8px; }
+h5 { color: #000000; line-height: 14px; font: 12px Helvetica, Arial, sans-serif; margin-top: 8px; }
+
+th {
+	 font-weight: bold;
+   text-align: left;
+   vertical-align: top;
+   background-color : #EEEEFF;
+   border: 1px solid black;
+}
+table.ObjectName {
+   margin-bottom: 1em;
+   border: 1px solid black;
+}
+table.AttributesClass {
+   width: 100%;
+   margin-bottom: 1em;
+   border: 1px solid black;
+}
+td.nameh {
+	background-color : #EEEEFF;
+   border: 1px solid #444444;
+}
+td.sep {
+  vertical-align: top;
+  border-width: thin;
+  border: 1px solid #DDDDDD;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+*.applyb {
+  font-size: larger;
+  text-align: center;
+}
+input.iauto {
+   width: 80%;
+	font-size: 12px;
+}
+
+*.aname {
+	font-size: large;
+}.aaccess {
+	font-size: small;
+	font-weight: normal;
+	color: gray;
+}
+*.atype {
+	font-size: small;
+	color: gray;
+}
+*.adescription {
+	font-size: small;
+	color: navy;
+   font-style: oblique;
+}
+* .error {
+	color: red;
+}
+
+A:ACTIVE {
+	color:Red;
+	background-color: #DEB887;
+	text-decoration : underline;
+}
+
+A:HOVER {
+	color:Red;
+	text-decoration : underline;
+}
+
+A:LINK {
+	color:#000099;
+	text-decoration : underline;
+}
+
+A:VISITED {
+	color:Purple;
+	text-decoration : underline;
+}
+
+pre {
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+
+

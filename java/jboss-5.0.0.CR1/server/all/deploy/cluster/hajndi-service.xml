@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ===================================================================== -->
+<!--                                                                       -->
+<!--  HA-JNDI Service Configuration                                        -->
+<!--                                                                       -->
+<!-- ===================================================================== -->
+
+<server>
+   
+   <mbean code="org.jboss.ha.jndi.HANamingService"
+      name="jboss:service=HAJNDI">      
+      
+      <!-- The partition used for group RPCs to find locally bound objects -->
+      <attribute name="HAPartition"><inject bean="HAPartition"/></attribute>
+      <!-- The cache for storing the replicated tree  -->
+      <attribute name="ClusteredCache"><inject bean="HAPartition" property="clusteredCache"/></attribute>
+      <!-- The thread pool used to control the bootstrap and auto discovery lookups -->
+      <attribute name="LookupPool"><inject bean="jboss.system:service=ThreadPool"/></attribute>
+      
+      <!-- Bind address of bootstrap and HA-JNDI RMI endpoints -->
+      <attribute name="BindAddress">${jboss.bind.address}</attribute>
+      <!-- Port on which the HA-JNDI stub is made available -->
+      <attribute name="Port">1100</attribute>
+      <!-- RmiPort to be used by the HA-JNDI service once bound. 0 => auto. -->
+      <attribute name="RmiPort">1101</attribute>
+      <!-- Accept backlog of the bootstrap socket -->
+      <attribute name="Backlog">50</attribute>
+
+      <!-- A flag to disable the auto discovery via multicast -->
+      <attribute name="DiscoveryDisabled">false</attribute>
+      <!-- Set the auto-discovery bootstrap multicast bind address. If not 
+      specified and a BindAddress is specified, the BindAddress will be used. -->
+      <attribute name="AutoDiscoveryBindAddress">${jboss.bind.address}</attribute>
+      <!-- Multicast Address and group port used for auto-discovery -->
+      <attribute name="AutoDiscoveryAddress">${jboss.partition.udpGroup:230.0.0.4}</attribute>
+      <attribute name="AutoDiscoveryGroup">1102</attribute>
+      <!-- The TTL (time-to-live) for autodiscovery IP multicast packets -->
+      <attribute name="AutoDiscoveryTTL">16</attribute>
+      <!-- The load balancing policy for HA-JNDI -->
+      <attribute name="LoadBalancePolicy">org.jboss.ha.framework.interfaces.RoundRobin</attribute>
+
+      <!-- Client socket factory to be used for client-server
+           RMI invocations during JNDI queries
+      <attribute name="ClientSocketFactory">custom</attribute>
+      -->
+      <!-- Server socket factory to be used for client-server
+           RMI invocations during JNDI queries
+      <attribute name="ServerSocketFactory">custom</attribute>
+      -->
+   </mbean>
+
+</server>

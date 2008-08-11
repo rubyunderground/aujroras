@@ -1,0 +1,362 @@
+12:17:20,076 INFO  [ServerImpl] Starting JBoss (Microcontainer)...
+12:17:20,077 INFO  [ServerImpl] Release ID: JBoss [Morpheus] 5.0.0.CR1 (build: SVNTag=JBoss_5_0_0_CR1 date=200806301254)
+12:17:20,077 DEBUG [ServerImpl] Using config: org.jboss.bootstrap.BaseServerConfig@6cbd97
+12:17:20,077 DEBUG [ServerImpl] Server type: class org.jboss.bootstrap.microcontainer.ServerImpl
+12:17:20,077 DEBUG [ServerImpl] Server loaded through: org.jboss.system.NoAnnotationURLClassLoader
+12:17:20,077 DEBUG [ServerImpl] Boot URLs:
+12:17:20,077 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/endorsed/resolver.jar
+12:17:20,077 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/endorsed/serializer.jar
+12:17:20,077 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/endorsed/xalan.jar
+12:17:20,077 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/endorsed/xercesImpl.jar
+12:17:20,077 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/concurrent.jar
+12:17:20,078 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/log4j-boot.jar
+12:17:20,078 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-logging-spi.jar
+12:17:20,078 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-logging-log4j.jar
+12:17:20,082 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-logging-jdk.jar
+12:17:20,082 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-common-core.jar
+12:17:20,082 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-xml-binding.jar
+12:17:20,082 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jaxb-api.jar
+12:17:20,082 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-bootstrap.jar
+12:17:20,082 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/javassist.jar
+12:17:20,082 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-reflect.jar
+12:17:20,082 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-mdr.jar
+12:17:20,082 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-dependency.jar
+12:17:20,082 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-kernel.jar
+12:17:20,082 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-metatype.jar
+12:17:20,082 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-managed.jar
+12:17:20,082 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-vfs.jar
+12:17:20,082 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-classloading-spi.jar
+12:17:20,082 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-classloader.jar
+12:17:20,082 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-classloading.jar
+12:17:20,082 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-classloading-vfs.jar
+12:17:20,082 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-aop-jdk50.jar
+12:17:20,082 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-aop-mc-int.jar
+12:17:20,082 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/trove.jar
+12:17:20,083 INFO  [ServerImpl] Home Dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1
+12:17:20,083 INFO  [ServerImpl] Home URL: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/
+12:17:20,083 INFO  [ServerImpl] Library URL: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/
+12:17:20,083 INFO  [ServerImpl] Patch URL: null
+12:17:20,084 INFO  [ServerImpl] Server Name: minimal
+12:17:20,084 INFO  [ServerImpl] Server Home Dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal
+12:17:20,084 INFO  [ServerImpl] Server Home URL: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/
+12:17:20,084 INFO  [ServerImpl] Server Data Dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/data
+12:17:20,084 INFO  [ServerImpl] Server Temp Dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/tmp
+12:17:20,084 INFO  [ServerImpl] Server Config URL: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/
+12:17:20,084 INFO  [ServerImpl] Server Library URL: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/lib/
+12:17:20,084 INFO  [ServerImpl] Root Deployment Filename: jboss-service.xml
+12:17:20,088 DEBUG [ServerImpl] Shutdown hook added Thread[JBoss Shutdown Hook,5,jboss]
+12:17:20,101 DEBUG [KernelFactory] Starting JBoss Kernel construction...
+12:17:20,377 DEBUG [KernelFactory] Completed JBoss Kernel construction.  Duration: 276 milliseconds
+12:17:20,532 DEBUG [ServerImpl] Already in start, ignoring duplicate start
+12:17:20,533 INFO  [ServerImpl] Starting Microcontainer, bootstrapURL=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/bootstrap.xml
+12:17:20,571 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@d7999e, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:20,577 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/validation set to: true
+12:17:20,578 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/namespaces set to: true
+12:17:20,578 DEBUG [SaxJBossXBParser] http://apache.org/xml/features/validation/dynamic set to: true
+12:17:20,622 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@d7999e, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:20,637 DEBUG [ServerImpl] BootstrapURLs=[classloader.xml, aop.xml, jmx.xml, deployers.xml, profile-service.xml]
+12:17:20,651 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@9e592c, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:20,651 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/validation set to: true
+12:17:20,651 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/namespaces set to: true
+12:17:20,652 DEBUG [SaxJBossXBParser] http://apache.org/xml/features/validation/dynamic set to: true
+12:17:20,652 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@9e592c, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:21,144 INFO  [CopyMechanism] VFS temp dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/tmp
+12:17:21,145 INFO  [ZipEntryContext] VFS force nested jars copy-mode is enabled.
+12:17:21,312 DEBUG [ClassLoaderSystem] DefaultClassLoaderSystem@b41c19 registered domain=ClassLoaderDomain@4721c7{name=<DEFAULT> parentPolicy=BEFORE parent=org.jboss.system.NoAnnotationURLClassLoader@76cbf7}
+12:17:21,317 DEBUG [BaseClassLoader] Created BaseClassLoader@4fd791{bootstrap-classloader:0.0.0$MODULE} with policy VFSClassLoaderPolicy@d179fb{name=bootstrap-classloader:0.0.0$MODULE domain=null roots=[DelegatingHandler@10447454[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-deployers-core-spi.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-deployers-core-spi.jar], DelegatingHandler@20086[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-deployers-core.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-deployers-core.jar], DelegatingHandler@2047516[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-deployers-client-spi.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-deployers-client-spi.jar], DelegatingHandler@2532856[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-deployers-client.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-deployers-client.jar], DelegatingHandler@5920122[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-deployers-structure-spi.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-deployers-structure-spi.jar], DelegatingHandler@10607104[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-deployers-spi.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-deployers-spi.jar], DelegatingHandler@15688697[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-deployers-impl.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-deployers-impl.jar], DelegatingHandler@9206046[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-deployers-vfs-spi.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-deployers-vfs-spi.jar], DelegatingHandler@6540271[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-deployers-vfs.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-deployers-vfs.jar], DelegatingHandler@14803499[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-system.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-system.jar], DelegatingHandler@13074502[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-j2se.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-j2se.jar], DelegatingHandler@11961466[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-mbeans.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-mbeans.jar], DelegatingHandler@11758225[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-jmx.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-jmx.jar], DelegatingHandler@1666311[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-system-jmx.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-system-jmx.jar], DelegatingHandler@4527828[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//dom4j.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/dom4j.jar], DelegatingHandler@14542094[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//activation.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/activation.jar], DelegatingHandler@6542706[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jaxb-impl.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jaxb-impl.jar], DelegatingHandler@5401885[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//stax-api.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/stax-api.jar], DelegatingHandler@7978329[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//wstx.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/wstx.jar]]  delegates=null exported=[javax.xml.stream.events, com.sun.xml.bind.v2, org.jboss.mx.util.propertyeditor, org.jboss.deployers.structure.spi.main, META-INF.maven.org.jboss.deployers.jboss-deployers-core-spi, org.jboss.deployers.vfs.plugins.structure.modify, org.jboss.mx.mxbean, org.jboss.deployers.spi.deployer.matchers, org.jboss.deployers.plugins.deployers, com.sun.xml.bind.v2.model.runtime, org.jboss.mx.timer, com.ctc.wstx.dom, org.dom4j.dom, org.jboss.deployers.vfs.plugins.structure.explicit, org.jboss.deployers.client.plugins.deployment, org.dom4j.io, com.ctc.wstx.util, com.sun.xml.bind.v2.runtime.output, org.dom4j.swing, META-INF.maven.org.jboss.deployers.jboss-deployers-structure-spi, com.sun.xml.bind.api, com.ctc.wstx.msv, org.jboss.deployers.spi.attachments.helpers, org.jboss.deployers.plugins.structure, org.jboss.system.server.profileservice.hotdeploy, com.sun.xml.txw2.annotation, org.jboss.system.metadata, org.jboss.system, com.sun.xml.bind.v2.runtime.reflect, org.jboss.deployers.vfs.deployer.kernel.managed, org.jboss.deployers.structure.spi, org.dom4j.rule, org.jboss.deployers.vfs.plugins.structure.file, org.jboss.deployers.vfs.plugins.structure.war, org.dom4j.rule.pattern, org.jboss.mx.metadata.xb, com.sun.xml.txw2, org.jboss.deployers.spi.deployer.managed, com.ctc.wstx.dtd, com.sun.xml.bind.api.impl, org.jboss.deployers.vfs.spi.structure, META-INF.maven.org.jboss.deployers.jboss-deployers-vfs, META-INF.maven.org.jboss.deployers.jboss-deployers-vfs-spi, org.jboss.deployers.vfs.spi.client, org.jboss.mx.service, com.sun.xml.bind.v2.runtime.unmarshaller, org.jboss.mx.modelmbean, org.jboss.deployment.scanner, org.jboss.system.server.profileservice, org.jboss.system.microcontainer.jmx, META-INF.maven.org.jboss.deployers.jboss-deployers-spi, org.jboss.mx.interceptor, com.sun.xml.bind.v2.schemagen.xmlschema, javax.xml.stream, com.sun.istack, org.jboss.system.microcontainer, org.codehaus.stax2.evt, META-INF.maven.org.jboss.deployers.jboss-deployers-core, org.jboss.profileservice.spi.repository, com.ctc.wstx.api, org.dom4j.xpp, META-INF.maven.org.jboss.deployers.jboss-deployers-client-spi, org.jboss.system.server.profileservice.repository, org.jboss.mx.standardmbean, org.jboss.deployers.vfs.plugins.structure.jar, org.jboss.deployers.spi, org.jboss.system.filterfactory, org.jboss.system.server.profile.basic, org.jboss.system.deployers, com.sun.xml.bind.v2.model.nav, org.dom4j, org.jboss.deployers.vfs.plugins.xb, org.jboss.mx.server.registry, org.dom4j.jaxb, org.jboss.deployers.vfs.spi.deployer, com.sun.xml.bind.annotation, org.jboss.deployers.spi.deployer, org.jboss.deployers.spi.structure, org.jboss.deployers.vfs.spi.structure.helpers, com.ctc.wstx.sw, org.jboss.deployers.spi.attachments, org.jboss.system.server.jmx, org.jboss.deployers.spi.annotations, com.sun.xml.bind.unmarshaller, com.sun.xml.txw2.output, com.sun.xml.bind.v2.util, com.sun.xml.bind.v2.schemagen.episode, org.jboss.deployers.client.spi, org.jboss.profileservice.aop, org.dom4j.xpath, org.jboss.profileservice.spi, com.ctc.wstx.cfg, org.dom4j.dtd, org.jboss.deployers.structure.spi.scope, com.sun.xml.bind.v2.runtime.reflect.opt, org.jboss.deployers.plugins.helpers, javax.xml.stream.util, com.ctc.wstx.compat, org.dom4j.datatype, org.jboss.system.server.profile.repository, com.ctc.wstx.evt, com.sun.xml.bind, com.ctc.wstx.ent, META-INF, org.jboss.mx.util, com.sun.xml.bind.v2.bytecode, org.jboss.deployers.vfs.plugins.client, com.sun.xml.bind.v2.schemagen, org.jboss.deployers.plugins.classloading, org.jboss.deployers.plugins.attachments, org.jboss.deployers.plugins.scanner, com.sun.xml.bind.v2.runtime, org.jboss.deployers.spi.deployer.helpers, org.dom4j.bean, org.jboss.aop.deployers.temp, org.jboss.mx.notification, com.sun.xml.bind.v2.runtime.property, org.codehaus.stax2.validation, org.codehaus.stax2.io, META-INF.maven.org.jboss.deployers.jboss-deployers-impl, org.codehaus.stax2, com.sun.xml.bind.v2.model.annotation, META-INF.services, org.jboss.mx.metadata, org.jboss.mx.server, META-INF.maven.org.jboss.deployers.jboss-deployers-client, org.jboss.deployers.vfs.deployer.kernel, org.dom4j.tree, org.jboss.deployers.plugins.main, org.dom4j.util, com.sun.activation.registries, com.sun.xml.bind.marshaller, org.jboss.deployers.vfs.plugins.classloader, org.jboss.mx.loading, org.jboss.deployers.structure.spi.helpers, org.jboss.system.deployers.managed, org.jboss.deployers.plugins.sort, org.jboss.deployers.plugins.managed, org.jboss.deployers.spi.management, com.ctc.wstx.stax, com.sun.xml.bind.v2.model.core, org.jboss.system.pm, com.ctc.wstx.exc, org.jboss.mx.persistence, com.ctc.wstx.sr, javax.activation, org.jboss.deployers.client.spi.main, org.jboss.mx.capability, com.sun.xml.bind.v2.model.impl, org.jboss.system.server.profileservice.basic, org.jboss.deployers.vfs.plugins.structure, com.sun.xml.bind.util, com.sun.activation.viewers, dtd, com.ctc.wstx.io, org.jboss.deployment, org.jboss.deployers.vfs.spi.deployer.helpers, org.jboss.deployers.structure.spi.scope.helpers, org.jboss.deployers.plugins.annotations, org.jboss.deployers.spi.management.deploy, org.jboss.system.server, ] <IMPORT-ALL>NON_EMPTY}
+12:17:21,318 DEBUG [BaseClassLoaderDomain] ClassLoaderDomain@4721c7{<DEFAULT>} registerClassLoader BaseClassLoader@4fd791{bootstrap-classloader:0.0.0$MODULE}
+12:17:21,331 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@f12cb4, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:21,331 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/validation set to: true
+12:17:21,331 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/namespaces set to: true
+12:17:21,331 DEBUG [SaxJBossXBParser] http://apache.org/xml/features/validation/dynamic set to: true
+12:17:21,331 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@f12cb4, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:21,581 DEBUG [AbstractKernelController] Additional matching bean - contextual injection already used for class: class org.jboss.classloading.spi.dependency.Module
+12:17:21,586 DEBUG [BaseClassLoader] Created BaseClassLoader@d00d24{aop-classloader:0.0.0$MODULE} with policy VFSClassLoaderPolicy@ed39f{name=aop-classloader:0.0.0$MODULE domain=null roots=[DelegatingHandler@6790791[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-aop-deployer-jdk50.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-aop-deployer-jdk50.jar], DelegatingHandler@14214026[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-aop-jboss4-jdk50.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-aop-jboss4-jdk50.jar], DelegatingHandler@4356469[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-aop-jboss5.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-aop-jboss5.jar]]  delegates=null exported=[org.jboss.aop.asintegration, org.jboss.aop.asintegration.jboss5.temp, META-INF, org.jboss.aop.asintegration.jboss4, org.jboss.aop.deployers, org.jboss.aop.domain, org.jboss.aop.deployment, org.jboss.aop.classpool, org.jboss.aop.asintegration.jboss5, ] <IMPORT-ALL>NON_EMPTY}
+12:17:21,586 DEBUG [BaseClassLoaderDomain] ClassLoaderDomain@4721c7{<DEFAULT>} registerClassLoader BaseClassLoader@d00d24{aop-classloader:0.0.0$MODULE}
+12:17:21,643 DEBUG [ClassLoaderSystem] DefaultClassLoaderSystem@b41c19 set translator to org.jboss.aop.asintegration.jboss5.DefaultTranslator@fe3e4f
+12:17:21,782 DEBUG [AspectManagerServiceJDK5] Creating AspectManagerServiceJDK5
+12:17:21,787 DEBUG [AspectManagerServiceJDK5] Created AspectManagerServiceJDK5
+12:17:21,788 DEBUG [AspectManagerServiceJDK5] Starting AspectManagerServiceJDK5
+12:17:21,788 DEBUG [AspectManagerServiceJDK5] Started AspectManagerServiceJDK5
+12:17:21,869 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@980821, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:21,869 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/validation set to: true
+12:17:21,869 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/namespaces set to: true
+12:17:21,869 DEBUG [SaxJBossXBParser] http://apache.org/xml/features/validation/dynamic set to: true
+12:17:21,869 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@980821, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:21,902 DEBUG [AbstractKernelController] Additional matching bean - contextual injection already used for class: class org.jboss.classloading.spi.dependency.Module
+12:17:21,903 DEBUG [BaseClassLoader] Created BaseClassLoader@d29ed8{jmx-classloader:0.0.0$MODULE} with policy VFSClassLoaderPolicy@ba8426{name=jmx-classloader:0.0.0$MODULE domain=null roots=[]  delegates=null exported=[] <IMPORT-ALL>NON_EMPTY}
+12:17:21,903 DEBUG [BaseClassLoaderDomain] ClassLoaderDomain@4721c7{<DEFAULT>} registerClassLoader BaseClassLoader@d29ed8{jmx-classloader:0.0.0$MODULE}
+12:17:22,058 DEBUG [JMXKernel] Created MBeanServer: org.jboss.mx.server.MBeanServerImpl@687f95[ defaultDomain='jboss' ]
+12:17:22,088 DEBUG [JMXKernel] Boot url list: [file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/]
+12:17:22,104 DEBUG [BaseClassLoader] Created BaseClassLoader@542b5d{vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/} with policy VFSClassLoaderPolicy@eb147c{name=vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/ domain=null roots=[FileHandler@9300947[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/ real=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/]]  delegates=null exported=[xmdesc, ] <IMPORT-ALL>NON_EMPTY}
+12:17:22,104 DEBUG [BaseClassLoaderDomain] ClassLoaderDomain@4721c7{<DEFAULT>} registerClassLoader BaseClassLoader@542b5d{vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/}
+12:17:22,159 DEBUG [JMXKernel] Failed to create xmbean for: org.jboss.system.server.ServerInfo
+12:17:22,164 INFO  [ServerInfo] Java version: 1.5.0_13,Apple Inc.
+12:17:22,164 INFO  [ServerInfo] Java VM: Java HotSpot(TM) Client VM 1.5.0_13-119,Apple Inc.
+12:17:22,164 INFO  [ServerInfo] OS-System: Mac OS X 10.5.4,i386
+12:17:22,164 DEBUG [ServerInfo] Full System Properties Dump
+12:17:22,164 DEBUG [ServerInfo]     java.vendor: Apple Inc.
+12:17:22,164 DEBUG [ServerInfo]     sun.java.launcher: SUN_STANDARD
+12:17:22,164 DEBUG [ServerInfo]     sun.management.compiler: HotSpot Client Compiler
+12:17:22,164 DEBUG [ServerInfo]     os.name: Mac OS X
+12:17:22,164 DEBUG [ServerInfo]     sun.boot.class.path: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/endorsed/resolver.jar:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/endorsed/serializer.jar:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/endorsed/xalan.jar:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/endorsed/xercesImpl.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/ui.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/laf.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/sunrsasign.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/jsse.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/jce.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/charsets.jar
+12:17:22,164 DEBUG [ServerInfo]     java.vm.specification.vendor: Sun Microsystems Inc.
+12:17:22,164 DEBUG [ServerInfo]     java.runtime.version: 1.5.0_13-b05-237
+12:17:22,164 DEBUG [ServerInfo]     user.name: bob
+12:17:22,164 DEBUG [ServerInfo]     jboss.bind.address: 127.0.0.1
+12:17:22,164 DEBUG [ServerInfo]     awt.nativeDoubleBuffering: true
+12:17:22,164 DEBUG [ServerInfo]     jboss.home.dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1
+12:17:22,164 DEBUG [ServerInfo]     user.language: en
+12:17:22,165 DEBUG [ServerInfo]     sun.boot.library.path: /System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Libraries
+12:17:22,165 DEBUG [ServerInfo]     jboss.home.url: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/
+12:17:22,165 DEBUG [ServerInfo]     java.version: 1.5.0_13
+12:17:22,165 DEBUG [ServerInfo]     user.timezone: America/New_York
+12:17:22,165 DEBUG [ServerInfo]     jboss.server.home.dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal
+12:17:22,165 DEBUG [ServerInfo]     jgroups.bind_addr: 127.0.0.1
+12:17:22,165 DEBUG [ServerInfo]     sun.arch.data.model: 32
+12:17:22,165 DEBUG [ServerInfo]     http.nonProxyHosts: local|*.local|169.254/16|*.169.254/16
+12:17:22,165 DEBUG [ServerInfo]     java.endorsed.dirs: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/endorsed
+12:17:22,165 DEBUG [ServerInfo]     jboss.server.home.url: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/
+12:17:22,165 DEBUG [ServerInfo]     sun.cpu.isalist: 
+12:17:22,165 DEBUG [ServerInfo]     sun.jnu.encoding: MacRoman
+12:17:22,165 DEBUG [ServerInfo]     file.encoding.pkg: sun.io
+12:17:22,165 DEBUG [ServerInfo]     file.separator: /
+12:17:22,165 DEBUG [ServerInfo]     java.specification.name: Java Platform API Specification
+12:17:22,165 DEBUG [ServerInfo]     java.class.version: 49.0
+12:17:22,165 DEBUG [ServerInfo]     jboss.server.config.url: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/
+12:17:22,165 DEBUG [ServerInfo]     user.country: US
+12:17:22,165 DEBUG [ServerInfo]     java.home: /System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home
+12:17:22,165 DEBUG [ServerInfo]     java.vm.info: mixed mode
+12:17:22,165 DEBUG [ServerInfo]     jboss.lib.url: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/
+12:17:22,165 DEBUG [ServerInfo]     os.version: 10.5.4
+12:17:22,165 DEBUG [ServerInfo]     path.separator: :
+12:17:22,165 DEBUG [ServerInfo]     java.vm.version: 1.5.0_13-119
+12:17:22,165 DEBUG [ServerInfo]     java.protocol.handler.pkgs: org.jboss.net.protocol|org.jboss.virtual.protocol
+12:17:22,165 DEBUG [ServerInfo]     java.awt.printerjob: apple.awt.CPrinterJob
+12:17:22,166 DEBUG [ServerInfo]     sun.io.unicode.encoding: UnicodeLittle
+12:17:22,166 DEBUG [ServerInfo]     awt.toolkit: apple.awt.CToolkit
+12:17:22,166 DEBUG [ServerInfo]     socksNonProxyHosts: local|*.local|169.254/16|*.169.254/16
+12:17:22,166 DEBUG [ServerInfo]     ftp.nonProxyHosts: local|*.local|169.254/16|*.169.254/16
+12:17:22,166 DEBUG [ServerInfo]     jboss.server.temp.dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/tmp
+12:17:22,166 DEBUG [ServerInfo]     sun.rmi.dgc.client.gcInterval: 3600000
+12:17:22,166 DEBUG [ServerInfo]     user.home: /Users/bob
+12:17:22,166 DEBUG [ServerInfo]     java.specification.vendor: Sun Microsystems Inc.
+12:17:22,166 DEBUG [ServerInfo]     java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+12:17:22,166 DEBUG [ServerInfo]     org.jboss.resolver.warning: true
+12:17:22,166 DEBUG [ServerInfo]     java.vendor.url: http://www.apple.com/
+12:17:22,166 DEBUG [ServerInfo]     program.name: run.sh
+12:17:22,166 DEBUG [ServerInfo]     java.vm.vendor: Apple Inc.
+12:17:22,166 DEBUG [ServerInfo]     gopherProxySet: false
+12:17:22,166 DEBUG [ServerInfo]     sun.rmi.dgc.server.gcInterval: 3600000
+12:17:22,166 DEBUG [ServerInfo]     java.runtime.name: Java(TM) 2 Runtime Environment, Standard Edition
+12:17:22,166 DEBUG [ServerInfo]     java.class.path: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/bin/run.jar
+12:17:22,166 DEBUG [ServerInfo]     jboss.server.log.dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/log
+12:17:22,167 DEBUG [ServerInfo]     jbossmx.loader.repository.class: org.jboss.mx.loading.UnifiedLoaderRepository3
+12:17:22,167 DEBUG [ServerInfo]     java.vm.specification.name: Java Virtual Machine Specification
+12:17:22,167 DEBUG [ServerInfo]     java.vm.specification.version: 1.0
+12:17:22,167 DEBUG [ServerInfo]     sun.cpu.endian: little
+12:17:22,167 DEBUG [ServerInfo]     sun.os.patch.level: unknown
+12:17:22,167 DEBUG [ServerInfo]     jboss.server.lib.url: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/lib/
+12:17:22,167 DEBUG [ServerInfo]     java.io.tmpdir: /tmp
+12:17:22,167 DEBUG [ServerInfo]     java.vendor.url.bug: http://bugreport.apple.com/
+12:17:22,167 DEBUG [ServerInfo]     jboss.server.data.dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/data
+12:17:22,167 DEBUG [ServerInfo]     java.rmi.server.hostname: 127.0.0.1
+12:17:22,167 DEBUG [ServerInfo]     jboss.vfs.forceCopy: true
+12:17:22,167 DEBUG [ServerInfo]     os.arch: i386
+12:17:22,167 DEBUG [ServerInfo]     java.awt.graphicsenv: apple.awt.CGraphicsEnvironment
+12:17:22,167 DEBUG [ServerInfo]     java.ext.dirs: /Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/lib/ext
+12:17:22,167 DEBUG [ServerInfo]     user.dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1
+12:17:22,167 DEBUG [ServerInfo]     mrj.version: 1040.1.5.0_13-237
+12:17:22,167 DEBUG [ServerInfo]     line.separator: 
+
+12:17:22,167 DEBUG [ServerInfo]     java.vm.name: Java HotSpot(TM) Client VM
+12:17:22,167 DEBUG [ServerInfo]     jboss.server.base.dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server
+12:17:22,167 DEBUG [ServerInfo]     jboss.server.base.url: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/
+12:17:22,167 DEBUG [ServerInfo]     javax.management.builder.initial: org.jboss.mx.server.MBeanServerBuilderImpl
+12:17:22,167 DEBUG [ServerInfo]     file.encoding: MacRoman
+12:17:22,167 DEBUG [ServerInfo]     java.specification.version: 1.5
+12:17:22,167 DEBUG [ServerInfo]     jboss.server.name: minimal
+12:17:22,168 DEBUG [JMXKernel] Created system MBean: jboss.system:type=ServerInfo
+12:17:22,178 DEBUG [ServiceController] Controller MBean online
+12:17:22,202 INFO  [JMXKernel] Legacy JMX core initialized
+12:17:22,203 DEBUG [AspectManagerJMXRegistrar] Registering AspectManagerService in JMX under: jboss.aop:service=AspectManager
+12:17:22,211 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@264f65, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:22,211 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/validation set to: true
+12:17:22,211 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/namespaces set to: true
+12:17:22,211 DEBUG [SaxJBossXBParser] http://apache.org/xml/features/validation/dynamic set to: true
+12:17:22,211 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@264f65, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:22,289 DEBUG [AbstractKernelController] Additional matching bean - contextual injection already used for class: class org.jboss.classloading.spi.dependency.Module
+12:17:22,290 DEBUG [BaseClassLoader] Created BaseClassLoader@b229b0{deployers-classloader:0.0.0$MODULE} with policy VFSClassLoaderPolicy@cee4bb{name=deployers-classloader:0.0.0$MODULE domain=null roots=[]  delegates=null exported=[] <IMPORT-ALL>NON_EMPTY}
+12:17:22,290 DEBUG [BaseClassLoaderDomain] ClassLoaderDomain@4721c7{<DEFAULT>} registerClassLoader BaseClassLoader@b229b0{deployers-classloader:0.0.0$MODULE}
+12:17:22,377 DEBUG [DeployersImpl] Added stage Not Installed before null
+12:17:22,378 DEBUG [DeployersImpl] Added stage Parse before ControllerState@6c3d1f{PreInstall}
+12:17:22,378 DEBUG [DeployersImpl] Added stage PostParse before ControllerState@6c3d1f{PreInstall}
+12:17:22,378 DEBUG [DeployersImpl] Added stage PreDescribe before ControllerState@6c3d1f{PreInstall}
+12:17:22,378 DEBUG [DeployersImpl] Added stage Describe before ControllerState@6c3d1f{PreInstall}
+12:17:22,378 DEBUG [DeployersImpl] Added stage ClassLoader before ControllerState@6c3d1f{PreInstall}
+12:17:22,378 DEBUG [DeployersImpl] Added stage PostClassLoader before ControllerState@6c3d1f{PreInstall}
+12:17:22,378 DEBUG [DeployersImpl] Added stage PreReal before ControllerState@6c3d1f{PreInstall}
+12:17:22,378 DEBUG [DeployersImpl] Added stage Real before ControllerState@6c3d1f{PreInstall}
+12:17:22,378 DEBUG [DeployersImpl] Added stage Installed before ControllerState@6c3d1f{PreInstall}
+12:17:22,395 DEBUG [VFSStructuralDeployersImpl] Added structure deployer org.jboss.deployers.vfs.plugins.structure.explicit.DeclaredStructure@1cf25c
+12:17:22,414 DEBUG [VFSStructuralDeployersImpl] Added structure deployer org.jboss.deployers.vfs.plugins.structure.war.WARStructure@257b52
+12:17:22,435 DEBUG [VFSStructuralDeployersImpl] Added structure deployer org.jboss.deployers.vfs.plugins.structure.jar.JARStructure@eed1b8
+12:17:22,444 DEBUG [VFSStructuralDeployersImpl] Added structure deployer org.jboss.deployers.vfs.plugins.structure.file.FileStructure@c0ad7
+12:17:22,507 DEBUG [DeployersImpl] Added deployer org.jboss.aop.asintegration.jboss5.AspectAppParsingDeployer@9ce2c2 for stage Describe
+org.jboss.aop.asintegration.jboss5.AspectAppParsingDeployer@9ce2c2{inputs=[] outputs=[org.jboss.aop.asintegration.jboss5.AspectDeployment]}
+
+12:17:22,526 DEBUG [DeployersImpl] Added deployer org.jboss.aop.deployers.AspectDeployer@12139e for stage PostClassLoader
+org.jboss.aop.deployers.AspectDeployer@12139e{inputs=[] outputs=[]}
+
+12:17:22,574 DEBUG [DeployersImpl] Added deployer org.jboss.deployers.vfs.deployer.kernel.BeanDeployer@442e06 for stage Parse
+org.jboss.deployers.vfs.deployer.kernel.BeanDeployer@442e06{inputs=[] outputs=[org.jboss.kernel.spi.deployment.KernelDeployment]}
+
+12:17:22,599 DEBUG [TypedManagedDeploymentCreator] addAttachmentType, interface org.jboss.kernel.spi.deployment.KernelDeployment:beans
+12:17:22,599 DEBUG [DeployersImpl] Added deployer org.jboss.deployers.vfs.deployer.kernel.KernelDeploymentDeployer@f4300e for stage Real
+org.jboss.deployers.vfs.deployer.kernel.KernelDeploymentDeployer@f4300e{inputs=[org.jboss.beans.metadata.spi.BeanMetaData, org.jboss.kernel.spi.deployment.KernelDeployment] outputs=[org.jboss.beans.metadata.spi.BeanMetaData]}
+
+12:17:22,621 DEBUG [DeployersImpl] Added deployer org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer@11ba0a for stage Real
+org.jboss.deployers.vfs.deployer.kernel.KernelDeploymentDeployer@f4300e{inputs=[org.jboss.beans.metadata.spi.BeanMetaData, org.jboss.kernel.spi.deployment.KernelDeployment] outputs=[org.jboss.beans.metadata.spi.BeanMetaData]}
+org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer@11ba0a{inputs=[org.jboss.beans.metadata.spi.BeanMetaData] outputs=[]}
+
+12:17:22,694 DEBUG [DeployersImpl] Added deployer org.jboss.system.deployers.SARDeployer@44f84 for stage Parse
+org.jboss.deployers.vfs.deployer.kernel.BeanDeployer@442e06{inputs=[] outputs=[org.jboss.kernel.spi.deployment.KernelDeployment]}
+org.jboss.system.deployers.SARDeployer@44f84{inputs=[] outputs=[org.jboss.system.metadata.ServiceDeployment]}
+
+12:17:22,717 DEBUG [DeployersImpl] Added deployer org.jboss.system.deployers.ServiceDeploymentDeployer@9b25f for stage Real
+org.jboss.deployers.vfs.deployer.kernel.KernelDeploymentDeployer@f4300e{inputs=[org.jboss.beans.metadata.spi.BeanMetaData, org.jboss.kernel.spi.deployment.KernelDeployment] outputs=[org.jboss.beans.metadata.spi.BeanMetaData]}
+org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer@11ba0a{inputs=[org.jboss.beans.metadata.spi.BeanMetaData] outputs=[]}
+org.jboss.system.deployers.ServiceDeploymentDeployer@9b25f{inputs=[org.jboss.system.metadata.ServiceMetaData, org.jboss.system.metadata.ServiceDeployment] outputs=[org.jboss.system.metadata.ServiceMetaData]}
+
+12:17:22,731 DEBUG [DeployersImpl] Added deployer org.jboss.system.deployers.ServiceDeployer@84a312 for stage Real
+org.jboss.deployers.vfs.deployer.kernel.KernelDeploymentDeployer@f4300e{inputs=[org.jboss.beans.metadata.spi.BeanMetaData, org.jboss.kernel.spi.deployment.KernelDeployment] outputs=[org.jboss.beans.metadata.spi.BeanMetaData]}
+org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer@11ba0a{inputs=[org.jboss.beans.metadata.spi.BeanMetaData] outputs=[]}
+org.jboss.system.deployers.ServiceDeploymentDeployer@9b25f{inputs=[org.jboss.system.metadata.ServiceMetaData, org.jboss.system.metadata.ServiceDeployment] outputs=[org.jboss.system.metadata.ServiceMetaData]}
+org.jboss.system.deployers.ServiceDeployer@84a312{inputs=[org.jboss.system.metadata.ServiceMetaData] outputs=[]}
+
+12:17:22,745 DEBUG [DeployersImpl] Added deployer org.jboss.system.deployers.HackClassloaderMetaDataDeployer@3d3774 for stage PostParse
+org.jboss.system.deployers.HackClassloaderMetaDataDeployer@3d3774{inputs=[org.jboss.mx.loading.LoaderRepositoryFactory$LoaderRepositoryConfig] outputs=[org.jboss.classloading.spi.metadata.ClassLoadingMetaData]}
+
+12:17:22,782 DEBUG [DeployersImpl] Added deployer org.jboss.deployers.vfs.spi.deployer.SchemaResolverDeployer@ee568c for stage Parse
+org.jboss.deployers.vfs.deployer.kernel.BeanDeployer@442e06{inputs=[] outputs=[org.jboss.kernel.spi.deployment.KernelDeployment]}
+org.jboss.deployers.vfs.spi.deployer.SchemaResolverDeployer@ee568c{inputs=[] outputs=[org.jboss.classloading.spi.metadata.ClassLoadingMetaData]}
+org.jboss.system.deployers.SARDeployer@44f84{inputs=[] outputs=[org.jboss.system.metadata.ServiceDeployment]}
+
+12:17:22,797 DEBUG [DeployersImpl] Added deployer org.jboss.deployers.plugins.classloading.ClassLoadingDefaultDeployer@568614 for stage PreDescribe
+org.jboss.deployers.plugins.classloading.ClassLoadingDefaultDeployer@568614{inputs=[org.jboss.classloading.spi.metadata.ClassLoadingMetaData] outputs=[org.jboss.classloading.spi.metadata.ClassLoadingMetaData]}
+
+12:17:22,809 DEBUG [DeployersImpl] Added deployer org.jboss.deployers.vfs.plugins.classloader.InMemoryClassesDeployer@734645 for stage Describe
+org.jboss.aop.asintegration.jboss5.AspectAppParsingDeployer@9ce2c2{inputs=[] outputs=[org.jboss.aop.asintegration.jboss5.AspectDeployment]}
+org.jboss.deployers.vfs.plugins.classloader.InMemoryClassesDeployer@734645{inputs=[] outputs=[org.jboss.classloading.spi.metadata.ClassLoadingMetaData]}
+
+12:17:22,830 DEBUG [DeployersImpl] Added deployer org.jboss.deployers.vfs.plugins.classloader.VFSClassLoaderDescribeDeployer@d059e5 for stage Describe
+org.jboss.aop.asintegration.jboss5.AspectAppParsingDeployer@9ce2c2{inputs=[] outputs=[org.jboss.aop.asintegration.jboss5.AspectDeployment]}
+org.jboss.deployers.vfs.plugins.classloader.InMemoryClassesDeployer@734645{inputs=[] outputs=[org.jboss.classloading.spi.metadata.ClassLoadingMetaData]}
+org.jboss.deployers.vfs.plugins.classloader.VFSClassLoaderDescribeDeployer@d059e5{inputs=[org.jboss.classloading.spi.metadata.ClassLoadingMetaData] outputs=[]}
+
+12:17:22,843 DEBUG [DeployersImpl] Added deployer org.jboss.deployers.plugins.classloading.AbstractLevelClassLoaderSystemDeployer@86062a for stage ClassLoader
+org.jboss.deployers.plugins.classloading.AbstractLevelClassLoaderSystemDeployer@86062a{inputs=[org.jboss.deployers.structure.spi.ClassLoaderFactory] outputs=[]}
+
+12:17:22,844 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@973268, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:22,844 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/validation set to: true
+12:17:22,844 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/namespaces set to: true
+12:17:22,844 DEBUG [SaxJBossXBParser] http://apache.org/xml/features/validation/dynamic set to: true
+12:17:22,844 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@973268, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:22,868 DEBUG [AbstractKernelController] Additional matching bean - contextual injection already used for class: class org.jboss.classloading.spi.dependency.Module
+12:17:22,869 DEBUG [BaseClassLoader] Created BaseClassLoader@674e3{profile-service-classloader:0.0.0$MODULE} with policy VFSClassLoaderPolicy@e41769{name=profile-service-classloader:0.0.0$MODULE domain=null roots=[]  delegates=null exported=[] <IMPORT-ALL>NON_EMPTY}
+12:17:22,869 DEBUG [BaseClassLoaderDomain] ClassLoaderDomain@4721c7{<DEFAULT>} registerClassLoader BaseClassLoader@674e3{profile-service-classloader:0.0.0$MODULE}
+12:17:22,898 INFO  [MetaDataAwareProfile] Using profile root:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal
+12:17:22,928 DEBUG [VFSBootstrapScannerImpl] Added URI: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml
+12:17:22,929 DEBUG [VFSBootstrapScannerImpl] URI list: [file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml]
+12:17:22,950 DEBUG [VFSDeployerScannerImpl] Added URI: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/deployers/
+12:17:22,950 DEBUG [VFSDeployerScannerImpl] URI list: [file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/deployers/]
+12:17:22,962 DEBUG [VFSDeploymentScannerImpl] Added URI: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/deploy/
+12:17:22,963 DEBUG [VFSDeploymentScannerImpl] URI list: [file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/deploy/]
+12:17:22,980 DEBUG [ProfileServiceBootstrap] Using ProfileService: org.jboss.system.server.profileservice.basic.MetaDataAwareProfileService@ada74e
+12:17:22,980 DEBUG [ProfileServiceBootstrap] Using MainDeployer: org.jboss.deployers.plugins.main.MainDeployerImpl@c319b9
+12:17:22,981 DEBUG [MainDeployerImpl] Add deployment: vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml
+12:17:23,009 DEBUG [MainDeployerImpl] Scheduling deployment: vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml parent=null
+12:17:23,011 DEBUG [DeployersImpl] Deploying vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml
+12:17:23,015 DEBUG [SARDeployer] Parsing: jboss-service.xml
+12:17:23,024 DEBUG [ServiceDeploymentParser] Found classpath element: [classpath: null]
+12:17:23,025 DEBUG [SARDeployer] Processing classpath: vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml codebase=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/lib/ archives=*
+12:17:23,139 DEBUG [InMemoryClassesDeployer] Dynamic class root for vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml is vfsmemory://5c4o01j-hrc8f4-fjrafog4-1-fjrafqny-6
+12:17:23,147 DEBUG [BaseClassLoader] Created BaseClassLoader@f4acd1{vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml} with policy VFSClassLoaderPolicy@7e0e74{name=vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml domain=null roots=[MemoryContextHandler@15145954[path=classes context=vfsmemory://5c4o01j-hrc8f4-fjrafog4-1-fjrafqny-6 real=vfsmemory://5c4o01j-hrc8f4-fjrafog4-1-fjrafqny-6/classes], DelegatingHandler@14129157[path=jboss-management.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/lib/jboss-management.jar], DelegatingHandler@4036262[path=jboss-minimal.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/lib/jboss-minimal.jar], DelegatingHandler@7173278[path=jnpserver.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/lib/jnpserver.jar], DelegatingHandler@216973[path=log4j.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/lib/log4j.jar]]  delegates=null exported=[org.apache.log4j.or, org.jboss.invocation.local, org.apache.log4j.jmx, org.jboss.naming.client.java, org.jboss.invocation.jrmp.server, org.jboss.invocation.unified.server, org.apache.log4j.lf5.viewer.categoryexplorer, org.apache.log4j.net, org.apache.log4j.lf5, org.jboss.invocation.unified.marshall, org.jboss.naming.java, org.jnp.server, org.jboss.invocation.jrmp.interfaces, org.jnp.interfaces.java, org.jnp.interfaces.jnp, org.apache.log4j.config, org.apache.log4j.jdbc, org.jboss.logging, org.apache.log4j.lf5.viewer.configure, org.jboss.management.j2ee.cluster, org.apache.log4j.lf5.util, org.jboss.invocation.http.interfaces, org.jboss.invocation.http.server, org.apache.log4j.varia, org.apache.log4j.lf5.viewer.images, org.apache.log4j.chainsaw, org.jboss.invocation.unified.interfaces, org.apache.log4j.or.sax, org.apache.log4j.spi, META-INF, org.jboss.invocation.pooled.interfaces, org.jboss.naming, org.apache.log4j.xml, org.jboss.management.j2ee.factory, org.jboss.management.j2ee.statistics, org.jboss.management.j2ee, org.jnp.client, META-INF.maven.org.jboss.naming.jnpserver, org.apache.log4j.lf5.viewer, org.apache.log4j.lf5.config, org.apache.log4j, org.jboss.invocation, org.apache.log4j.or.jms, org.jboss.naming.interceptors, org.jnp.interfaces, org.apache.log4j.nt, org.jboss.invocation.pooled.server, org.apache.log4j.helpers] <IMPORT-ALL>NON_EMPTY}
+12:17:23,147 DEBUG [BaseClassLoaderDomain] ClassLoaderDomain@4721c7{<DEFAULT>} registerClassLoader BaseClassLoader@f4acd1{vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml}
+12:17:23,161 DEBUG [ServiceDeploymentDeployer] <server>
+ <!-- Load all jars from the JBOSS_DIST/server/<config>/lib directory. This
+     can be restricted to specific jars by specifying them in the archives
+     attribute.
+    -->
+ <classpath archives='*' codebase='${jboss.server.lib.url:lib}'/>
+ <!-- ==================================================================== -->
+ <!-- Log4j Initialization                                                 -->
+ <!-- ==================================================================== -->
+ <mbean code='org.jboss.logging.Log4jService' name='jboss.system:type=Log4jService,service=Logging'>
+  <attribute name='ConfigurationURL'>resource:jboss-log4j.xml</attribute>
+ </mbean>
+ <!-- ==================================================================== -->
+ <!-- JNDI                                                                 -->
+ <!-- ==================================================================== -->
+ <!-- A Thread pool service -->
+ <mbean code='org.jboss.util.threadpool.BasicThreadPool' name='jboss.system:service=ThreadPool'>
+  <attribute name='Name'>JBoss System Threads</attribute>
+  <attribute name='ThreadGroupName'>System Threads</attribute>
+  <!-- How long a thread will live without any tasks in MS -->
+  <attribute name='KeepAliveTime'>60000</attribute>
+  <!-- The max number of threads in the pool -->
+  <attribute name='MaximumPoolSize'>10</attribute>
+  <!-- The max number of tasks before the queue is full -->
+  <attribute name='MaximumQueueSize'>1000</attribute>
+  <!-- The behavior of the pool when a task is added and the queue is full.
+      abort - a RuntimeException is thrown
+      run - the calling thread executes the task
+      wait - the calling thread blocks until the queue has room
+      discard - the task is silently discarded without being run
+      discardOldest - check to see if a task is about to complete and enque
+         the new task if possible, else run the task in the calling thread
+      -->
+  <attribute name='BlockingMode'>run</attribute>
+ </mbean>
+ <!-- A simple mbean wrapper around the jndi Naming object. This
+      only handles an in memory instance. The NamingService uses this
+      as the JNDI store and exposes it remotely.
+   -->
+ <mbean code='org.jnp.server.NamingBeanImpl' name='jboss:service=NamingBeanImpl' xmbean-dd='resource:xmdesc/NamingBean-xmbean.xml'></mbean>
+ <mbean code='org.jboss.naming.NamingService' name='jboss:service=Naming' xmbean-dd='resource:xmdesc/NamingService-xmbean.xml'>
+  <!-- The call by value mode. true if all lookups are unmarshalled using
+         the caller's TCL, false if in VM lookups return the value by reference.
+      -->
+  <attribute name='CallByValue'>false</attribute>
+  <!-- The listening port for the bootstrap JNP service. Set this to -1
+         to run the NamingService without the JNP invoker listening port.
+      -->
+  <attribute name='Port'>1099</attribute>
+  <!-- The bootstrap JNP server bind address. This also sets the default
+         RMI service bind address. Empty == all addresses
+      -->
+  <attribute name='BindAddress'>${jboss.bind.address}</attribute>
+  <!-- The port of the RMI naming service, 0 == anonymous -->
+  <attribute name='RmiPort'>1098</attribute>
+  <!-- The RMI service bind address. Empty == all addresses
+      -->
+  <attribute name='RmiBindAddress'>${jboss.bind.address}</attribute>
+  <!-- The thread pool service used to control the bootstrap lookups -->
+  <depends optional-attribute-name='LookupPool' proxy-type='attribute'>jboss.system:service=ThreadPool</depends>
+  <!-- An example of using the unifed invoker as the transport.
+         <depends optional-attribute-name="InvokerProxyFactory"
+         proxy-type="attribute">jboss:service=proxyFactory,type=unified,target=Naming</depends>
+      -->
+  <depends optional-attribute-name='Naming' proxy-type='attribute'>jboss:service=NamingBeanImpl</depends>
+ </mbean>
+</server>
+12:17:23,175 DEBUG [AbstractDeploymentContext] Added component jboss.system:service=Logging,type=Log4jService to vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml
+12:17:23,175 DEBUG [AbstractDeploymentContext] Added component jboss.system:service=ThreadPool to vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml
+12:17:23,175 DEBUG [AbstractDeploymentContext] Added component jboss:service=NamingBeanImpl to vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml
+12:17:23,175 DEBUG [AbstractDeploymentContext] Added component jboss:service=Naming to vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/minimal/conf/jboss-service.xml
+12:17:23,182 DEBUG [ServiceCreator] About to create bean: jboss.system:type=Log4jService,service=Logging with code: org.jboss.logging.Log4jService
+12:17:23,197 DEBUG [ServiceCreator] Created mbean: jboss.system:type=Log4jService,service=Logging
+12:17:23,202 DEBUG [ServiceConfigurator] ConfigurationURL set to resource:jboss-log4j.xml in jboss.system:type=Log4jService,service=Logging
+12:17:23,203 DEBUG [ServiceController] Creating service jboss.system:type=Log4jService,service=Logging
+12:17:23,203 DEBUG [Log4jService] Creating jboss.system:type=Log4jService,service=Logging
+12:17:23,204 DEBUG [Log4jService$URLWatchTimerTask] Configuring from URL: resource:jboss-log4j.xml

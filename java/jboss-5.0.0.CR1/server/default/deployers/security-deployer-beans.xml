@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Security Deployer
+-->
+<deployment xmlns="urn:jboss:bean-deployer:2.0"> 
+
+   <bean name="EARSecurityDeployer" class="org.jboss.deployment.EarSecurityDeployer"/>
+   <bean name="EJBSecurityDeployer" class="org.jboss.ejb.deployers.EjbSecurityDeployer"/>
+   <bean name="WARSecurityDeployer" class="org.jboss.web.deployers.WarSecurityDeployer"/>
+
+   <bean name="SecurityParser" class="org.jboss.deployers.vfs.spi.deployer.SchemaResolverDeployer">
+      <constructor>
+         <parameter>org.jboss.security.microcontainer.beans.metadata.SecurityPolicyMetaData</parameter>
+      </constructor>
+      <!-- The Deployer mandates this suffix. So we use a dummy -->
+      <property name="suffix">dummy-policy.xml</property>
+      <property name="registerWithJBossXB">true</property>
+   </bean>
+
+</deployment>

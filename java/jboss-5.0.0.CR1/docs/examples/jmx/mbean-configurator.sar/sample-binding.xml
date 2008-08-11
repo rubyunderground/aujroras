@@ -1,0 +1,21 @@
+<!-- This is a sample binding for the MBean configurator example        -->
+<!-- Will setup so sets attribute on SampleConfig mbean when it         -->
+<!-- is registered with the MBeanServer (see SampleService to see       -->
+<!-- How the SampleConfig mbean is created).  Notice that when the      -->
+<!-- SampleConfig mbean is first created, the default value for         -->
+<!-- the testAttribute attribute is "Initial Value".  This will be      -->
+<!-- changed by the service binding below to "Changed Value".           -->
+<service-bindings>
+
+   <server name="config-example">
+
+      <service-config name="sample:name=SampleConfig"
+         delegateClass="org.jboss.services.binding.AttributeMappingDelegate"
+         >        
+         <delegate-config>
+            <attribute name="TestAttribute">Changed Value</attribute>
+         </delegate-config>
+      </service-config>
+
+   </server>
+</service-bindings>

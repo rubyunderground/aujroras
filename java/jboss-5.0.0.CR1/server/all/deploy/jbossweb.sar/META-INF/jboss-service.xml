@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: jboss-service-all.xml 60489 2007-02-12 08:22:28Z scott.stark@jboss.org $ -->
+
+<server> 
+   <!-- 
+       JBoss Web Service
+       
+       This is a wrapper around the WarDeployer bean deployed in
+       deployers/jboss-web.deployer/war-deployers-beans.xml.  This wrapper
+       controls the lifecycle of the JBoss Web runtime exposed by the
+       WarDeployer bean.
+   -->   
+   <mbean code="org.jboss.web.tomcat.service.deployers.TomcatService"
+      name="jboss.web:service=WebServer">
+      
+    <!-- Inject the TomcatDeployer -->
+    <attribute name="TomcatDeployer">
+       <inject bean="WarDeployer"/>
+    </attribute> 
+
+    <!-- Only needed if the org.jboss.web.tomcat.service.jca.CachedConnectionValve
+         is enabled in the tomcat server.xml file.
+         TODO: injection      
+    -->
+    <depends>jboss.jca:service=CachedConnectionManager</depends>
+
+    <!-- Transaction manager for unfinished transaction checking in the CachedConnectionValve -->      
+    <depends>jboss:service=TransactionManager</depends>
+    
+    <!-- 
+       Do not configure other JMX attributes via this file.
+       Use the WarDeployer bean in deployers/jboss-web.deployer/war-deployers-beans.xml
+    -->
+      
+   </mbean>
+</server>

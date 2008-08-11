@@ -1,0 +1,957 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<cache-configs>
+
+    <!-- 
+      | A config appropriate for HttpSession caches.
+      | Not for use with FIELD replication granularity webapps.
+    -->
+    <cache-config name="standard-session-cache">
+
+        <attribute name="TransactionManagerLookupClass">org.jboss.cache.transaction.BatchModeTransactionManagerLookup</attribute>
+
+        <attribute name="NodeLockingScheme">PESSIMISTIC</attribute>
+        <attribute name="IsolationLevel">REPEATABLE_READ</attribute>
+
+        <!-- Valid modes are REPL_ASYNC and REPL_SYNC -->
+        <attribute name="CacheMode">REPL_ASYNC</attribute>
+
+        <!-- Name of cluster. Needs to be the same for all members, in order
+             to find each other -->
+        <attribute name="ClusterName">${jboss.partition.name:DefaultPartition}-SessionCache</attribute>
+        
+        <!-- Use a UDP (multicast) based stack. Need JGroups flow control (FC)
+             because we are using asynchronous replication.
+        -->
+        <attribute name="MultiplexerStack">${jboss.default.jgroups.stack:udp}</attribute>
+
+        <!-- Must fetch state. -->
+        <attribute name="FetchInMemoryState">true</attribute>
+
+        <!--
+          The max amount of time (in milliseconds) we wait until the
+          state (ie. the contents of the cache) are retrieved from
+          existing members at startup.
+        -->
+        <attribute name="StateRetrievalTimeout">60000</attribute>
+
+        <!--
+            Number of milliseconds to wait until all responses for a
+            synchronous call have been received.
+        -->
+        <attribute name="SyncReplTimeout">17500</attribute>
+
+        <!-- Max number of milliseconds to wait for a lock acquisition -->
+        <attribute name="LockAcquisitionTimeout">15000</attribute>
+
+        <!-- Region-based marshalling is not needed. -->
+        <attribute name="UseRegionBasedMarshalling">false</attribute>
+        <!-- Must match the value of "UseRegionBasedMarshalling" -->
+        <attribute name="InactiveOnStartup">false</attribute>
+           
+        <attribute name="ExposeManagementStatistics">true</attribute>
+
+        <!-- Buddy Replication config -->
+        <attribute name="BuddyReplicationConfig">
+          <config>
+            <buddyReplicationEnabled>false</buddyReplicationEnabled>
+            <buddyLocatorClass>org.jboss.cache.buddyreplication.NextMemberBuddyLocator</buddyLocatorClass>
+            <!-- numBuddies is the number of backup nodes each node maintains.  
+                 ignoreColocatedBuddies means that each node will *try* to 
+                 select a buddy on a different physical host. If not able to do 
+                 so though, it will fall back to colocated nodes. -->
+            <buddyLocatorProperties>
+               numBuddies = 1
+               ignoreColocatedBuddies = true
+            </buddyLocatorProperties>
+
+            <!-- A way to specify a preferred replication group.  If specified, 
+                 we try and pick a buddy why shares the same pool name (falling 
+                 back to other buddies if not available).  This allows the sysdmin 
+                 to hint at backup buddies are picked, so for example, nodes may 
+                 be hinted topick buddies on a different physical rack or power 
+                 supply for added fault tolerance.  
+            -->
+            <buddyPoolName>default</buddyPoolName>
+            <!-- communication timeout for inter-buddy group organisation 
+                 messages (such as assigning to and removing from groups -->
+            <buddyCommunicationTimeout>17500</buddyCommunicationTimeout>
+
+            <!-- Do not change these -->
+            <autoDataGravitation>false</autoDataGravitation>
+            <dataGravitationRemoveOnFind>true</dataGravitationRemoveOnFind>
+            <dataGravitationSearchBackupTrees>true</dataGravitationSearchBackupTrees>
+
+          </config>
+        </attribute>
+        
+        <!-- Cache Loader for session passivation --> 
+        <attribute name="CacheLoaderConfig">
+          <config>
+            <passivation>true</passivation>
+            <shared>false</shared>
+
+            <cacheloader>
+               <class>org.jboss.cache.loader.FileCacheLoader</class>
+               <properties>
+                  location=${jboss.server.data.dir}${/}session
+               </properties>
+               <async>false</async>
+               <fetchPersistentState>true</fetchPersistentState>
+               <ignoreModifications>false</ignoreModifications>
+               <checkCharacterPortability>false</checkCharacterPortability>
+            </cacheloader>
+
+          </config>
+        </attribute>
+
+        <!-- 
+           JBoss Cache eviction is not needed; webapp or SFSB container 
+           manages eviction by itself.
+        -->
+
+    </cache-config>
+
+    <!-- 
+      | A config appropriate for HttpSession caches for webapps 
+      | that use FIELD replication granularity.
+    -->
+    <cache-config name="field-granularity-session-cache">
+
+        <attribute name="TransactionManagerLookupClass">org.jboss.cache.transaction.BatchModeTransactionManagerLookup</attribute>
+
+        <attribute name="NodeLockingScheme">PESSIMISTIC</attribute>
+        <attribute name="IsolationLevel">REPEATABLE_READ</attribute>
+
+        <!-- Valid modes are LOCAL
+                             REPL_ASYNC
+                             REPL_SYNC
+        -->
+        <attribute name="CacheMode">REPL_ASYNC</attribute>
+
+        <!-- Name of cluster. Needs to be the same for all members, in order
+             to find each other -->
+        <attribute name="ClusterName">${jboss.partition.name:DefaultPartition}-FieldSessionCache</attribute>
+        
+        <!-- Use a UDP (multicast) based stack. Need JGroups flow control (FC)
+             because we are using asynchronous replication.
+        -->
+        <attribute name="MultiplexerStack">${jboss.default.jgroups.stack:udp}</attribute>
+
+        <!-- Must fetch state. -->
+        <attribute name="FetchInMemoryState">true</attribute>
+
+        <!--
+          The max amount of time (in milliseconds) we wait until the
+          state (ie. the contents of the cache) are retrieved from
+          existing members at startup.
+        -->
+        <attribute name="StateRetrievalTimeout">60000</attribute>
+
+        <!--
+            Number of milliseconds to wait until all responses for a
+            synchronous call have been received.
+        -->
+        <attribute name="SyncReplTimeout">17500</attribute>
+
+        <!-- Max number of milliseconds to wait for a lock acquisition -->
+        <attribute name="LockAcquisitionTimeout">15000</attribute>
+
+        <!--
+          Indicate whether to use marshalling or not. Set this to true if you 
+          are running under a scoped class loader, e.g., inside an application 
+          server. Default is "false".
+        -->
+        <attribute name="UseRegionBasedMarshalling">true</attribute>
+        <!-- Must match the value of "useRegionBasedMarshalling" -->
+        <attribute name="InactiveOnStartup">true</attribute>
+           
+        <attribute name="ExposeManagementStatistics">true</attribute>
+
+        <!-- Buddy Replication config -->
+        <attribute name="BuddyReplicationConfig">
+          <config>
+            <buddyReplicationEnabled>false</buddyReplicationEnabled>
+            <buddyLocatorClass>org.jboss.cache.buddyreplication.NextMemberBuddyLocator</buddyLocatorClass>
+            <!-- numBuddies is the number of backup nodes each node maintains.  
+                 ignoreColocatedBuddies means that each node will *try* to 
+                 select a buddy on a different physical host. If not able to do 
+                 so though, it will fall back to colocated nodes. -->
+            <buddyLocatorProperties>
+               numBuddies = 1
+               ignoreColocatedBuddies = true
+            </buddyLocatorProperties>
+
+            <!-- A way to specify a preferred replication group.  If specified, 
+                 we try and pick a buddy why shares the same pool name (falling 
+                 back to other buddies if not available).  This allows the sysdmin 
+                 to hint at backup buddies are picked, so for example, nodes may 
+                 be hinted topick buddies on a different physical rack or power 
+                 supply for added fault tolerance.  
+            -->
+            <buddyPoolName>default</buddyPoolName>
+            <!-- communication timeout for inter-buddy group organisation 
+                 messages (such as assigning to and removing from groups -->
+            <buddyCommunicationTimeout>17500</buddyCommunicationTimeout>
+
+            <!-- Do not change these -->
+            <autoDataGravitation>false</autoDataGravitation>
+            <dataGravitationRemoveOnFind>true</dataGravitationRemoveOnFind>
+            <dataGravitationSearchBackupTrees>true</dataGravitationSearchBackupTrees>
+
+          </config>
+        </attribute>
+        
+        <!-- Cache Loader for session passivation --> 
+        <attribute name="CacheLoaderConfig">
+          <config>
+            <passivation>true</passivation>
+            <shared>false</shared>
+
+            <cacheloader>
+               <class>org.jboss.cache.loader.FileCacheLoader</class>
+               <properties>
+                  location=${jboss.server.data.dir}${/}field-session
+               </properties>
+               <async>false</async>
+               <fetchPersistentState>true</fetchPersistentState>
+               <ignoreModifications>false</ignoreModifications>
+               <checkCharacterPortability>false</checkCharacterPortability>
+            </cacheloader>
+
+          </config>
+        </attribute>
+
+        <!-- FIELD granularity webapps use JBoss Cache eviction -->
+        <attribute name="EvictionPolicyConfig">
+          <config>
+            <attribute name="wakeUpIntervalSeconds">5</attribute>
+            <!-- Name of the DEFAULT eviction policy class. -->
+            <attribute name="policyClass">org.jboss.cache.eviction.NullEvictionPolicy</attribute>
+            <!--  Cache wide default region -->
+            <region name="/_default_"/>
+            <!-- JBossWeb integration code will programatically create
+                 other regions as webapps are deployed -->
+          </config>
+        </attribute>
+
+    </cache-config>
+
+    <!-- 
+      | A config appropriate for EJB3 SFSB caching.
+    -->
+    <cache-config name="sfsb-cache">
+        <!--  No transaction manager lookup -->
+        
+        <attribute name="NodeLockingScheme">PESSIMISTIC</attribute>
+        <attribute name="IsolationLevel">REPEATABLE_READ</attribute>
+
+        <!-- Valid modes are LOCAL
+                             REPL_ASYNC
+                             REPL_SYNC
+        -->
+        <attribute name="CacheMode">REPL_ASYNC</attribute>
+
+        <!-- Name of cluster. Needs to be the same for all members, in order
+             to find each other -->
+        <attribute name="ClusterName">${jboss.partition.name:DefaultPartition}-SFSBCache</attribute>
+        
+        <!-- Use a UDP (multicast) based stack. Need JGroups flow control (FC)
+             because we are using asynchronous replication.
+        -->
+        <attribute name="MultiplexerStack">${jboss.default.jgroups.stack:udp}</attribute>
+
+        <!-- Must fetch state. -->
+        <attribute name="FetchInMemoryState">true</attribute>
+
+        <!--
+          The max amount of time (in milliseconds) we wait until the
+          state (ie. the contents of the cache) are retrieved from
+          existing members at startup.
+        -->
+        <attribute name="StateRetrievalTimeout">60000</attribute>
+
+        <!--
+            Number of milliseconds to wait until all responses for a
+            synchronous call have been received.
+        -->
+        <attribute name="SyncReplTimeout">17500</attribute>
+
+        <!-- Max number of milliseconds to wait for a lock acquisition -->
+        <attribute name="LockAcquisitionTimeout">15000</attribute>
+
+        <!--
+          SFSBs use region-based marshalling to provide for partial state
+          transfer during deployment/undeployment.
+        -->
+        <attribute name="UseRegionBasedMarshalling">true</attribute>
+        <!-- Must match the value of "useRegionBasedMarshalling" -->
+        <attribute name="InactiveOnStartup">true</attribute>
+           
+        <attribute name="ExposeManagementStatistics">true</attribute>
+
+        <!-- Buddy Replication config -->
+        <attribute name="BuddyReplicationConfig">
+          <config>
+            <buddyReplicationEnabled>false</buddyReplicationEnabled>
+            <buddyLocatorClass>org.jboss.cache.buddyreplication.NextMemberBuddyLocator</buddyLocatorClass>
+            <!-- numBuddies is the number of backup nodes each node maintains.  
+                 ignoreColocatedBuddies means that each node will *try* to 
+                 select a buddy on a different physical host. If not able to do 
+                 so though, it will fall back to colocated nodes. -->
+            <buddyLocatorProperties>
+               numBuddies = 1
+               ignoreColocatedBuddies = true
+            </buddyLocatorProperties>
+
+            <!-- A way to specify a preferred replication group.  If specified, 
+                 we try and pick a buddy why shares the same pool name (falling 
+                 back to other buddies if not available).  This allows the sysdmin 
+                 to hint at backup buddies are picked, so for example, nodes may 
+                 be hinted topick buddies on a different physical rack or power 
+                 supply for added fault tolerance.  
+            -->
+            <buddyPoolName>default</buddyPoolName>
+            <!-- communication timeout for inter-buddy group organisation 
+                 messages (such as assigning to and removing from groups -->
+            <buddyCommunicationTimeout>17500</buddyCommunicationTimeout>
+
+            <!-- Do not change these -->
+            <autoDataGravitation>false</autoDataGravitation>
+            <dataGravitationRemoveOnFind>true</dataGravitationRemoveOnFind>
+            <dataGravitationSearchBackupTrees>true</dataGravitationSearchBackupTrees>
+
+          </config>
+        </attribute>
+        
+        <!-- Cache Loader for session passivation --> 
+        <attribute name="CacheLoaderConfig">
+          <config>
+            <passivation>true</passivation>
+            <shared>false</shared>
+
+            <cacheloader>
+               <class>org.jboss.cache.loader.FileCacheLoader</class>
+               <properties>
+                  location=${jboss.server.data.dir}${/}sfsb
+               </properties>
+               <async>false</async>
+               <fetchPersistentState>true</fetchPersistentState>
+               <ignoreModifications>false</ignoreModifications>
+               <checkCharacterPortability>false</checkCharacterPortability>
+            </cacheloader>
+
+          </config>
+        </attribute>
+
+        <!-- SFSBs use JBoss Cache eviction -->
+        <attribute name="EvictionPolicyConfig">
+          <config>
+            <attribute name="wakeUpIntervalSeconds">5</attribute>
+            <!-- Name of the DEFAULT eviction policy class. -->
+            <attribute name="policyClass">org.jboss.cache.eviction.NullEvictionPolicy</attribute>
+            <!--  Cache wide default region -->
+            <region name="/_default_"/>
+            <!-- EJB3 integration code will programatically create
+                 other regions as beans are deployed -->
+          </config>
+        </attribute>
+
+    </cache-config>
+
+    <!-- 
+      | A config appropriate for the HAPartition-based services, e.g.
+      | DistributedState, HA-JNDI. Also valid for use by the JBossWeb 
+      | ClusteredSingleSignOn valve.
+    -->
+    <cache-config name="ha-partition">
+
+        <attribute name="TransactionManagerLookupClass">org.jboss.cache.transaction.BatchModeTransactionManagerLookup</attribute>
+
+        <attribute name="NodeLockingScheme">PESSIMISTIC</attribute>
+        <attribute name="IsolationLevel">REPEATABLE_READ</attribute>
+
+        <attribute name="CacheMode">REPL_SYNC</attribute>
+
+        <attribute name="ClusterName">${jboss.partition.name:DefaultPartition}-HAPartitionCache</attribute>
+        
+        <!-- Use a UDP (multicast) based stack. Need JGroups flow control (FC)
+             because we are using asynchronous replication.
+        -->
+        <attribute name="MultiplexerStack">${jboss.default.jgroups.stack:udp}</attribute>
+
+        <attribute name="FetchInMemoryState">true</attribute>
+
+        <attribute name="StateRetrievalTimeout">60000</attribute>
+        <attribute name="SyncReplTimeout">17500</attribute>
+        <attribute name="LockAcquisitionTimeout">15000</attribute>
+
+        <attribute name="UseRegionBasedMarshalling">false</attribute>
+        <attribute name="InactiveOnStartup">false</attribute>
+           
+        <attribute name="ExposeManagementStatistics">true</attribute>
+
+    </cache-config>
+
+    <!-- 
+      | Following are JBoss Cache configurations suitable for different 
+      | Hibernate 2nd Level Cache uses (e.g. entities vs. queries).
+      |
+      | In all cases, TransactionManager configuration not required.
+      | Hibernate will plug in its own transaction manager integration. 
+    -->
+    
+    
+    <!-- A config appropriate for entity/collection caching. -->
+    <cache-config name="optimistic-entity">
+
+        <!-- Node locking scheme -->
+        <attribute name="NodeLockingScheme">OPTIMISTIC</attribute>
+
+        <!-- Valid modes are LOCAL
+                             REPL_ASYNC
+                             REPL_SYNC
+                             INVALIDATION_ASYNC
+                             INVALIDATION_SYNC
+
+             INVALIDATION_SYNC is highly recommended as the mode for use
+             with entity and collection caches.
+        -->
+        <attribute name="CacheMode">INVALIDATION_SYNC</attribute>
+
+        <!-- Name of cluster. Needs to be the same for all members, in order
+             to find each other -->
+        <attribute name="ClusterName">${jboss.partition.name:DefaultPartition}-optimistic-entity</attribute>
+        
+        <!-- Use a UDP (multicast) based stack. A udp-sync stack might be
+             slightly better (no JGroups FC) but we stick with udp to
+             help ensure this cache and others like timestamps-cache
+             that require FC can use the same underlying JGroups resources. -->
+        <attribute name="MultiplexerStack">${jboss.default.jgroups.stack:udp}</attribute>
+
+        <!-- Whether or not to fetch state on joining a cluster. -->
+        <attribute name="FetchInMemoryState">false</attribute>
+
+        <!--
+          The max amount of time (in milliseconds) we wait until the
+          state (ie. the contents of the cache) are retrieved from
+          existing members at startup. Ignored if FetchInMemoryState=false.
+        -->
+        <attribute name="StateRetrievalTimeout">20000</attribute>
+
+        <!--
+            Number of milliseconds to wait until all responses for a
+            synchronous call have been received.
+        -->
+        <attribute name="SyncReplTimeout">20000</attribute>
+
+        <!-- Max number of milliseconds to wait for a lock acquisition -->
+        <attribute name="LockAcquisitionTimeout">15000</attribute>
+
+       <!--
+          Indicate whether to use marshalling or not. Set this to true if you are running under a scoped
+          class loader, e.g., inside an application server. Default is "false".
+       -->
+       <attribute name="UseRegionBasedMarshalling">true</attribute>
+       <!-- Must match the value of "useRegionBasedMarshalling" -->
+       <attribute name="InactiveOnStartup">true</attribute>
+
+      <!--  Specific eviction policy configurations. This is LRU -->
+      <attribute name="EvictionPolicyConfig">
+        <config>
+          <attribute name="wakeUpIntervalSeconds">5</attribute>
+          <!-- Name of the DEFAULT eviction policy class. -->
+          <attribute name="policyClass">org.jboss.cache.eviction.LRUPolicy</attribute>
+          <!--  Cache wide default -->
+          <region name="/_default_">
+            <!-- Evict LRU node once we have more than this number of nodes -->
+            <attribute name="maxNodes">10000</attribute>
+            <!-- And, evict any node that hasn't been accessed in this many seconds -->
+            <attribute name="timeToLiveSeconds">1000</attribute>
+            <!-- Don't evict a node that's been accessed within this many seconds. 
+                 Set this to a value greater than your max expected transaction length. -->
+            <attribute name="minTimeToLiveSeconds">120</attribute>
+          </region>
+          <!--  Don't ever evict modification timestamps -->
+          <region name="/TS" policyClass="org.jboss.cache.eviction.NullEvictionPolicy"/>
+        </config>
+     </attribute>
+
+    </cache-config>
+
+    <!-- A config appropriate for entity/collection caching that
+         uses pessimistic locking -->
+    <cache-config name="pessimistic-entity">
+
+        <!-- Node locking scheme -->
+        <attribute name="NodeLockingScheme">PESSIMISTIC</attribute>
+
+        <!--
+            Isolation level : SERIALIZABLE
+                              REPEATABLE_READ (default)
+                              READ_COMMITTED
+                              READ_UNCOMMITTED
+                              NONE
+        -->
+        <attribute name="IsolationLevel">REPEATABLE_READ</attribute>
+
+        <!-- Valid modes are LOCAL
+                             REPL_ASYNC
+                             REPL_SYNC
+                             INVALIDATION_ASYNC
+                             INVALIDATION_SYNC
+
+             INVALIDATION_SYNC is highly recommended as the mode for use
+             with entity and collection caches.
+        -->
+        <attribute name="CacheMode">INVALIDATION_SYNC</attribute>
+
+        <!-- Name of cluster. Needs to be the same for all members, in order
+             to find each other -->
+        <attribute name="ClusterName">${jboss.partition.name:DefaultPartition}-pessimistic-entity</attribute>
+        
+        <!-- Use a UDP (multicast) based stack. A udp-sync stack might be
+             slightly better (no JGroups FC) but we stick with udp to
+             help ensure this cache and others like timestamps-cache
+             that require FC can use the same underlying JGroups resources. -->
+        <attribute name="MultiplexerStack">${jboss.default.jgroups.stack:udp}</attribute>
+
+        <!-- Whether or not to fetch state on joining a cluster. -->
+        <attribute name="FetchInMemoryState">false</attribute>
+
+        <!--
+          The max amount of time (in milliseconds) we wait until the
+          state (ie. the contents of the cache) are retrieved from
+          existing members at startup. Ignored if FetchInMemoryState=false.
+        -->
+        <attribute name="StateRetrievalTimeout">20000</attribute>
+
+        <!--
+            Number of milliseconds to wait until all responses for a
+            synchronous call have been received.
+        -->
+        <attribute name="SyncReplTimeout">20000</attribute>
+
+        <!-- Max number of milliseconds to wait for a lock acquisition -->
+        <attribute name="LockAcquisitionTimeout">15000</attribute>
+
+       <!--
+          Indicate whether to use marshalling or not. Set this to true if you 
+          are running under a scoped class loader, e.g., inside an application 
+          server. Default is "false".
+       -->
+       <attribute name="UseRegionBasedMarshalling">true</attribute>
+       <!-- Must match the value of "useRegionBasedMarshalling" -->
+       <attribute name="InactiveOnStartup">true</attribute>
+
+      <!--  Specific eviction policy configurations. This is LRU -->
+      <attribute name="EvictionPolicyConfig">
+        <config>
+          <attribute name="wakeUpIntervalSeconds">5</attribute>
+          <!-- Name of the DEFAULT eviction policy class. -->
+          <attribute name="policyClass">org.jboss.cache.eviction.LRUPolicy</attribute>
+          <!--  Cache wide default -->
+          <region name="/_default_">
+            <!-- Evict LRU node once we have more than this number of nodes -->
+            <attribute name="maxNodes">10000</attribute>
+            <!-- And, evict any node that hasn't been accessed in this many seconds -->
+            <attribute name="timeToLiveSeconds">1000</attribute>
+            <!-- Don't evict a node that's been accessed within this many seconds. 
+                 Set this to a value greater than your max expected transaction length. -->
+            <attribute name="minTimeToLiveSeconds">120</attribute>
+          </region>
+          <!--  Don't ever evict modification timestamps -->
+          <region name="/TS" policyClass="org.jboss.cache.eviction.NullEvictionPolicy"/>
+        </config>
+     </attribute>
+
+    </cache-config>    
+
+
+
+    <!-- A config appropriate for query caching. Does not replicate
+         queries. DO NOT STORE TIMESTAMPS IN THIS CACHE.
+    -->
+    <cache-config name="local-query">
+
+        <!-- Node locking scheme -->
+        <attribute name="NodeLockingScheme">OPTIMISTIC</attribute>
+
+        <attribute name="CacheMode">LOCAL</attribute>
+
+        <!-- Max number of milliseconds to wait for a lock acquisition -->
+        <attribute name="LockAcquisitionTimeout">15000</attribute>
+
+        <!--  Specific eviction policy configurations. This is LRU -->
+        <attribute name="EvictionPolicyConfig">
+          <config>
+            <attribute name="wakeUpIntervalSeconds">5</attribute>
+            <!-- Name of the DEFAULT eviction policy class. -->
+            <attribute name="policyClass">org.jboss.cache.eviction.LRUPolicy</attribute>
+            <!--  Cache wide default -->
+            <region name="/_default_">
+               <!-- Evict LRU node once we have more than this number of nodes -->
+               <attribute name="maxNodes">10000</attribute>
+               <!-- And, evict any node that hasn't been accessed in this many seconds -->
+               <attribute name="timeToLiveSeconds">1000</attribute>
+               <!-- Don't evict a node that's been accessed within this many seconds. 
+                    Set this to a value greater than your max expected transaction length. -->
+               <attribute name="minTimeToLiveSeconds">120</attribute>
+            </region>
+            <!--  Don't ever evict modification timestamps -->
+            <region name="/TS" policyClass="org.jboss.cache.eviction.NullEvictionPolicy"/>
+          </config>
+       </attribute>
+
+    </cache-config> 
+    
+
+    <!-- A query cache that replicates queries. Replication is asynchronous.
+          DO NOT STORE TIMESTAMPS IN THIS CACHE.
+    -->
+    <cache-config name="replicated-query">
+
+        <!-- Node locking scheme -->
+        <attribute name="NodeLockingScheme">OPTIMISTIC</attribute>
+
+        <!--
+            Isolation level : SERIALIZABLE
+                              REPEATABLE_READ (default)
+                              READ_COMMITTED
+                              READ_UNCOMMITTED
+                              NONE
+        -->
+        <attribute name="IsolationLevel">REPEATABLE_READ</attribute>
+
+        <!-- Valid modes are LOCAL
+                             REPL_ASYNC
+                             REPL_SYNC
+                             INVALIDATION_ASYNC
+                             INVALIDATION_SYNC
+
+             INVALIDATION_SYNC is highly recommended as the mode for use
+             with entity and collection caches.
+        -->
+        <attribute name="CacheMode">REPL_ASYNC</attribute>
+
+        <!-- Name of cluster. Needs to be the same for all members, in order
+             to find each other -->
+        <attribute name="ClusterName">${jboss.partition.name:DefaultPartition}-replicated-query</attribute>
+        
+        <!-- Use a UDP (multicast) based stack -->
+        <attribute name="MultiplexerStack">${jboss.default.jgroups.stack:udp}</attribute>
+
+        <!-- Whether or not to fetch state on joining a cluster. -->
+        <attribute name="FetchInMemoryState">false</attribute>
+
+        <!--
+          The max amount of time (in milliseconds) we wait until the
+          state (ie. the contents of the cache) are retrieved from
+          existing members at startup. Ignored if FetchInMemoryState=false.
+        -->
+        <attribute name="StateRetrievalTimeout">20000</attribute>
+
+        <!--
+            Number of milliseconds to wait until all responses for a
+            synchronous call have been received.
+        -->
+        <attribute name="SyncReplTimeout">20000</attribute>
+
+        <!-- Max number of milliseconds to wait for a lock acquisition -->
+        <attribute name="LockAcquisitionTimeout">15000</attribute>
+
+       <!--
+          Indicate whether to use marshalling or not. Set this to true if you 
+          are running under a scoped class loader, e.g., inside an application 
+          server. Default is "false".
+       -->
+       <attribute name="UseRegionBasedMarshalling">true</attribute>
+       <!-- Must match the value of "useRegionBasedMarshalling" -->
+       <attribute name="InactiveOnStartup">true</attribute>
+
+      <!--  Specific eviction policy configurations. This is LRU -->
+      <attribute name="EvictionPolicyConfig">
+        <config>
+          <attribute name="wakeUpIntervalSeconds">5</attribute>
+          <!-- Name of the DEFAULT eviction policy class. -->
+          <attribute name="policyClass">org.jboss.cache.eviction.LRUPolicy</attribute>
+          <!--  Cache wide default -->
+          <region name="/_default_">
+            <!-- Evict LRU node once we have more than this number of nodes -->
+            <attribute name="maxNodes">10000</attribute>
+            <!-- And, evict any node that hasn't been accessed in this many seconds -->
+            <attribute name="timeToLiveSeconds">1000</attribute>
+            <!-- Don't evict a node that's been accessed within this many seconds. 
+                 Set this to a value greater than your max expected transaction length. -->
+            <attribute name="minTimeToLiveSeconds">120</attribute>
+          </region>
+          <!--  Don't ever evict modification timestamps -->
+          <region name="/TS" policyClass="org.jboss.cache.eviction.NullEvictionPolicy"/>
+        </config>
+     </attribute>
+
+    </cache-config>     
+    
+    
+
+    <!-- Optimized for timestamp caching. A clustered timestamp cache
+         is required if query caching is used, even if the query cache
+         itself is configured with CacheMode=LOCAL.
+    -->
+    <cache-config name="timestamps-cache">
+
+        <!-- Node locking scheme -->
+        <attribute name="NodeLockingScheme">PESSIMISTIC</attribute>
+
+        <!--
+            Isolation level : SERIALIZABLE
+                              REPEATABLE_READ (default)
+                              READ_COMMITTED
+                              READ_UNCOMMITTED
+                              NONE
+        -->
+        <attribute name="IsolationLevel">REPEATABLE_READ</attribute>
+
+        <!-- Cannot be INVALIDATION. ASYNC for improved performance. -->
+        <attribute name="CacheMode">REPL_ASYNC</attribute>
+
+        <!-- Name of cluster. Needs to be the same for all members, in order
+             to find each other -->
+        <attribute name="ClusterName">${jboss.partition.name:DefaultPartition}-timestamps-cache</attribute>
+        
+        <!-- Use a UDP (multicast) based stack -->
+        <attribute name="MultiplexerStack">${jboss.default.jgroups.stack:udp}</attribute>
+
+        <!-- Used for timestamps, so must fetch state. -->
+        <attribute name="FetchInMemoryState">true</attribute>
+
+        <!--
+          The max amount of time (in milliseconds) we wait until the
+          state (ie. the contents of the cache) are retrieved from
+          existing members at startup. Ignored if FetchInMemoryState=false.
+        -->
+        <attribute name="StateRetrievalTimeout">20000</attribute>
+
+        <!--
+            Number of milliseconds to wait until all responses for a
+            synchronous call have been received.
+        -->
+        <attribute name="SyncReplTimeout">20000</attribute>
+
+        <!-- Max number of milliseconds to wait for a lock acquisition -->
+        <attribute name="LockAcquisitionTimeout">15000</attribute>
+
+       <!--
+          Indicate whether to use marshalling or not. Set this to true if you 
+          are running under a scoped class loader, e.g., inside an application 
+          server. Default is "false".
+       -->
+       <attribute name="UseRegionBasedMarshalling">true</attribute>
+       <!-- Must match the value of "useRegionBasedMarshalling" -->
+       <attribute name="InactiveOnStartup">true</attribute>
+
+      <!--  Specific eviction policy configurations. This is LRU -->
+      <attribute name="EvictionPolicyConfig">
+        <config>
+          <attribute name="wakeUpIntervalSeconds">5</attribute>
+          <!-- Name of the DEFAULT eviction policy class. -->
+          <attribute name="policyClass">org.jboss.cache.eviction.LRUPolicy</attribute>
+          <!--  Cache wide default -->
+          <region name="/_default_">
+            <!-- Evict LRU node once we have more than this number of nodes -->
+            <attribute name="maxNodes">10000</attribute>
+            <!-- And, evict any node that hasn't been accessed in this many seconds -->
+            <attribute name="timeToLiveSeconds">1000</attribute>
+            <!-- Don't evict a node that's been accessed within this many seconds. 
+                 Set this to a value greater than your max expected transaction length. -->
+            <attribute name="minTimeToLiveSeconds">120</attribute>
+          </region>
+          <!--  Don't ever evict modification timestamps -->
+          <region name="/TS" policyClass="org.jboss.cache.eviction.NullEvictionPolicy"/>
+        </config>
+     </attribute>
+
+    </cache-config>  
+    
+    
+
+    <!-- A config appropriate for a cache that's shared for
+         entity, collection, query and timestamp caching. Not an advised
+         configuration, since it requires cache mode REPL_SYNC, which is the 
+         least efficient mode. Also requires a full state transfer at startup,
+         which can be expensive. Uses optimistic locking -->
+    <cache-config name="optimistic-shared">
+
+        <!-- Node locking scheme:
+                OPTIMISTIC
+                PESSIMISTIC (default)
+        -->
+        <attribute name="NodeLockingScheme">OPTIMISTIC</attribute>
+
+        <!-- Must use REPL since used for timestamp caching. -->
+        <attribute name="CacheMode">REPL_SYNC</attribute>
+        
+        <!-- With OPTIMISTIC  with replication we need to use synchronous commits. -->
+        <attribute name="SyncCommitPhase">true</attribute>
+        <attribute name="SyncRollbackPhase">true</attribute>
+        
+        <!-- Name of cluster. Needs to be the same for all members, in order
+             to find each other -->
+        <attribute name="ClusterName">${jboss.partition.name:DefaultPartition}-optimistic-shared</attribute>
+        
+        <!-- Use a UDP (multicast) based stack. Need JGroups flow control (FC)
+             because timestamp communication will not require a synchronous response.
+        -->
+        <attribute name="MultiplexerStack">${jboss.default.jgroups.stack:udp}</attribute>
+
+        <!-- Used for timestamps, so must fetch state. -->
+        <attribute name="FetchInMemoryState">true</attribute>
+
+        <!--
+          The max amount of time (in milliseconds) we wait until the
+          state (ie. the contents of the cache) are retrieved from
+          existing members at startup. Ignored if FetchInMemoryState=false.
+        -->
+        <attribute name="StateRetrievalTimeout">20000</attribute>
+
+        <!--
+            Number of milliseconds to wait until all responses for a
+            synchronous call have been received.
+        -->
+        <attribute name="SyncReplTimeout">20000</attribute>
+
+        <!-- Max number of milliseconds to wait for a lock acquisition -->
+        <attribute name="LockAcquisitionTimeout">15000</attribute>
+
+       <!--
+          Indicate whether to use marshalling or not. Set this to true if you are running under a scoped
+          class loader, e.g., inside an application server. Default is "false".
+       -->
+       <attribute name="UseRegionBasedMarshalling">true</attribute>
+       <!-- Must match the value of "useRegionBasedMarshalling" -->
+       <attribute name="InactiveOnStartup">true</attribute>
+
+      <!--  Specific eviction policy configurations. This is LRU -->
+      <attribute name="EvictionPolicyConfig">
+        <config>
+          <attribute name="wakeUpIntervalSeconds">5</attribute>
+          <!-- Name of the DEFAULT eviction policy class. -->
+          <attribute name="policyClass">org.jboss.cache.eviction.LRUPolicy</attribute>
+          <!--  Cache wide default -->
+          <region name="/_default_">
+            <!-- Evict LRU node once we have more than this number of nodes -->
+            <attribute name="maxNodes">10000</attribute>
+            <!-- And, evict any node that hasn't been accessed in this many seconds -->
+            <attribute name="timeToLiveSeconds">1000</attribute>
+            <!-- Don't evict a node that's been accessed within this many seconds. 
+                 Set this to a value greater than your max expected transaction length. -->
+            <attribute name="minTimeToLiveSeconds">120</attribute>
+          </region>
+          <!--  Don't ever evict modification timestamps -->
+          <region name="/TS" policyClass="org.jboss.cache.eviction.NullEvictionPolicy"/>
+        </config>
+     </attribute>
+
+    </cache-config>   
+    
+    
+
+    <!-- A config appropriate for a cache that's shared for
+         entity, collection, query and timestamp caching. Not an advised
+         configuration, since it requires cache mode REPL_SYNC, which is the 
+         least efficient mode. Also requires a full state transfer at startup,
+         which can be expensive. Uses pessmistic locking.
+    -->
+    <cache-config name="pessimistic-shared">
+
+        <!-- TransactionManager configuration not required for Hibernate!
+             Hibernate will plug in its own transaction manager integration. 
+        -->
+
+        <!-- Node locking scheme:
+                OPTIMISTIC
+                PESSIMISTIC (default)
+        -->
+        <attribute name="NodeLockingScheme">PESSIMISTIC</attribute>
+
+        <!--
+            Isolation level : SERIALIZABLE
+                              REPEATABLE_READ (default)
+                              READ_COMMITTED
+                              READ_UNCOMMITTED
+                              NONE
+        -->
+        <attribute name="IsolationLevel">REPEATABLE_READ</attribute>
+
+        <!-- Valid modes are LOCAL
+                             REPL_ASYNC
+                             REPL_SYNC
+                             INVALIDATION_ASYNC
+                             INVALIDATION_SYNC
+
+             INVALIDATION_SYNC is highly recommended as the mode for use
+             with entity and collection caches.
+        -->
+        <attribute name="CacheMode">REPL_SYNC</attribute>
+
+        <!-- Name of cluster. Needs to be the same for all members, in order
+             to find each other -->
+        <attribute name="ClusterName">${jboss.partition.name:DefaultPartition}-pessimistic-shared</attribute>
+        
+        <!-- Use a UDP (multicast) based stack. Need JGroups flow control (FC)
+             because timestamp communication will not require a synchronous response.
+        -->
+        <attribute name="MultiplexerStack">${jboss.default.jgroups.stack:udp}</attribute>
+
+        <!-- Used for timestamps, so must fetch state. -->
+        <attribute name="FetchInMemoryState">true</attribute>
+
+        <!--
+          The max amount of time (in milliseconds) we wait until the
+          state (ie. the contents of the cache) are retrieved from
+          existing members at startup.
+        -->
+        <attribute name="StateRetrievalTimeout">20000</attribute>
+
+        <!--
+            Number of milliseconds to wait until all responses for a
+            synchronous call have been received.
+        -->
+        <attribute name="SyncReplTimeout">20000</attribute>
+
+        <!-- Max number of milliseconds to wait for a lock acquisition -->
+        <attribute name="LockAcquisitionTimeout">15000</attribute>
+
+       <!--
+          Indicate whether to use marshalling or not. Set this to true if you 
+          are running under a scoped class loader, e.g., inside an application 
+          server. Default is "false".
+       -->
+       <attribute name="UseRegionBasedMarshalling">true</attribute>
+       <!-- Must match the value of "useRegionBasedMarshalling" -->
+       <attribute name="InactiveOnStartup">true</attribute>
+
+      <!--  Specific eviction policy configurations. This is LRU -->
+      <attribute name="EvictionPolicyConfig">
+        <config>
+          <attribute name="wakeUpIntervalSeconds">5</attribute>
+          <!-- Name of the DEFAULT eviction policy class. -->
+          <attribute name="policyClass">org.jboss.cache.eviction.LRUPolicy</attribute>
+          <!--  Cache wide default -->
+          <region name="/_default_">
+            <!-- Evict LRU node once we have more than this number of nodes -->
+            <attribute name="maxNodes">10000</attribute>
+            <!-- And, evict any node that hasn't been accessed in this many seconds -->
+            <attribute name="timeToLiveSeconds">1000</attribute>
+            <!-- Don't evict a node that's been accessed within this many seconds. 
+                 Set this to a value greater than your max expected transaction length. -->
+            <attribute name="minTimeToLiveSeconds">120</attribute>
+          </region>
+          <!--  Don't ever evict modification timestamps -->
+          <region name="/TS" policyClass="org.jboss.cache.eviction.NullEvictionPolicy"/>
+        </config>
+     </attribute>
+
+    </cache-config>
+    
+</cache-configs>

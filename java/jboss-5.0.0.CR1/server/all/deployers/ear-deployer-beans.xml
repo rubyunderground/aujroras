@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    EAR Deployers
+    $Id: ear-deployer-beans.xml 74615 2008-06-16 13:49:15Z alesj $
+-->
+<deployment xmlns="urn:jboss:bean-deployer:2.0">
+
+   <bean name="EARStructureDeployer" class="org.jboss.deployment.EARStructure">
+     <property name="comparatorClassName">org.jboss.system.deployers.LegacyDeploymentContextComparator</property>
+   </bean>
+
+   <!-- application.xml parsing deployer -->
+   <bean name="AppParsingDeployer" class="org.jboss.deployment.AppParsingDeployer">
+      <property name="type">ear</property>
+      <!-- TODO JBAS-4193 property name="useValidation">false</property -->
+   </bean>
+   <!-- Implicit ear contents identifying deployer for ears without
+      an application.xml
+    -->
+   <bean name="EARContentsDeployer" class="org.jboss.deployment.EARContentsDeployer">
+      <constructor>
+         <parameter><inject bean="AppParsingDeployer" property="relativeOrder"/></parameter>
+      </constructor>
+
+      <property name="type">ear</property>
+      <!-- Does the deployment have to end in .ear to process it -->
+      <property name="requiresEarSuffix">true</property>
+   </bean>
+   <!-- jboss-app.xml parsing deployer -->
+   <bean name="JBossAppParsingDeployer" class="org.jboss.deployment.JBossAppParsingDeployer">
+      <install bean="ManagedDeploymentCreator" method="addAttachmentType">
+         <parameter>
+            <value>org.jboss.metadata.ear.jboss.JBossAppMetaData</value>
+         </parameter>
+         <parameter>
+            <value>ear</value>
+         </parameter>
+      </install>
+      <uninstall bean="ManagedDeploymentCreator" method="removeAttachmentType">
+         <parameter>
+            <value>org.jboss.metadata.ear.jboss.JBossAppMetaData</value>
+         </parameter>
+      </uninstall>
+      <property name="type">ear</property>
+      <!-- A flag indicating if ear deployments should have their own scoped
+         class loader to isolate their classes from other deployments.
+      -->      
+      <property name="isolated">false</property>
+      <!-- A flag indicating if the ear components should have in VM call
+         optimization disabled.
+      -->
+      <property name="callByValue">false</property> 
+         
+      <!-- Specify an unauthenticated identity -->
+      <property name="unauthenticatedIdentity">anonymous</property>    
+   </bean>
+</deployment>

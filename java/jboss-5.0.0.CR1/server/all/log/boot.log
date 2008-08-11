@@ -1,0 +1,765 @@
+12:17:41,995 INFO  [ServerImpl] Starting JBoss (Microcontainer)...
+12:17:41,996 INFO  [ServerImpl] Release ID: JBoss [Morpheus] 5.0.0.CR1 (build: SVNTag=JBoss_5_0_0_CR1 date=200806301254)
+12:17:41,996 DEBUG [ServerImpl] Using config: org.jboss.bootstrap.BaseServerConfig@6cbd97
+12:17:41,996 DEBUG [ServerImpl] Server type: class org.jboss.bootstrap.microcontainer.ServerImpl
+12:17:41,996 DEBUG [ServerImpl] Server loaded through: org.jboss.system.NoAnnotationURLClassLoader
+12:17:41,996 DEBUG [ServerImpl] Boot URLs:
+12:17:41,996 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/endorsed/resolver.jar
+12:17:41,996 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/endorsed/serializer.jar
+12:17:41,996 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/endorsed/xalan.jar
+12:17:41,996 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/endorsed/xercesImpl.jar
+12:17:41,996 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/concurrent.jar
+12:17:41,996 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/log4j-boot.jar
+12:17:41,996 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-logging-spi.jar
+12:17:41,997 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-logging-log4j.jar
+12:17:42,000 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-logging-jdk.jar
+12:17:42,001 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-common-core.jar
+12:17:42,001 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-xml-binding.jar
+12:17:42,001 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jaxb-api.jar
+12:17:42,001 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-bootstrap.jar
+12:17:42,001 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/javassist.jar
+12:17:42,001 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-reflect.jar
+12:17:42,001 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-mdr.jar
+12:17:42,001 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-dependency.jar
+12:17:42,001 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-kernel.jar
+12:17:42,001 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-metatype.jar
+12:17:42,001 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-managed.jar
+12:17:42,001 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-vfs.jar
+12:17:42,001 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-classloading-spi.jar
+12:17:42,001 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-classloader.jar
+12:17:42,001 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-classloading.jar
+12:17:42,001 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-classloading-vfs.jar
+12:17:42,001 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-aop-jdk50.jar
+12:17:42,001 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-aop-mc-int.jar
+12:17:42,001 DEBUG [ServerImpl]   file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/trove.jar
+12:17:42,001 INFO  [ServerImpl] Home Dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1
+12:17:42,001 INFO  [ServerImpl] Home URL: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/
+12:17:42,002 INFO  [ServerImpl] Library URL: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/
+12:17:42,002 INFO  [ServerImpl] Patch URL: null
+12:17:42,002 INFO  [ServerImpl] Server Name: all
+12:17:42,002 INFO  [ServerImpl] Server Home Dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all
+12:17:42,002 INFO  [ServerImpl] Server Home URL: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/
+12:17:42,003 INFO  [ServerImpl] Server Data Dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/data
+12:17:42,003 INFO  [ServerImpl] Server Temp Dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/tmp
+12:17:42,003 INFO  [ServerImpl] Server Config URL: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/
+12:17:42,003 INFO  [ServerImpl] Server Library URL: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/
+12:17:42,003 INFO  [ServerImpl] Root Deployment Filename: jboss-service.xml
+12:17:42,006 DEBUG [ServerImpl] Shutdown hook added Thread[JBoss Shutdown Hook,5,jboss]
+12:17:42,018 DEBUG [KernelFactory] Starting JBoss Kernel construction...
+12:17:42,291 DEBUG [KernelFactory] Completed JBoss Kernel construction.  Duration: 273 milliseconds
+12:17:42,445 DEBUG [ServerImpl] Already in start, ignoring duplicate start
+12:17:42,446 INFO  [ServerImpl] Starting Microcontainer, bootstrapURL=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/bootstrap.xml
+12:17:42,482 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@d7999e, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:42,488 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/validation set to: true
+12:17:42,488 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/namespaces set to: true
+12:17:42,488 DEBUG [SaxJBossXBParser] http://apache.org/xml/features/validation/dynamic set to: true
+12:17:42,535 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@d7999e, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:42,551 DEBUG [ServerImpl] BootstrapURLs=[classloader.xml, aop.xml, jmx.xml, deployers.xml, profile-service.xml]
+12:17:42,564 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@9e592c, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:42,565 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/validation set to: true
+12:17:42,565 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/namespaces set to: true
+12:17:42,565 DEBUG [SaxJBossXBParser] http://apache.org/xml/features/validation/dynamic set to: true
+12:17:42,565 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@9e592c, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:43,054 INFO  [CopyMechanism] VFS temp dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/tmp
+12:17:43,055 INFO  [ZipEntryContext] VFS force nested jars copy-mode is enabled.
+12:17:43,221 DEBUG [ClassLoaderSystem] DefaultClassLoaderSystem@b41c19 registered domain=ClassLoaderDomain@4721c7{name=<DEFAULT> parentPolicy=BEFORE parent=org.jboss.system.NoAnnotationURLClassLoader@76cbf7}
+12:17:43,226 DEBUG [BaseClassLoader] Created BaseClassLoader@4fd791{bootstrap-classloader:0.0.0$MODULE} with policy VFSClassLoaderPolicy@d179fb{name=bootstrap-classloader:0.0.0$MODULE domain=null roots=[DelegatingHandler@10447454[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-deployers-core-spi.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-deployers-core-spi.jar], DelegatingHandler@20086[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-deployers-core.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-deployers-core.jar], DelegatingHandler@2047516[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-deployers-client-spi.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-deployers-client-spi.jar], DelegatingHandler@2532856[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-deployers-client.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-deployers-client.jar], DelegatingHandler@5920122[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-deployers-structure-spi.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-deployers-structure-spi.jar], DelegatingHandler@10607104[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-deployers-spi.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-deployers-spi.jar], DelegatingHandler@15688697[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-deployers-impl.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-deployers-impl.jar], DelegatingHandler@9206046[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-deployers-vfs-spi.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-deployers-vfs-spi.jar], DelegatingHandler@6540271[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-deployers-vfs.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-deployers-vfs.jar], DelegatingHandler@14803499[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-system.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-system.jar], DelegatingHandler@13074502[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-j2se.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-j2se.jar], DelegatingHandler@11961466[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-mbeans.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-mbeans.jar], DelegatingHandler@11758225[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-jmx.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-jmx.jar], DelegatingHandler@1666311[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-system-jmx.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-system-jmx.jar], DelegatingHandler@4527828[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//dom4j.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/dom4j.jar], DelegatingHandler@14542094[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//activation.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/activation.jar], DelegatingHandler@6542706[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jaxb-impl.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jaxb-impl.jar], DelegatingHandler@5401885[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//stax-api.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/stax-api.jar], DelegatingHandler@7978329[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//wstx.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/wstx.jar]]  delegates=null exported=[javax.xml.stream.events, com.sun.xml.bind.v2, org.jboss.mx.util.propertyeditor, org.jboss.deployers.structure.spi.main, META-INF.maven.org.jboss.deployers.jboss-deployers-core-spi, org.jboss.deployers.vfs.plugins.structure.modify, org.jboss.mx.mxbean, org.jboss.deployers.spi.deployer.matchers, org.jboss.deployers.plugins.deployers, com.sun.xml.bind.v2.model.runtime, org.jboss.mx.timer, com.ctc.wstx.dom, org.dom4j.dom, org.jboss.deployers.vfs.plugins.structure.explicit, org.jboss.deployers.client.plugins.deployment, org.dom4j.io, com.ctc.wstx.util, com.sun.xml.bind.v2.runtime.output, org.dom4j.swing, META-INF.maven.org.jboss.deployers.jboss-deployers-structure-spi, com.sun.xml.bind.api, com.ctc.wstx.msv, org.jboss.deployers.spi.attachments.helpers, org.jboss.deployers.plugins.structure, org.jboss.system.server.profileservice.hotdeploy, com.sun.xml.txw2.annotation, org.jboss.system.metadata, org.jboss.system, com.sun.xml.bind.v2.runtime.reflect, org.jboss.deployers.vfs.deployer.kernel.managed, org.jboss.deployers.structure.spi, org.dom4j.rule, org.jboss.deployers.vfs.plugins.structure.file, org.jboss.deployers.vfs.plugins.structure.war, org.dom4j.rule.pattern, org.jboss.mx.metadata.xb, com.sun.xml.txw2, org.jboss.deployers.spi.deployer.managed, com.ctc.wstx.dtd, com.sun.xml.bind.api.impl, org.jboss.deployers.vfs.spi.structure, META-INF.maven.org.jboss.deployers.jboss-deployers-vfs, META-INF.maven.org.jboss.deployers.jboss-deployers-vfs-spi, org.jboss.deployers.vfs.spi.client, org.jboss.mx.service, com.sun.xml.bind.v2.runtime.unmarshaller, org.jboss.mx.modelmbean, org.jboss.deployment.scanner, org.jboss.system.server.profileservice, org.jboss.system.microcontainer.jmx, META-INF.maven.org.jboss.deployers.jboss-deployers-spi, org.jboss.mx.interceptor, com.sun.xml.bind.v2.schemagen.xmlschema, javax.xml.stream, com.sun.istack, org.jboss.system.microcontainer, org.codehaus.stax2.evt, META-INF.maven.org.jboss.deployers.jboss-deployers-core, org.jboss.profileservice.spi.repository, com.ctc.wstx.api, org.dom4j.xpp, META-INF.maven.org.jboss.deployers.jboss-deployers-client-spi, org.jboss.system.server.profileservice.repository, org.jboss.mx.standardmbean, org.jboss.deployers.vfs.plugins.structure.jar, org.jboss.deployers.spi, org.jboss.system.filterfactory, org.jboss.system.server.profile.basic, org.jboss.system.deployers, com.sun.xml.bind.v2.model.nav, org.dom4j, org.jboss.deployers.vfs.plugins.xb, org.jboss.mx.server.registry, org.dom4j.jaxb, org.jboss.deployers.vfs.spi.deployer, com.sun.xml.bind.annotation, org.jboss.deployers.spi.deployer, org.jboss.deployers.spi.structure, org.jboss.deployers.vfs.spi.structure.helpers, com.ctc.wstx.sw, org.jboss.deployers.spi.attachments, org.jboss.system.server.jmx, org.jboss.deployers.spi.annotations, com.sun.xml.bind.unmarshaller, com.sun.xml.txw2.output, com.sun.xml.bind.v2.util, com.sun.xml.bind.v2.schemagen.episode, org.jboss.deployers.client.spi, org.jboss.profileservice.aop, org.dom4j.xpath, org.jboss.profileservice.spi, com.ctc.wstx.cfg, org.dom4j.dtd, org.jboss.deployers.structure.spi.scope, com.sun.xml.bind.v2.runtime.reflect.opt, org.jboss.deployers.plugins.helpers, javax.xml.stream.util, com.ctc.wstx.compat, org.dom4j.datatype, org.jboss.system.server.profile.repository, com.ctc.wstx.evt, com.sun.xml.bind, com.ctc.wstx.ent, META-INF, org.jboss.mx.util, com.sun.xml.bind.v2.bytecode, org.jboss.deployers.vfs.plugins.client, com.sun.xml.bind.v2.schemagen, org.jboss.deployers.plugins.classloading, org.jboss.deployers.plugins.attachments, org.jboss.deployers.plugins.scanner, com.sun.xml.bind.v2.runtime, org.jboss.deployers.spi.deployer.helpers, org.dom4j.bean, org.jboss.aop.deployers.temp, org.jboss.mx.notification, com.sun.xml.bind.v2.runtime.property, org.codehaus.stax2.validation, org.codehaus.stax2.io, META-INF.maven.org.jboss.deployers.jboss-deployers-impl, org.codehaus.stax2, com.sun.xml.bind.v2.model.annotation, META-INF.services, org.jboss.mx.metadata, org.jboss.mx.server, META-INF.maven.org.jboss.deployers.jboss-deployers-client, org.jboss.deployers.vfs.deployer.kernel, org.dom4j.tree, org.jboss.deployers.plugins.main, org.dom4j.util, com.sun.activation.registries, com.sun.xml.bind.marshaller, org.jboss.deployers.vfs.plugins.classloader, org.jboss.mx.loading, org.jboss.deployers.structure.spi.helpers, org.jboss.system.deployers.managed, org.jboss.deployers.plugins.sort, org.jboss.deployers.plugins.managed, org.jboss.deployers.spi.management, com.ctc.wstx.stax, com.sun.xml.bind.v2.model.core, org.jboss.system.pm, com.ctc.wstx.exc, org.jboss.mx.persistence, com.ctc.wstx.sr, javax.activation, org.jboss.deployers.client.spi.main, org.jboss.mx.capability, com.sun.xml.bind.v2.model.impl, org.jboss.system.server.profileservice.basic, org.jboss.deployers.vfs.plugins.structure, com.sun.xml.bind.util, com.sun.activation.viewers, dtd, com.ctc.wstx.io, org.jboss.deployment, org.jboss.deployers.vfs.spi.deployer.helpers, org.jboss.deployers.structure.spi.scope.helpers, org.jboss.deployers.plugins.annotations, org.jboss.deployers.spi.management.deploy, org.jboss.system.server, ] <IMPORT-ALL>NON_EMPTY}
+12:17:43,226 DEBUG [BaseClassLoaderDomain] ClassLoaderDomain@4721c7{<DEFAULT>} registerClassLoader BaseClassLoader@4fd791{bootstrap-classloader:0.0.0$MODULE}
+12:17:43,240 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@f12cb4, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:43,240 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/validation set to: true
+12:17:43,240 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/namespaces set to: true
+12:17:43,240 DEBUG [SaxJBossXBParser] http://apache.org/xml/features/validation/dynamic set to: true
+12:17:43,240 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@f12cb4, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:43,487 DEBUG [AbstractKernelController] Additional matching bean - contextual injection already used for class: class org.jboss.classloading.spi.dependency.Module
+12:17:43,492 DEBUG [BaseClassLoader] Created BaseClassLoader@d00d24{aop-classloader:0.0.0$MODULE} with policy VFSClassLoaderPolicy@ed39f{name=aop-classloader:0.0.0$MODULE domain=null roots=[DelegatingHandler@6790791[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-aop-deployer-jdk50.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-aop-deployer-jdk50.jar], DelegatingHandler@14214026[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-aop-jboss4-jdk50.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-aop-jboss4-jdk50.jar], DelegatingHandler@4356469[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib//jboss-aop-jboss5.jar real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/jboss-aop-jboss5.jar]]  delegates=null exported=[org.jboss.aop.asintegration, org.jboss.aop.asintegration.jboss5.temp, META-INF, org.jboss.aop.asintegration.jboss4, org.jboss.aop.deployers, org.jboss.aop.domain, org.jboss.aop.deployment, org.jboss.aop.classpool, org.jboss.aop.asintegration.jboss5, ] <IMPORT-ALL>NON_EMPTY}
+12:17:43,492 DEBUG [BaseClassLoaderDomain] ClassLoaderDomain@4721c7{<DEFAULT>} registerClassLoader BaseClassLoader@d00d24{aop-classloader:0.0.0$MODULE}
+12:17:43,548 DEBUG [ClassLoaderSystem] DefaultClassLoaderSystem@b41c19 set translator to org.jboss.aop.asintegration.jboss5.DefaultTranslator@fe3e4f
+12:17:43,685 DEBUG [AspectManagerServiceJDK5] Creating AspectManagerServiceJDK5
+12:17:43,689 DEBUG [AspectManagerServiceJDK5] Created AspectManagerServiceJDK5
+12:17:43,691 DEBUG [AspectManagerServiceJDK5] Starting AspectManagerServiceJDK5
+12:17:43,691 DEBUG [AspectManagerServiceJDK5] Started AspectManagerServiceJDK5
+12:17:43,767 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@980821, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:43,768 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/validation set to: true
+12:17:43,768 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/namespaces set to: true
+12:17:43,768 DEBUG [SaxJBossXBParser] http://apache.org/xml/features/validation/dynamic set to: true
+12:17:43,768 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@980821, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:43,799 DEBUG [AbstractKernelController] Additional matching bean - contextual injection already used for class: class org.jboss.classloading.spi.dependency.Module
+12:17:43,800 DEBUG [BaseClassLoader] Created BaseClassLoader@d29ed8{jmx-classloader:0.0.0$MODULE} with policy VFSClassLoaderPolicy@ba8426{name=jmx-classloader:0.0.0$MODULE domain=null roots=[]  delegates=null exported=[] <IMPORT-ALL>NON_EMPTY}
+12:17:43,801 DEBUG [BaseClassLoaderDomain] ClassLoaderDomain@4721c7{<DEFAULT>} registerClassLoader BaseClassLoader@d29ed8{jmx-classloader:0.0.0$MODULE}
+12:17:43,951 DEBUG [JMXKernel] Created MBeanServer: org.jboss.mx.server.MBeanServerImpl@687f95[ defaultDomain='jboss' ]
+12:17:43,979 DEBUG [JMXKernel] Boot url list: [file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/]
+12:17:43,999 DEBUG [BaseClassLoader] Created BaseClassLoader@542b5d{vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/} with policy VFSClassLoaderPolicy@eb147c{name=vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/ domain=null roots=[FileHandler@9300947[path= context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/ real=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/]]  delegates=null exported=[props, xmdesc, ] <IMPORT-ALL>NON_EMPTY}
+12:17:43,999 DEBUG [BaseClassLoaderDomain] ClassLoaderDomain@4721c7{<DEFAULT>} registerClassLoader BaseClassLoader@542b5d{vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/}
+12:17:44,061 DEBUG [JMXKernel] Failed to create xmbean for: org.jboss.system.server.ServerInfo
+12:17:44,067 INFO  [ServerInfo] Java version: 1.5.0_13,Apple Inc.
+12:17:44,067 INFO  [ServerInfo] Java VM: Java HotSpot(TM) Client VM 1.5.0_13-119,Apple Inc.
+12:17:44,067 INFO  [ServerInfo] OS-System: Mac OS X 10.5.4,i386
+12:17:44,067 DEBUG [ServerInfo] Full System Properties Dump
+12:17:44,067 DEBUG [ServerInfo]     java.vendor: Apple Inc.
+12:17:44,067 DEBUG [ServerInfo]     sun.java.launcher: SUN_STANDARD
+12:17:44,067 DEBUG [ServerInfo]     sun.management.compiler: HotSpot Client Compiler
+12:17:44,067 DEBUG [ServerInfo]     os.name: Mac OS X
+12:17:44,067 DEBUG [ServerInfo]     sun.boot.class.path: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/endorsed/resolver.jar:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/endorsed/serializer.jar:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/endorsed/xalan.jar:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/endorsed/xercesImpl.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/ui.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/laf.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/sunrsasign.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/jsse.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/jce.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/charsets.jar
+12:17:44,067 DEBUG [ServerInfo]     java.vm.specification.vendor: Sun Microsystems Inc.
+12:17:44,067 DEBUG [ServerInfo]     java.runtime.version: 1.5.0_13-b05-237
+12:17:44,067 DEBUG [ServerInfo]     user.name: bob
+12:17:44,067 DEBUG [ServerInfo]     jboss.bind.address: 127.0.0.1
+12:17:44,067 DEBUG [ServerInfo]     awt.nativeDoubleBuffering: true
+12:17:44,067 DEBUG [ServerInfo]     jboss.home.dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1
+12:17:44,067 DEBUG [ServerInfo]     user.language: en
+12:17:44,067 DEBUG [ServerInfo]     sun.boot.library.path: /System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Libraries
+12:17:44,068 DEBUG [ServerInfo]     jboss.home.url: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/
+12:17:44,068 DEBUG [ServerInfo]     java.version: 1.5.0_13
+12:17:44,068 DEBUG [ServerInfo]     user.timezone: America/New_York
+12:17:44,068 DEBUG [ServerInfo]     jboss.server.home.dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all
+12:17:44,068 DEBUG [ServerInfo]     jgroups.bind_addr: 127.0.0.1
+12:17:44,068 DEBUG [ServerInfo]     sun.arch.data.model: 32
+12:17:44,068 DEBUG [ServerInfo]     http.nonProxyHosts: local|*.local|169.254/16|*.169.254/16
+12:17:44,068 DEBUG [ServerInfo]     java.endorsed.dirs: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/endorsed
+12:17:44,068 DEBUG [ServerInfo]     jboss.server.home.url: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/
+12:17:44,068 DEBUG [ServerInfo]     sun.cpu.isalist: 
+12:17:44,068 DEBUG [ServerInfo]     sun.jnu.encoding: MacRoman
+12:17:44,068 DEBUG [ServerInfo]     file.encoding.pkg: sun.io
+12:17:44,068 DEBUG [ServerInfo]     file.separator: /
+12:17:44,068 DEBUG [ServerInfo]     java.specification.name: Java Platform API Specification
+12:17:44,068 DEBUG [ServerInfo]     java.class.version: 49.0
+12:17:44,068 DEBUG [ServerInfo]     jboss.server.config.url: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/
+12:17:44,068 DEBUG [ServerInfo]     user.country: US
+12:17:44,068 DEBUG [ServerInfo]     java.home: /System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home
+12:17:44,068 DEBUG [ServerInfo]     java.vm.info: mixed mode
+12:17:44,068 DEBUG [ServerInfo]     jboss.lib.url: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/lib/
+12:17:44,068 DEBUG [ServerInfo]     os.version: 10.5.4
+12:17:44,068 DEBUG [ServerInfo]     path.separator: :
+12:17:44,069 DEBUG [ServerInfo]     java.vm.version: 1.5.0_13-119
+12:17:44,069 DEBUG [ServerInfo]     java.protocol.handler.pkgs: org.jboss.net.protocol|org.jboss.virtual.protocol
+12:17:44,069 DEBUG [ServerInfo]     java.awt.printerjob: apple.awt.CPrinterJob
+12:17:44,069 DEBUG [ServerInfo]     sun.io.unicode.encoding: UnicodeLittle
+12:17:44,069 DEBUG [ServerInfo]     awt.toolkit: apple.awt.CToolkit
+12:17:44,069 DEBUG [ServerInfo]     socksNonProxyHosts: local|*.local|169.254/16|*.169.254/16
+12:17:44,069 DEBUG [ServerInfo]     ftp.nonProxyHosts: local|*.local|169.254/16|*.169.254/16
+12:17:44,069 DEBUG [ServerInfo]     jboss.server.temp.dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/tmp
+12:17:44,069 DEBUG [ServerInfo]     sun.rmi.dgc.client.gcInterval: 3600000
+12:17:44,069 DEBUG [ServerInfo]     user.home: /Users/bob
+12:17:44,069 DEBUG [ServerInfo]     java.specification.vendor: Sun Microsystems Inc.
+12:17:44,069 DEBUG [ServerInfo]     java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+12:17:44,069 DEBUG [ServerInfo]     org.jboss.resolver.warning: true
+12:17:44,069 DEBUG [ServerInfo]     java.vendor.url: http://www.apple.com/
+12:17:44,069 DEBUG [ServerInfo]     program.name: run.sh
+12:17:44,069 DEBUG [ServerInfo]     java.vm.vendor: Apple Inc.
+12:17:44,070 DEBUG [ServerInfo]     gopherProxySet: false
+12:17:44,070 DEBUG [ServerInfo]     sun.rmi.dgc.server.gcInterval: 3600000
+12:17:44,070 DEBUG [ServerInfo]     java.runtime.name: Java(TM) 2 Runtime Environment, Standard Edition
+12:17:44,070 DEBUG [ServerInfo]     java.class.path: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/bin/run.jar
+12:17:44,070 DEBUG [ServerInfo]     jboss.server.log.dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/log
+12:17:44,070 DEBUG [ServerInfo]     jbossmx.loader.repository.class: org.jboss.mx.loading.UnifiedLoaderRepository3
+12:17:44,070 DEBUG [ServerInfo]     java.vm.specification.name: Java Virtual Machine Specification
+12:17:44,070 DEBUG [ServerInfo]     java.vm.specification.version: 1.0
+12:17:44,070 DEBUG [ServerInfo]     sun.cpu.endian: little
+12:17:44,070 DEBUG [ServerInfo]     sun.os.patch.level: unknown
+12:17:44,070 DEBUG [ServerInfo]     jboss.server.lib.url: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/
+12:17:44,070 DEBUG [ServerInfo]     java.io.tmpdir: /tmp
+12:17:44,070 DEBUG [ServerInfo]     java.vendor.url.bug: http://bugreport.apple.com/
+12:17:44,070 DEBUG [ServerInfo]     jboss.server.data.dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/data
+12:17:44,070 DEBUG [ServerInfo]     java.rmi.server.hostname: 127.0.0.1
+12:17:44,070 DEBUG [ServerInfo]     jboss.vfs.forceCopy: true
+12:17:44,070 DEBUG [ServerInfo]     os.arch: i386
+12:17:44,070 DEBUG [ServerInfo]     java.awt.graphicsenv: apple.awt.CGraphicsEnvironment
+12:17:44,070 DEBUG [ServerInfo]     java.ext.dirs: /Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/lib/ext
+12:17:44,070 DEBUG [ServerInfo]     user.dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1
+12:17:44,070 DEBUG [ServerInfo]     mrj.version: 1040.1.5.0_13-237
+12:17:44,070 DEBUG [ServerInfo]     line.separator: 
+
+12:17:44,070 DEBUG [ServerInfo]     java.vm.name: Java HotSpot(TM) Client VM
+12:17:44,070 DEBUG [ServerInfo]     jboss.server.base.dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server
+12:17:44,070 DEBUG [ServerInfo]     jboss.server.base.url: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/
+12:17:44,070 DEBUG [ServerInfo]     javax.management.builder.initial: org.jboss.mx.server.MBeanServerBuilderImpl
+12:17:44,070 DEBUG [ServerInfo]     file.encoding: MacRoman
+12:17:44,071 DEBUG [ServerInfo]     java.specification.version: 1.5
+12:17:44,071 DEBUG [ServerInfo]     jboss.server.name: all
+12:17:44,071 DEBUG [JMXKernel] Created system MBean: jboss.system:type=ServerInfo
+12:17:44,082 DEBUG [ServiceController] Controller MBean online
+12:17:44,105 INFO  [JMXKernel] Legacy JMX core initialized
+12:17:44,109 DEBUG [AspectManagerJMXRegistrar] Registering AspectManagerService in JMX under: jboss.aop:service=AspectManager
+12:17:44,117 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@264f65, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:44,117 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/validation set to: true
+12:17:44,117 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/namespaces set to: true
+12:17:44,117 DEBUG [SaxJBossXBParser] http://apache.org/xml/features/validation/dynamic set to: true
+12:17:44,117 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@264f65, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:44,193 DEBUG [AbstractKernelController] Additional matching bean - contextual injection already used for class: class org.jboss.classloading.spi.dependency.Module
+12:17:44,194 DEBUG [BaseClassLoader] Created BaseClassLoader@b229b0{deployers-classloader:0.0.0$MODULE} with policy VFSClassLoaderPolicy@cee4bb{name=deployers-classloader:0.0.0$MODULE domain=null roots=[]  delegates=null exported=[] <IMPORT-ALL>NON_EMPTY}
+12:17:44,194 DEBUG [BaseClassLoaderDomain] ClassLoaderDomain@4721c7{<DEFAULT>} registerClassLoader BaseClassLoader@b229b0{deployers-classloader:0.0.0$MODULE}
+12:17:44,280 DEBUG [DeployersImpl] Added stage Not Installed before null
+12:17:44,281 DEBUG [DeployersImpl] Added stage Parse before ControllerState@6c3d1f{PreInstall}
+12:17:44,281 DEBUG [DeployersImpl] Added stage PostParse before ControllerState@6c3d1f{PreInstall}
+12:17:44,281 DEBUG [DeployersImpl] Added stage PreDescribe before ControllerState@6c3d1f{PreInstall}
+12:17:44,281 DEBUG [DeployersImpl] Added stage Describe before ControllerState@6c3d1f{PreInstall}
+12:17:44,281 DEBUG [DeployersImpl] Added stage ClassLoader before ControllerState@6c3d1f{PreInstall}
+12:17:44,281 DEBUG [DeployersImpl] Added stage PostClassLoader before ControllerState@6c3d1f{PreInstall}
+12:17:44,281 DEBUG [DeployersImpl] Added stage PreReal before ControllerState@6c3d1f{PreInstall}
+12:17:44,281 DEBUG [DeployersImpl] Added stage Real before ControllerState@6c3d1f{PreInstall}
+12:17:44,281 DEBUG [DeployersImpl] Added stage Installed before ControllerState@6c3d1f{PreInstall}
+12:17:44,298 DEBUG [VFSStructuralDeployersImpl] Added structure deployer org.jboss.deployers.vfs.plugins.structure.explicit.DeclaredStructure@1cf25c
+12:17:44,317 DEBUG [VFSStructuralDeployersImpl] Added structure deployer org.jboss.deployers.vfs.plugins.structure.war.WARStructure@257b52
+12:17:44,338 DEBUG [VFSStructuralDeployersImpl] Added structure deployer org.jboss.deployers.vfs.plugins.structure.jar.JARStructure@eed1b8
+12:17:44,347 DEBUG [VFSStructuralDeployersImpl] Added structure deployer org.jboss.deployers.vfs.plugins.structure.file.FileStructure@c0ad7
+12:17:44,411 DEBUG [DeployersImpl] Added deployer org.jboss.aop.asintegration.jboss5.AspectAppParsingDeployer@9ce2c2 for stage Describe
+org.jboss.aop.asintegration.jboss5.AspectAppParsingDeployer@9ce2c2{inputs=[] outputs=[org.jboss.aop.asintegration.jboss5.AspectDeployment]}
+
+12:17:44,431 DEBUG [DeployersImpl] Added deployer org.jboss.aop.deployers.AspectDeployer@12139e for stage PostClassLoader
+org.jboss.aop.deployers.AspectDeployer@12139e{inputs=[] outputs=[]}
+
+12:17:44,478 DEBUG [DeployersImpl] Added deployer org.jboss.deployers.vfs.deployer.kernel.BeanDeployer@442e06 for stage Parse
+org.jboss.deployers.vfs.deployer.kernel.BeanDeployer@442e06{inputs=[] outputs=[org.jboss.kernel.spi.deployment.KernelDeployment]}
+
+12:17:44,503 DEBUG [TypedManagedDeploymentCreator] addAttachmentType, interface org.jboss.kernel.spi.deployment.KernelDeployment:beans
+12:17:44,503 DEBUG [DeployersImpl] Added deployer org.jboss.deployers.vfs.deployer.kernel.KernelDeploymentDeployer@f4300e for stage Real
+org.jboss.deployers.vfs.deployer.kernel.KernelDeploymentDeployer@f4300e{inputs=[org.jboss.beans.metadata.spi.BeanMetaData, org.jboss.kernel.spi.deployment.KernelDeployment] outputs=[org.jboss.beans.metadata.spi.BeanMetaData]}
+
+12:17:44,525 DEBUG [DeployersImpl] Added deployer org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer@11ba0a for stage Real
+org.jboss.deployers.vfs.deployer.kernel.KernelDeploymentDeployer@f4300e{inputs=[org.jboss.beans.metadata.spi.BeanMetaData, org.jboss.kernel.spi.deployment.KernelDeployment] outputs=[org.jboss.beans.metadata.spi.BeanMetaData]}
+org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer@11ba0a{inputs=[org.jboss.beans.metadata.spi.BeanMetaData] outputs=[]}
+
+12:17:44,598 DEBUG [DeployersImpl] Added deployer org.jboss.system.deployers.SARDeployer@44f84 for stage Parse
+org.jboss.deployers.vfs.deployer.kernel.BeanDeployer@442e06{inputs=[] outputs=[org.jboss.kernel.spi.deployment.KernelDeployment]}
+org.jboss.system.deployers.SARDeployer@44f84{inputs=[] outputs=[org.jboss.system.metadata.ServiceDeployment]}
+
+12:17:44,621 DEBUG [DeployersImpl] Added deployer org.jboss.system.deployers.ServiceDeploymentDeployer@9b25f for stage Real
+org.jboss.deployers.vfs.deployer.kernel.KernelDeploymentDeployer@f4300e{inputs=[org.jboss.beans.metadata.spi.BeanMetaData, org.jboss.kernel.spi.deployment.KernelDeployment] outputs=[org.jboss.beans.metadata.spi.BeanMetaData]}
+org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer@11ba0a{inputs=[org.jboss.beans.metadata.spi.BeanMetaData] outputs=[]}
+org.jboss.system.deployers.ServiceDeploymentDeployer@9b25f{inputs=[org.jboss.system.metadata.ServiceMetaData, org.jboss.system.metadata.ServiceDeployment] outputs=[org.jboss.system.metadata.ServiceMetaData]}
+
+12:17:44,635 DEBUG [DeployersImpl] Added deployer org.jboss.system.deployers.ServiceDeployer@84a312 for stage Real
+org.jboss.deployers.vfs.deployer.kernel.KernelDeploymentDeployer@f4300e{inputs=[org.jboss.beans.metadata.spi.BeanMetaData, org.jboss.kernel.spi.deployment.KernelDeployment] outputs=[org.jboss.beans.metadata.spi.BeanMetaData]}
+org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer@11ba0a{inputs=[org.jboss.beans.metadata.spi.BeanMetaData] outputs=[]}
+org.jboss.system.deployers.ServiceDeploymentDeployer@9b25f{inputs=[org.jboss.system.metadata.ServiceMetaData, org.jboss.system.metadata.ServiceDeployment] outputs=[org.jboss.system.metadata.ServiceMetaData]}
+org.jboss.system.deployers.ServiceDeployer@84a312{inputs=[org.jboss.system.metadata.ServiceMetaData] outputs=[]}
+
+12:17:44,649 DEBUG [DeployersImpl] Added deployer org.jboss.system.deployers.HackClassloaderMetaDataDeployer@3d3774 for stage PostParse
+org.jboss.system.deployers.HackClassloaderMetaDataDeployer@3d3774{inputs=[org.jboss.mx.loading.LoaderRepositoryFactory$LoaderRepositoryConfig] outputs=[org.jboss.classloading.spi.metadata.ClassLoadingMetaData]}
+
+12:17:44,686 DEBUG [DeployersImpl] Added deployer org.jboss.deployers.vfs.spi.deployer.SchemaResolverDeployer@ee568c for stage Parse
+org.jboss.deployers.vfs.deployer.kernel.BeanDeployer@442e06{inputs=[] outputs=[org.jboss.kernel.spi.deployment.KernelDeployment]}
+org.jboss.deployers.vfs.spi.deployer.SchemaResolverDeployer@ee568c{inputs=[] outputs=[org.jboss.classloading.spi.metadata.ClassLoadingMetaData]}
+org.jboss.system.deployers.SARDeployer@44f84{inputs=[] outputs=[org.jboss.system.metadata.ServiceDeployment]}
+
+12:17:44,701 DEBUG [DeployersImpl] Added deployer org.jboss.deployers.plugins.classloading.ClassLoadingDefaultDeployer@568614 for stage PreDescribe
+org.jboss.deployers.plugins.classloading.ClassLoadingDefaultDeployer@568614{inputs=[org.jboss.classloading.spi.metadata.ClassLoadingMetaData] outputs=[org.jboss.classloading.spi.metadata.ClassLoadingMetaData]}
+
+12:17:44,713 DEBUG [DeployersImpl] Added deployer org.jboss.deployers.vfs.plugins.classloader.InMemoryClassesDeployer@734645 for stage Describe
+org.jboss.aop.asintegration.jboss5.AspectAppParsingDeployer@9ce2c2{inputs=[] outputs=[org.jboss.aop.asintegration.jboss5.AspectDeployment]}
+org.jboss.deployers.vfs.plugins.classloader.InMemoryClassesDeployer@734645{inputs=[] outputs=[org.jboss.classloading.spi.metadata.ClassLoadingMetaData]}
+
+12:17:44,734 DEBUG [DeployersImpl] Added deployer org.jboss.deployers.vfs.plugins.classloader.VFSClassLoaderDescribeDeployer@d059e5 for stage Describe
+org.jboss.aop.asintegration.jboss5.AspectAppParsingDeployer@9ce2c2{inputs=[] outputs=[org.jboss.aop.asintegration.jboss5.AspectDeployment]}
+org.jboss.deployers.vfs.plugins.classloader.InMemoryClassesDeployer@734645{inputs=[] outputs=[org.jboss.classloading.spi.metadata.ClassLoadingMetaData]}
+org.jboss.deployers.vfs.plugins.classloader.VFSClassLoaderDescribeDeployer@d059e5{inputs=[org.jboss.classloading.spi.metadata.ClassLoadingMetaData] outputs=[]}
+
+12:17:44,747 DEBUG [DeployersImpl] Added deployer org.jboss.deployers.plugins.classloading.AbstractLevelClassLoaderSystemDeployer@86062a for stage ClassLoader
+org.jboss.deployers.plugins.classloading.AbstractLevelClassLoaderSystemDeployer@86062a{inputs=[org.jboss.deployers.structure.spi.ClassLoaderFactory] outputs=[]}
+
+12:17:44,747 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@973268, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:44,747 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/validation set to: true
+12:17:44,747 DEBUG [SaxJBossXBParser] http://xml.org/sax/features/namespaces set to: true
+12:17:44,747 DEBUG [SaxJBossXBParser] http://apache.org/xml/features/validation/dynamic set to: true
+12:17:44,747 DEBUG [SaxJBossXBParser] Created parser: org.apache.xerces.jaxp.SAXParserImpl@973268, isNamespaceAware: true, isValidating: true, isXIncludeAware: true
+12:17:44,772 DEBUG [AbstractKernelController] Additional matching bean - contextual injection already used for class: class org.jboss.classloading.spi.dependency.Module
+12:17:44,772 DEBUG [BaseClassLoader] Created BaseClassLoader@674e3{profile-service-classloader:0.0.0$MODULE} with policy VFSClassLoaderPolicy@e41769{name=profile-service-classloader:0.0.0$MODULE domain=null roots=[]  delegates=null exported=[] <IMPORT-ALL>NON_EMPTY}
+12:17:44,772 DEBUG [BaseClassLoaderDomain] ClassLoaderDomain@4721c7{<DEFAULT>} registerClassLoader BaseClassLoader@674e3{profile-service-classloader:0.0.0$MODULE}
+12:17:44,802 INFO  [MetaDataAwareProfile] Using profile root:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all
+12:17:44,834 DEBUG [VFSBootstrapScannerImpl] Added URI: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml
+12:17:44,834 DEBUG [VFSBootstrapScannerImpl] URI list: [file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml]
+12:17:44,857 DEBUG [VFSDeployerScannerImpl] Added URI: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/deployers/
+12:17:44,857 DEBUG [VFSDeployerScannerImpl] URI list: [file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/deployers/]
+12:17:44,871 DEBUG [VFSDeploymentScannerImpl] Added URI: file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/deploy/
+12:17:44,871 DEBUG [VFSDeploymentScannerImpl] URI list: [file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/deploy/]
+12:17:44,917 DEBUG [ProfileServiceBootstrap] Using ProfileService: org.jboss.system.server.profileservice.basic.MetaDataAwareProfileService@520b3c
+12:17:44,917 DEBUG [ProfileServiceBootstrap] Using MainDeployer: org.jboss.deployers.plugins.main.MainDeployerImpl@5fc8b9
+12:17:44,919 DEBUG [MainDeployerImpl] Add deployment: vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml
+12:17:44,940 DEBUG [MainDeployerImpl] Scheduling deployment: vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml parent=null
+12:17:44,941 DEBUG [DeployersImpl] Deploying vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml
+12:17:44,946 DEBUG [SARDeployer] Parsing: jboss-service.xml
+12:17:44,960 DEBUG [ServiceDeploymentParser] Found classpath element: [classpath: null]
+12:17:44,963 DEBUG [SARDeployer] Processing classpath: vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml codebase=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ archives=*
+12:17:45,550 DEBUG [InMemoryClassesDeployer] Dynamic class root for vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml is vfsmemory://5c4o01j-vtkbbe-fjrag5cx-1-fjrag7yh-6
+12:17:45,700 DEBUG [BaseClassLoader] Created BaseClassLoader@f62f97{vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml} with policy VFSClassLoaderPolicy@ae9e7e{name=vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml domain=null roots=[MemoryContextHandler@2591373[path=classes context=vfsmemory://5c4o01j-vtkbbe-fjrag5cx-1-fjrag7yh-6 real=vfsmemory://5c4o01j-vtkbbe-fjrag5cx-1-fjrag7yh-6/classes], DelegatingHandler@16336026[path=antlr.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/antlr.jar], DelegatingHandler@450451[path=autonumber-plugin.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/autonumber-plugin.jar], DelegatingHandler@4215523[path=avalon-framework.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/avalon-framework.jar], DelegatingHandler@123349[path=bcel.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/bcel.jar], DelegatingHandler@9537479[path=bindingservice-plugin.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/bindingservice-plugin.jar], DelegatingHandler@6895710[path=bsf.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/bsf.jar], DelegatingHandler@15977485[path=bsh.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/bsh.jar], DelegatingHandler@14248965[path=commons-collections.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/commons-collections.jar], DelegatingHandler@4378015[path=commons-httpclient.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/commons-httpclient.jar], DelegatingHandler@13215564[path=commons-logging.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/commons-logging.jar], DelegatingHandler@430030[path=dtdparser121.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/dtdparser121.jar], DelegatingHandler@13326958[path=ejb3-persistence.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ejb3-persistence.jar], DelegatingHandler@10359983[path=el-api.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/el-api.jar], DelegatingHandler@6292885[path=hibernate-annotations.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/hibernate-annotations.jar], DelegatingHandler@955276[path=hibernate-commons-annotations.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/hibernate-commons-annotations.jar], DelegatingHandler@16318505[path=hibernate-core.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/hibernate-core.jar], DelegatingHandler@7967781[path=hibernate-entitymanager.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/hibernate-entitymanager.jar], DelegatingHandler@15537059[path=hibernate-jbosscache2.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/hibernate-jbosscache2.jar], DelegatingHandler@10768394[path=hibernate-jmx.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/hibernate-jmx.jar], DelegatingHandler@8585200[path=hibernate-validator.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/hibernate-validator.jar], DelegatingHandler@7411472[path=hsqldb-plugin.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/hsqldb-plugin.jar], DelegatingHandler@10565731[path=hsqldb.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/hsqldb.jar], DelegatingHandler@8187906[path=jacorb.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jacorb.jar], DelegatingHandler@7412674[path=jaxen.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jaxen.jar], DelegatingHandler@13999195[path=jboss-common-jdbc-wrapper.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-common-jdbc-wrapper.jar], DelegatingHandler@796310[path=jboss-current-invocation-aspects.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-current-invocation-aspects.jar], DelegatingHandler@12150609[path=jboss-ejb3-cache.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-ejb3-cache.jar], DelegatingHandler@3020284[path=jboss-ejb3-common.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-ejb3-common.jar], DelegatingHandler@10841114[path=jboss-ejb3-core.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-ejb3-core.jar], DelegatingHandler@6041655[path=jboss-ejb3-ext-api-impl.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-ejb3-ext-api-impl.jar], DelegatingHandler@6399500[path=jboss-ejb3-ext-api.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-ejb3-ext-api.jar], DelegatingHandler@14447373[path=jboss-ejb3-interceptors.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-ejb3-interceptors.jar], DelegatingHandler@360541[path=jboss-ejb3-metadata.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-ejb3-metadata.jar], DelegatingHandler@3042866[path=jboss-ejb3-security.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-ejb3-security.jar], DelegatingHandler@4494649[path=jboss-ejb3-transactions.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-ejb3-transactions.jar], DelegatingHandler@10541315[path=jboss-ha-client.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-ha-client.jar], DelegatingHandler@492801[path=jboss-ha-server-api.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-ha-server-api.jar], DelegatingHandler@11346407[path=jboss-hibernate.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-hibernate.jar], DelegatingHandler@9229158[path=jboss-iiop.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-iiop.jar], DelegatingHandler@9102173[path=jboss-integration.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-integration.jar], DelegatingHandler@5566588[path=jboss-jaspi-api.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-jaspi-api.jar], DelegatingHandler@7890638[path=jboss-javaee.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-javaee.jar], DelegatingHandler@10843572[path=jboss-jca.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-jca.jar], DelegatingHandler@13802243[path=jboss-jmx-remoting.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-jmx-remoting.jar], DelegatingHandler@12523842[path=jboss-jsr77.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-jsr77.jar], DelegatingHandler@1271029[path=jboss-jsr88.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-jsr88.jar], DelegatingHandler@4789889[path=jboss-management.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-management.jar], DelegatingHandler@6587082[path=jboss-messaging-int.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-messaging-int.jar], DelegatingHandler@13017107[path=jboss-messaging.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-messaging.jar], DelegatingHandler@3637355[path=jboss-metadata.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-metadata.jar], DelegatingHandler@13632089[path=jboss-monitoring.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-monitoring.jar], DelegatingHandler@4872020[path=jboss-profileservice.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-profileservice.jar], DelegatingHandler@11237521[path=jboss-remoting-aspects.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-remoting-aspects.jar], DelegatingHandler@7905658[path=jboss-remoting.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-remoting.jar], DelegatingHandler@11631068[path=jboss-security-aspects.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-security-aspects.jar], DelegatingHandler@12020421[path=jboss-security-spi.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-security-spi.jar], DelegatingHandler@12765863[path=jboss-serialization.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-serialization.jar], DelegatingHandler@8827241[path=jboss-srp.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-srp.jar], DelegatingHandler@15306057[path=jboss-sunxacml.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-sunxacml.jar], DelegatingHandler@3849685[path=jboss-transaction-aspects.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-transaction-aspects.jar], DelegatingHandler@8720645[path=jboss-xacml.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss-xacml.jar], DelegatingHandler@2132899[path=jboss.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jboss.jar], DelegatingHandler@11507749[path=jbossas-remoting.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jbossas-remoting.jar], DelegatingHandler@2997525[path=jbosscache-core.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jbosscache-core.jar], DelegatingHandler@14201579[path=jbosscache-pojo.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jbosscache-pojo.jar], DelegatingHandler@13271951[path=jbossha.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jbossha.jar], DelegatingHandler@8604607[path=jbossjta-integration.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jbossjta-integration.jar], DelegatingHandler@14819524[path=jbossjta.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jbossjta.jar], DelegatingHandler@13977655[path=jbosssx-server.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jbosssx-server.jar], DelegatingHandler@7874383[path=jbosssx.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jbosssx.jar], DelegatingHandler@6079930[path=jbossts-common.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jbossts-common.jar], DelegatingHandler@12142975[path=jbossws-common.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jbossws-common.jar], DelegatingHandler@8939808[path=jbossws-framework.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jbossws-framework.jar], DelegatingHandler@11387916[path=jbossws-native-jaxrpc.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jbossws-native-jaxrpc.jar], DelegatingHandler@2231000[path=jbossws-native-jaxws-ext.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jbossws-native-jaxws-ext.jar], DelegatingHandler@16132755[path=jbossws-native-jaxws.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jbossws-native-jaxws.jar], DelegatingHandler@6629574[path=jbossws-native-saaj.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jbossws-native-saaj.jar], DelegatingHandler@5765510[path=jbossws-spi.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jbossws-spi.jar], DelegatingHandler@12511305[path=jgroups.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jgroups.jar], DelegatingHandler@8664690[path=jmx-adaptor-plugin.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jmx-adaptor-plugin.jar], DelegatingHandler@1212643[path=jnpserver.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jnpserver.jar], DelegatingHandler@13365917[path=joesnmp.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/joesnmp.jar], DelegatingHandler@10836017[path=jsp-api.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/jsp-api.jar], DelegatingHandler@4273223[path=log4j-snmp-appender.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/log4j-snmp-appender.jar], DelegatingHandler@13588695[path=log4j.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/log4j.jar], DelegatingHandler@13738556[path=mail-plugin.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/mail-plugin.jar], DelegatingHandler@15876812[path=mail.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/mail.jar], DelegatingHandler@16749012[path=properties-plugin.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/properties-plugin.jar], DelegatingHandler@12516605[path=quartz.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/quartz.jar], DelegatingHandler@13851902[path=scheduler-plugin-example.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/scheduler-plugin-example.jar], DelegatingHandler@1649443[path=scheduler-plugin.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/scheduler-plugin.jar], DelegatingHandler@6243438[path=servlet-api.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/servlet-api.jar], DelegatingHandler@8761529[path=slf4j-api.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/slf4j-api.jar], DelegatingHandler@1395503[path=slf4j-jboss-logging.jar context=file:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/ real=vfszip:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/lib/slf4j-jboss-logging.jar]]  delegates=null exported=[org.apache.bsf.debug.meta, com.arjuna.common.util.concurrency, com.arjuna.ats.arjuna.gandiva.nameservice, org.jboss.cache.pojo.collection, bsh.collection, org.jboss.hibernate.deployers, org.jboss.cache.notifications.annotation, org.jboss.proxy, org.hibernate.lob, com.arjuna.ats.internal.jbossatx.agent, org.apache.tomcat.util.net, org.jaxen.saxpath, com.arjuna.ats.jbossatx, org.jboss.ejb3.proxy.handler, org.jboss.mx.remoting.event, org.jboss.security.identity.plugins, org.jboss.resource.work, org.jboss.serial.exception, org.jboss.deployment.services, org.jboss.remoting.transport.multiplex.utility, javax.enterprise.deploy.model.exceptions, org.jboss.ejb3.timerservice.quartz.jmx, org.quartz.utils, org.jboss.security.authorization.modules, org.jacorb.notification.queue, org.jboss.remoting.marshall.encryption, org.jboss.wsf.spi, org.jboss.cache.transaction, org.jboss.remoting.samples.transporter.custom.client, org.jboss.metadata.ear.spec, javax.transaction.xa, org.jboss.ejb.plugins.cmp.jdbc.bridge, javax.servlet.jsp, org.jgroups.auth, org.jboss.remoting.samples.transporter.simple, org.jboss.cache, org.jboss.metadata.common.jboss, org.omg.CONV_FRAME, org.jacorb.poa.gui.beans, org.apache.log4j.nt, org.jboss.ejb3.naming.client.java, org.jboss.serial.references, com.arjuna.ats.arjuna.exceptions, org.apache.bcel, org.hibernate.dialect.function, org.jboss.ejb3.dependency, org.hibernate.hql.classic, org.apache.avalon.framework.logger, org.jboss.security.xacml.util, org.apache.commons.collections.bidimap, org.hsqldb.lib.java, org.jboss.proxy.ejb, org.jboss.metatype.api.types, org.hibernate.persister.collection, org.jboss.ejb3.annotation, org.jboss.security.mapping.providers.principal, com.arjuna.ats.jbossatx.logging, org.jboss.verifier.factory, com.arjuna.ats.internal.jta.transaction.arjunacore.subordinate.jca, org.hibernate.secure, org.jboss.util.stream, org.jboss.hibernate, org.jboss.remoting.network, META-INF.maven.org.jboss.ws.jbossws-framework, org.jboss.managed.plugins.factory, org.jboss.varia.scheduler, org.jboss.deployment.spi.factories, com.arjuna.ats.arjuna.state, org.jboss.jms.client, org.apache.avalon.framework.thread, com.arjuna.common.internal.util.logging.simpleLog, org.jboss.jms.server.connectionmanager, org.jboss.remoting.samples.serialization, org.hibernate.bytecode.util, org.jboss.jmx.connector.invoker.client, com.arjuna.ats.jdbc.logging, org.jboss.remoting.samples.http, org.hibernate.loader.entity, org.jacorb.orb.policies, org.jboss.aspects.security, com.arjuna.ats.tsmx.common, org.jboss.security.xacml.sunxacml.ctx, org.jboss.ejb3.timerservice.quartz, org.jboss.deployment.spi.configurations, javax.servlet.http, org.hibernate.validator.event, org.quartz.plugins.xml, org.jboss.ejb3.interceptors.aop.annotation, org.apache.bsf.debug.serverImpl, org.jboss.resource.connectionmanager.xa, org.jnp.interfaces.java, org.hibernate.loader.custom.sql, org.jboss.ejb3.proxy.factory.stateful, org.jboss.remoting.samples.transporter.basic, org.jboss.ejb3.cluster.metadata, org.apache.avalon.framework.service, org.hibernate.cfg.annotations.reflection, com.arjuna.ats.internal.arjuna.utils, org.hibernate.bytecode.cglib, org.jboss.wsf.spi.metadata.webservices, com.arjuna.ats.txoj.tools, org.jboss.metadata.javaee.spec, org.jboss.aspects.remoting.interceptors.invoker, com.arjuna.ats.internal.arjuna.state, META-INF.maven.org.jboss.cluster.jboss-ha-server-api, org.hibernate.collection, org.jboss.metadata, org.hibernate.cache.jbc2.query, org.jboss.management.j2ee.factory, org.omg.CORBA, org.omg.IOP, javax.xml.rpc, com.sun.mail.imap, org.hibernate.transaction, org.jboss.ejb3.util, org.quartz.impl.jdbcjobstore.oracle.weblogic, org.jboss.ws.tools.ant, com.arjuna.ats.arjuna.objectstore.jdbc, com.arjuna.ats.jta.utils, org.jacorb.util.tracing, META-INF.maven.org.jboss.javaee.jboss-jaspi-api, org.apache.commons.httpclient.protocol, org.hibernate.cache.impl.bridge, org.jboss.naming.client.java, javax.enterprise.deploy.spi.exceptions, org.jboss.wsf.framework.transport, org.jboss.ejb3.proxy.factory.service, org.hibernate.cache.impl, org.jboss.management.j2ee.cluster, org.jboss.wsf.common, org.jboss.ha.framework.server, javax.management.j2ee, com.arjuna.ats.internal.arjuna.gandiva.inventory, org.apache.bsf, META-INF.maven.org.jboss.security.jboss-sunxacml, org.quartz.impl.calendar, javax.servlet.jsp.resources, com.arjuna.ats.txoj.common, licenses, org.jboss.security.audit.config, org.omg.IOP.CodecPackage, org.hsqldb.rowio, org.jboss.security.callbacks, com.arjuna.ats.internal.jdbc.drivers, org.hibernate.proxy.pojo, META-INF.maven.org.jboss.ejb3.jboss-ejb3-core, org.jboss.resource.timer, com.arjuna.common.internal.util.propertyservice, org.jboss.remoting.samples.transporter.proxy, org.jacorb.notification.filter.impl, com.arjuna.ats.internal.arjuna.thread, org.jboss.ejb3.common.thread, org.apache.commons.httpclient, org.hibernate.annotations.common.reflection, org.jaxen.saxpath.helpers, org.omg.PortableServer.ServantLocatorPackage, org.hibernate.hql.antlr, org.jboss.cache.util, org.jacorb.naming, org.apache.bsf.util.event.adapters, org.hibernate.ejb.event, org.omg.CosCollection, , org.omg.CosTime, org.jboss.ejb3.stateful, org.jboss.ejb.plugins.cmp.jdbc2.keygen, javax.resource.spi.work, org.omg.CosPropertyService, org.jboss.remoting.transport.servlet.web, org.omg.PortableServer.POAManagerPackage, org.jboss.wsf.framework.management, org.apache.commons.httpclient.util, org.apache.bsf.debug.jsdi, com.arjuna.ats.internal.arjuna.objectstore.jdbc.accessors, com.arjuna.ats.arjuna.recovery, org.jboss.iiop.jacorb, xmdesc, org.apache.bcel.verifier.structurals, org.jboss.security.xacml.core.model.policy, org.hibernate.id.insert, org.jboss.remoting.samples.callback, org.jboss.wsf.spi.tools.ant, org.apache.bsf.engines.javascript, javax.resource.cci, org.jboss.remoting.util, org.jboss.ejb.plugins.cmp.bridge, org.omg.IIOP, org.apache.bsf.engines.jython, META-INF.maven.org.jboss.naming.jnpserver, org.jboss.security.xacml.sunxacml.support.finder, org.jboss.wsf.framework.http, org.hibernate.proxy.dom4j, org.jboss.messaging.core.contract, org.jboss.ejb3.interceptors.lang, org.jboss.jms.server.recovery, org.jboss.remoting.transport.coyote, org.jgroups.stack, org.jacorb.ssl, org.hibernate.classic, com.arjuna.ats.internal.txoj.semaphore, org.jboss.serial.objectmetamodel, org.jacorb.poa.gui.pm, javax.xml.ws.handler.soap, com.arjuna.common.util.logging, org.omg.PortableInterceptor.ORBInitInfoPackage, org.apache.bcel.generic, org.apache.log4j.lf5, org.apache.commons.collections.set, org.jboss.security.microcontainer.beans, org.hibernate.engine.transaction, org.jboss.ejb.plugins.cmp.ejbql, com.arjuna.ats.internal.jta.xa, org.apache.commons.httpclient.cookie, org.jboss.cache.invalidation.triggers, org.hibernate.validator.interpolator, org.jboss.security.plugins.audit, org.jaxen.function.xslt, org.jboss.ejb3.metadata.plugins.loader, org.jboss.ejb3.session, com.arjuna.ats.jta.recovery, com.arjuna.ats.jbossatx.jta, org.jboss.security.jce, javax.management.j2ee.statistics, org.jboss.deployment.dependency, org.jboss.remoting.transport.web, org.jboss.ejb3.enc, org.jboss.security.jacc, org.jboss.remoting.transport.sslmultiplex, org.jacorb.util, org.hibernate.cache.jbc2.entity, org.hsqldb.util.sqltool, org.omg.PortableInterceptor, org.jboss.metadata.web.spec, org.jboss.ejb3.timerservice, org.quartz.spi, org.omg.Messaging, org.jboss.remoting.util.socket, com.sun.mail.imap.protocol, antlr.collections, org.jboss.remoting.samples.transporter.proxy.client, org.jboss.invocation.iiop, javax.xml.ws.handler, org.hsqldb.util, org.jboss.cache.cluster, org.jboss.proxy.generic, org.jboss.cache.eviction, javax.servlet.jsp.tagext, org.jboss.security.plugins.authorization, org.jboss.ejb3.protocol.jarjar, org.quartz.impl.jdbcjobstore, org.omg.SecurityLevel1, org.omg.CORBA_2_3.portable, org.jboss.jms.server.connectionfactory, org.jboss.profileservice.management.upload, org.jboss.jms.server.endpoint, org.omg.ATLAS, org.jboss.iiop.rmi.ir, org.jboss.jms.referenceable, org.jacorb.concurrency, org.jboss.ejb3.interceptor, com.wutka.dtd, org.jboss.security.jndi, org.jboss.ejb3.annotation.impl, org.jboss.remoting.transport.https, antlr.debug.misc, org.hibernate.type, org.apache.log4j.chainsaw, org.jboss.messaging.core.impl.postoffice, org.jboss.cache.pojo.notification, org.jacorb.security.ssl, org.jgroups.annotations, org.jboss.remoting, org.hibernate.intercept, com.arjuna.ats.internal.jta.recovery.arjunacore, org.jboss.security.xacml.sunxacml.finder.impl, javax.servlet.jsp.el, org.jboss.cache.loader.bdbje, org.hibernate.criterion, org.jboss.resource.spi.timer, org.apache.commons.collections.list, com.arjuna.ats.jta.resources, org.jboss.cache.factories, org.hibernate.loader.criteria, org.jboss.jms.server.messagecounter, org.jboss.profileservice.mock.ds, org.jboss.invocation, org.jboss.jms.delegate, org.hibernate.intercept.cglib, javax.annotation.security, org.jboss.serial.util, org.hibernate.ejb.packaging, org.jboss.resource.metadata.mcf, org.hsqldb.jdbc, org.jboss.jca.spi, org.jboss.remoting.samples.transporter.serialization.client, org.hibernate.hql.ast, javax.xml.rpc.handler, org.jboss.ejb3.annotation.defaults, org.apache.avalon.framework.component, com.arjuna.ats.jta, com.arjuna.ats.tsmx.agent.exceptions, org.omg.CSI, org.jboss.messaging.core.impl.message, org.jaxen.expr.iter, com.arjuna.ats.txoj.lockstore, org.omg.DynamicAny, org.omg.CosNaming.NamingContextPackage, org.apache.bsf.util.cf, com.arjuna.ats.jta.common, org.jboss.cache.pojo.interceptors, org.jboss.jms.destination, javax.xml.rpc.holders, org.jboss.jms.client.remoting, antlr.actions.python, org.jboss.deployment.spi, org.omg.CORBA_2_5, org.jboss.security.audit.providers, org.jboss.security.acl.config, org.jgroups.jmx.protocols, org.hsqldb.store, org.hibernate.cfg.annotations, org.jboss.monitor.client, bsh.util, org.jboss.remoting.samples.config.factories, org.jacorb.imr.util, org.apache.log4j.helpers, org.omg.CosTypedEventChannelAdmin, org.jgroups.blocks, com.arjuna.ats.internal.arjuna, org.jboss.remoting.samples.multiplex.invoker, org.hibernate.persister.entity, org.jboss.remoting.transport.socket, org.hibernate.annotations.common, org.jboss.jms.server.plugin.contract, org.jboss.ejb3.security.embedded.plugins, org.jboss.deployment.security, META-INF.maven.org.jboss.ws.native.jbossws-native-jaxws-ext, org.jboss.ejb3.deployers, org.jboss.deployment.spi.beans, org.jboss.wsf.framework.serviceref, org.slf4j.spi, org.jboss.security.plugins.auth, org.jboss.varia.autonumber, org.jboss.ha.framework.server.util, org.jboss.web.deployers, org.jboss.security.identity.fed, org.jgroups.jmx.protocols.pbcast, org.jboss.remoting.ident, org.jboss.cache.optimistic, org.jboss.serial, org.apache.avalon.framework.configuration, org.jboss.cache.buddyreplication, org.omg.CosNotifyCommAck, org.jboss.services.binding, com.sun.mail.smtp, META-INF.maven.org.jboss.ws.jbossws-spi, javax.enterprise.deploy.spi.factories, org.jboss.ha.framework.test, org.apache.avalon.framework.activity, META-INF.maven.org.jboss.ejb3.jboss-ejb3-security, org.jboss.iiop.naming, org.jboss.remoting.samples.simple, org.jboss.remoting.transport.sslbisocket, javax.jms, org.jboss.ejb, org.jboss.security.xacml.sunxacml.cond, org.jgroups.protocols, org.omg.TimeBase, javax.servlet.resources, com.arjuna.ats.internal.jdbc.drivers.modifiers, org.jboss.messaging.core.jmx, org.slf4j.impl, com.arjuna.ats.txoj, org.apache.commons.logging.impl, org.jboss.hibernate.cache, org.jboss.remoting.transport.multiplex, org.jboss.remoting.samples.callback.statistics, org.hibernate.ejb, org.apache.commons.collections.keyvalue, org.jboss.jms.server.destination, com.arjuna.ats.txoj.semaphore, org.jboss.remoting.transporter, org.omg.DynamicAny.DynAnyFactoryPackage, org.jboss.ejb.plugins.cmp.jdbc.keygen, org.jboss.remoting.transport.sslservlet, org.apache.log4j.lf5.config, org.hibernate.validator, org.apache.commons.collections.comparators, org.hibernate.exception, org.jacorb.transaction, org.jboss.invocation.local, org.jacorb.orb.standardInterceptors, org.apache.commons.httpclient.params, org.apache.bsf.debug.clientImpl, org.omg.PortableServer, org.jacorb.orb.dynany, org.jboss.remoting.detection.jndi, org.jboss.remoting.transport.coyote.ssl, org.jboss.ejb3.common.registrar.spi, org.jnp.interfaces.jnp, org.jboss.mail, org.jboss.wsf.spi.invocation, org.jboss.security.xacml.sunxacml.attr.proxy, org.omg.CSIIOP, antlr.ASdebug, org.jacorb.imr.RegistrationPackage, org.jboss.remoting.detection.util, org.jboss.security.xacml.interfaces, org.jboss.security.authorization.resources, org.slf4j.helpers, org.jboss.tm.usertx.server, org.jboss.serial.persister, org.jboss.wsf.spi.binding, org.jboss.wsf.common.handler, org.jboss.wsf.spi.http, org.jboss.security.mapping, org.jboss.invocation.unified.interfaces, org.jboss.security.config, com.arjuna.ats.internal.jta.resources.errorhandlers, org.jboss.ejb3.interceptors.direct, org.jacorb.ir.gui.typesystem, com.arjuna.ats.arjuna.objectstore, com.arjuna.ats.internal.jta.transaction.arjunacore.jca, org.jboss.serial.io, org.jboss.wsf.common.utils, org.jboss.cache.marshall, org.jboss.security.identity.extensions, org.jboss.security.xacml.sunxacml.combine, org.jboss.management.j2ee.statistics, org.hibernate.cache.jbc2.timestamp, org.jboss.wsf.spi.annotation, com.sun.mail.handlers, org.jboss.security.microcontainer.beans.metadata, org.jacorb.security.ssl.sun_jsse, com.arjuna.ats.txoj.logging, org.hibernate.cfg, org.jboss.iiop.tm, org.jboss.cache.notifications, org.jboss.monitor, org.jboss.metadata.ejb.jboss, org.jboss.remoting.network.filter, org.jboss.security.authorization.modules.ejb, com.arjuna.ats.tsmx.logging, org.jboss.ejb3.jndipolicy.impl, org.jboss.remoting.serialization.impl.jboss, org.jboss.invocation.http.interfaces, org.hibernate.param, org.hibernate.hql.ast.exec, org.jboss.remoting.samples.chat.client, org.hibernate.context, org.apache.log4j.varia, org.jgroups.conf, org.jboss.jms.server.bridge, org.hibernate.util, org.omg.BiDirPolicy, org.jboss.invocation.pooled.interfaces, org.jboss.cache.util.concurrent, org.jboss.lang.ref, org.quartz.plugins.history, org.w3c.dom, org.apache.commons.logging, org.jboss.ha.singleton, org.hibernate.cache.jbc2.builder, org.jgroups.protocols.pbcast, META-INF.maven.org.jboss.ws.native.jbossws-native-jaxrpc, org.jboss.cache.pojo.memory, org.jacorb.dds, org.jacorb.poa.gui.poa, org.jboss.deployment, org.jboss.remoting.samples.detection.multicast, org.jgroups, org.omg.GSSUP, org.jboss.metadata.ejb.jboss.jndipolicy.plugins, org.jboss.remoting.samples.stream, org.jboss.cache.pojo.notification.annotation, META-INF.maven.org.jboss.ejb3.jboss-ejb3-metadata, org.jboss.invocation.jrmp.server, org.apache.commons.collections.iterators, org.jboss.security.plugins.mapping, org.jacorb.notification.lifecycle, org.jboss.remoting.transport.bisocket, org.jboss.remoting.security, com.sun.mail.pop3, org.hsqldb.resources, com.arjuna.common.internal.util.licence.utils, bsh.reflect, org.jboss.tm, org.jboss.remoting.samples.transporter.complex.server, org.apache.log4j.lf5.viewer.configure, org.jboss.jms.client.delegate, org.omg.CORBA.ContainerPackage, com.arjuna.ats.internal.tsmx.agent.exceptions, org.jboss.ejb3.asynchronous, org.jboss.remoting.samples.transporter.complex.client, javax.xml.ws.soap, org.jacorb.sasPolicy, META-INF.maven.org.jboss.ejb3.jboss-ejb3-interceptors, org.jboss.naming, org.jboss.metadata.annotation.creator, org.jboss.metadata.ejb.jboss.jndipolicy.spi, com.arjuna.ats.jdbc.common, org.jboss.web, org.jboss.jms.recovery, org.jboss.mx.remoting.provider.rmi, org.jboss.ejb3.proxy.factory, org.jboss.injection.lang.reflect, org.hibernate.ejb.transaction, org.jboss.remoting.loading, org.jboss.security.cache, org.hibernate.connection, org.jboss.remoting.samples.transporter.serialization, org.hsqldb.persist, com.arjuna.ats.internal.txoj, com.arjuna.ats.internal.jta.transaction.arjunacore.subordinate, org.jboss.mx.remoting.provider.iiop, org.jboss.cache.invalidation.bridges, org.hibernate.engine.query, com.arjuna.ats.internal.txoj.recovery, org.apache.bsf.engines.jacl, org.hibernate.jdbc, org.jboss.mx.remoting.tracker, org.jboss.remoting.marshal.rmi, org.jboss.jms.client.state, org.jboss.metadata.ejb.jboss.proxy, org.jboss.remoting.samples.transporter.clustered.client, org.omg.SecurityReplaceable, org.jboss.iiop.rmi.marshal.strategy, org.jboss.remoting.security.domain, org.apache.log4j.net, javax.interceptor, javax.security.auth.message.config, javax.resource.spi.endpoint, org.jboss.logging, org.omg.CosTypedNotifyChannelAdmin, org.jacorb.naming.namemanager, org.jboss.ejb3.tx.container, org.quartz.jobs.ee.jmx, org.omg.CosNotifyChannelAdminAck, org.jacorb.transport.iiop, org.jboss.remoting.samples.transporter.clustered.server, org.omg.CORBA.ORBPackage, META-INF.maven.org.jboss.aspects.jboss-remoting-aspects, org.hibernate.proxy.map, org.omg.CORBA.TypeCodePackage, org.quartz.ee.jmx.jboss.doc-files, bsh.util.lib, org.jacorb.poa, org.jacorb.events, org.jboss.security.auth.message.config, org.jnp.client, com.arjuna.ats.internal.jta.transaction.arjunacore, org.jboss.cache.lock, org.jboss.security.identitytrust.modules, org.jacorb.ir.gui.remoteobject, com.arjuna.ats.arjuna.utils, org.jboss.ejb.plugins.lock, org.jaxen.util, com.arjuna.ats.internal.jdbc.recovery, org.apache.bcel.verifier.exc, org.jboss.ejb.plugins.security, org.jboss.security.xacml.factories, org.jboss.hibernate.session, org.omg.RTCORBA, org.jboss.resource.adapter.jdbc, org.jboss.remoting.samples.transporter.basic.client, org.hibernate.validator.resources, org.apache.commons.collections, org.jgroups.debug, org.jboss.ejb3.interceptors.annotation, org.jboss.profileservice.aop, org.jboss.remoting.transport.rmi, org.omg.CosTypedNotifyComm, com.arjuna.ats.tsmx.mbeans, org.omg.Dynamic, com.arjuna.common.util.propertyservice.plugins, javax.persistence, org.hibernate.annotations.common.util, org.jboss.aspects.remoting.interceptors.transport, org.jboss.remoting.samples.transporter.proxy.server, javax.xml.ws.addressing.soap, antlr.preprocessor, org.jboss.cache.xml, org.jboss.resource.statistic.formatter, org.quartz.ee.jta, org.jboss.metadata.annotation.finder, org.jboss.verifier.event, org.jboss.security.xacml.core.model.context, org.jboss.crypto.digest, org.jboss.jms.client.plugin, org.jaxen.expr, org.jboss.wsf.spi.deployment, com.arjuna.ats.arjuna, org.jaxen.pattern, org.jboss.metadata.annotation.creator.client, com.arjuna.ats.txoj.exceptions, org.quartz.plugins.management, org.jboss.ejb3.metadata.jpa.spec, org.jboss.profileservice.remoting, org.jboss.remoting.transport.local, org.quartz.jobs.ee.mail, org.hibernate.bytecode.javassist, org.jboss.security.auth.container.modules, org.apache.bcel.verifier, org.jboss.cache.factories.annotations, org.jboss.metadata.jpa.spec, org.hibernate.annotations, org.jboss.metadata.client.jboss, org.jboss.client, org.jboss.ejb.deployers, org.jaxen.dom, org.apache.commons.collections.map, org.jboss.wsf.spi.deployment.integration, org.jboss.ejb3.timerservice.jboss, org.jaxen, org.jacorb.util.tracing.TracingServicePackage, org.jboss.cache.jmx, org.apache.commons.collections.bag, com.arjuna.ats.internal.arjuna.gandiva.nameservice, org.apache.bcel.verifier.statics, org.apache.log4j.lf5.viewer.images, org.jboss.ejb3.statistics, org.quartz.helpers, org.jboss.jms.server.remoting, org.jacorb.util.threadpool, stylesheets, META-INF.maven.org.jboss.metadata.jboss-metadata, javax.xml.soap, org.jaxen.xom, javax.ejb, org.hibernate.cache.access, javax.annotation, org.jboss.remoting.samples.transporter.serialization.server, org.jboss.ejb3.mdb, org.jboss.security.auth.message, org.hibernate.engine, org.quartz.ee.servlet, org.apache.commons.collections.buffer, org.jboss.cache.pojo.annotation, org.apache.commons.httpclient.methods.multipart, org.apache.taglibs.bsf, org.omg.CosEventChannelAdmin, org.jboss.metadata.annotation.creator.ws, org.hibernate.event, org.apache.log4j.jdbc, org.jboss.messaging.core.impl.jchannelfactory, com.arjuna.ats.internal.arjuna.recovery, org.jboss.slf4j, javax.persistence.spi, bsh.classpath, org.jboss.wsf.spi.serviceref, org.hibernate.ejb.instrument, org.jboss.jmx.connector.invoker, org.apache.log4j.xml, org.apache.bsf.debug.util, org.jboss.metadata.annotation.creator.web, com.arjuna.common.internal.util.propertyservice.plugins.io, org.jboss.security.xacml.bridge, org.hibernate.loader.collection, org.apache.log4j.or.jms, org.apache.bsf.util, org.jboss.ha.hasessionstate.interfaces, org.jboss.profileservice.management.upload.remoting, org.jboss.wsf.spi.metadata.j2ee, org.jboss.remoting.detection.multicast, org.jboss.annotation.ear, org.jboss.deployment.spi.status, org.jboss.resource.binding.remote, org.jboss.security.plugins.acl, org.jacorb.orb.iiop, org.jboss.security.authorization, org.jboss.jms.server.selector, META-INF.maven.org.hibernate.hibernate-core, org.hibernate.sql, org.jboss.monitor.alerts, org.jboss.security.xacml.sunxacml.attr, org.jacorb.orb.util, org.hibernate.proxy, antlr.build, org.omg.dds, org.jboss.metadata.ejb.spec, org.quartz.jobs.ee.ejb, org.jboss.resource.statistic, org.omg.CORBA_2_3, org.hibernate.tool.hbm2ddl, org.apache.log4j.ext, org.jboss.monitor.alarm, org.jboss.resource.adapter.jdbc.remote, org.quartz.impl.jdbcjobstore.oracle, org.jboss.cache.config, org.hibernate.cache.jbc2, org.omg.CORBA.ContainedPackage, META-INF.maven.org.jboss.ejb3.jboss-ejb3-cache, org.hsqldb.scriptio, org.hibernate.stat, org.hibernate.jmx, antlr.actions.java, org.jboss.messaging.util, org.jboss.ejb3.common.string, org.jacorb.orb.dsi, org.jboss.hibernate.deployers.metadata, org.jboss.naming.java, org.jboss.resource.metadata, org.omg.IOP.CodecFactoryPackage, org.hibernate.tuple.entity, javax.xml.ws.wsaddressing, security, org.jacorb.notification, org.hibernate.hql.ast.tree, com.arjuna.ats.internal.jta.resources, org.omg.CosNaming, org.jboss.ejb3.proxy, org.jboss.remoting.invocation, org.jboss.metamodel.descriptor, org.jboss.managed.plugins.advice, org.jboss.wsf.framework, com.arjuna.ats.internal.tsmx.agent.implementations.ri, org.jboss.resource, org.jboss.security.auth, org.omg.CosNaming.NamingContextExtPackage, org.jboss.ejb3.metamodel, org.jboss.security.integration, org.jboss.ejb3.javaee, com.arjuna.common.util, org.jboss.messaging.core.impl.clusterconnection, org.jboss.ejb.plugins.cmp.jdbc, org.jboss.profileservice.management.templates, org.hibernate.id.enhanced, com.arjuna.common.util.propertyservice, org.hsqldb.index, com.arjuna.ats.arjuna.tools, org.jboss.metadata.annotation.creator.ejb.jboss, org.apache.bsf.engines.xslt, org.jboss.security.propertyeditor, org.jboss.ejb3.cache.tree, org.jboss.verifier, org.jboss.ejb3.proxy.impl, org.jboss.remoting.samples.multiplex, org.jboss.resource.statistic.pool, META-INF.maven.org.jboss.ejb3.jboss-ejb3-ext-api, org.jboss.resource.deployment, com.arjuna.ats.jta.transaction, org.jboss.security.xacml.sunxacml.cond.cluster, bsh.commands, org.opennms.protocols.snmp.asn1, javax.transaction, org.jboss.serial.finalcontainers, META-INF.maven.org.jboss.cluster.jboss-ha-client, com.arjuna.ats.internal.jbossatx.jta, org.jboss.ejb.plugins, com.arjuna.common.util.propertyservice.propertycontainer, org.jboss.ejb3.metadata, org.quartz.ee.jmx.jboss, org.jboss.wsf.common.management, org.jgroups.demos.wb, org.jboss.deployment.plugin, org.jboss.jms.server.plugin, org.hibernate.hql.ast.util, org.jboss.crypto, com.arjuna.ats.internal.arjuna.template, bsh, org.jboss.ejb3.proxy.handler.stateless, org.jboss.ejb3.interceptors.container, org.jboss.wsf.spi.management.recording, javax.security.auth.message.module, org.jboss.resource.metadata.repository, com.arjuna.ats.jdbc, org.jboss.invocation.unified.server, org.omg.CosNotifyChannelAdmin, org.jacorb.notification.conf, org.hsqldb.types, javax.xml.registry.infomodel, org.jboss.remoting.samples.detection.jndi.ssl, org.jboss.ejb3.metadata.annotation, org.jboss.jms.server.endpoint.advised, org.jboss.jms, org.jboss.mx.remoting.rmi, javax.servlet, org.jboss.security.audit, org.hibernate.bytecode, org.jboss.jms.jndi, org.jboss.security.javaee, org.jacorb.notification.container, org.jboss.ejb3.security.bridge, org.jboss.ejb.plugins.cmp.jdbc2.schema, com.arjuna.ats.internal.jta, org.omg.SSLIOP, org.apache.bsf.util.event, com.arjuna.ats.internal.jta.utils.arjunacore, org.jboss.security.client, org.jboss.ejb3.proxy.factory.stateless, org.jboss.security.xacml.sunxacml.support, org.jboss.security.auth.container.config, javax.management.remote, META-INF.maven.org.jboss.aspects.jboss-transaction-aspects, org.jacorb.poa.except, org.hibernate.ejb.connection, META-INF.maven.org.jboss.cache.jbosscache-core, org.jboss.ejb3.cache.persistence, org.jboss.remoting.detection, org.jboss.wsf.test, org.apache.bsf.debug, org.jacorb.orb, javax.xml.ws.addressing, org.jboss.iiop.csiv2, org.jboss.ejb3.security.helpers, javax.security.jacc, org.jboss.jms.exception, org.jboss.wsf.framework.management.recording, org.jboss.cache.util.reflect, com.arjuna.ats.tsmx.agent, org.jboss.ha.cachemanager, org.jboss.serial.classmetamodel, org.apache.log4j.jmx, javax.resource.spi, org.jboss.resource.security, org.jboss.remoting.transport, org.jboss.ejb3.mdb.inflow, org.jboss.remoting.samples.chat.exceptions, org.jboss.invocation.unified.marshall, org.jacorb.config, org.hibernate.cache.jbc2.util, org.opennms.protocols.snmp, org.jboss.security.srp, org.jboss.jms.server.connectormanager, com.arjuna.ats.tsmx, com.arjuna.ats.internal.txoj.lockstore, org.jboss.security.xacml.sunxacml.finder, org.hibernate.jdbc.util, org.jboss.ejb3.metadata.spi.signature, org.jboss.security.factories, javax.xml.rpc.soap, javax.xml.registry, com.arjuna.ats.internal.tsmx.mbeans, org.jboss.metadata.javaee.jboss, org.jacorb.notification.filter.etcl, org.jboss.jms.server, org.omg.CORBA.ValueDefPackage, org.jboss.persistence, org.jboss.management.j2ee, org.hibernate.metadata, org.jboss.metadata.common.ejb, org.jgroups.tests, org.apache.bsf.util.event.generator, org.jaxen.javabean, javax.jws, org.jboss.security.auth.spi, org.omg.Security, org.jboss.wsf.spi.invocation.integration, org.jboss.ejb3.security.client, org.jboss.profileservice.management.builders, org.jboss.remoting.samples.oneway, org.hibernate.cache, org.jboss.ejb3.interceptors.metadata, org.jboss.cache.notifications.event, org.jboss.remoting.transport.sslsocket, javax.ejb.spi, org.jboss.ha.framework.interfaces, org.hsqldb.lib, org.jboss.wsf.spi.util, antlr.collections.impl, org.omg.CosTransactions, org.slf4j, org.jboss.aspects.currentinvocation, org.jboss.ejb3.proxy.handler.service, META-INF.maven.org.hibernate.hibernate-jbosscache2, antlr.actions.cpp, com.arjuna.ats.jta.exceptions, org.apache.log4j.spi, META-INF, org.hibernate.transform, org.jboss.metadata.lang, org.jboss.cache.pojo.notification.event, org.jboss.aspects.tx, org.jboss.ejb3, org.jboss.security.ssl, org.hibernate.event.def, org.jboss.remoting.samples.transporter.multiple.server, org.jboss.messaging.core.impl, org.jboss.security.auth.certs, org.jboss.ejb3.cache.simple, org.jboss.ejb3.aop, org.jacorb.notification.util, org.jboss.wsf.spi.management, org.jboss.remoting.samples.transporter.basic.server, javax.xml.rpc.server, org.jboss.security.xacml.core.ext, org.jaxen.function.ext, org.omg.CORBA.InterfaceDefPackage, org.jaxen.saxpath.base, org.hibernate.cfg.search, META-INF.maven.org.jboss.aspects.jboss-current-invocation-aspects, org.hibernate.tuple, org.omg.CosTypedEventComm, org.hibernate.engine.query.sql, org.jboss.ejb3.interceptors.proxy, org.jboss.messaging.util.prioritylinkedlist, org.jacorb.notification.servant, org.jacorb.transport, org.hibernate.hql, org.hibernate.tuple.component, org.jboss.remoting.samples.detection.jndi, com.arjuna.ats.jta.xa, org.jboss.cache.pojo.interceptors.dynamic, org.jboss.jms.wireformat, org.omg.SecurityAdmin, org.omg.DynamicAny.DynAnyPackage, org.apache.avalon.framework.context, org.jboss.cache.invalidation, org.hibernate.loader, META-INF.maven.org.jboss.ws.native.jbossws-native-saaj, org.jacorb.ir.gui, org.apache.log4j.lf5.viewer, org.apache.log4j, javax.enterprise.deploy.shared, javax.enterprise.deploy.shared.factories, META-INF.maven.org.jboss.slf4j.slf4j-jboss-logging, org.jgroups.util, org.quartz.simpl, com.sun.mail.iap, org.jboss.security.mapping.providers, org.jboss.aspects.txlock, org.jacorb.orb.dii, org.jboss.messaging.core.impl.tx, javax.el, org.jboss.ejb3.interceptors.aop, org.hibernate.loader.hql, org.jboss.security.plugins, org.jboss.iiop.rmi, META-INF.maven.org.jboss.aspects.jboss-security-aspects, org.jboss.remoting.samples.chat.server, META-INF.maven.org.jboss.ws.native.jbossws-native-jaxws, org.apache.bsf.engines.netrexx, META-INF.maven.org.jboss.security.jboss-xacml, org.jboss.security.auth.login, org.jboss.security.authorization.util, org.jacorb.orb.portableInterceptor, javax.xml.ws.spi, org.jacorb.orb.diop, org.jboss.proxy.ejb.handle, org.jboss.wsf.spi.transport, antlr, org.jboss.security.mapping.config, org.jboss.jms.server.jbosssx, org.hibernate.impl, org.jboss.remoting.samples.callback.acknowledgement, org.jboss.security.srp.jaas, bsh.servlet, org.jboss.security.identity, org.jboss.metadata.serviceref, org.hibernate.property, org.jboss.iiop.rmi.marshal, org.jboss.ejb3.kernel, org.jboss.varia.scheduler.example, org.jboss.corba, org.jboss.resource.adapter.jdbc.jdk5, javax.mail, org.jboss.cache.marshall.io, org.jboss.profileservice.management.plugins, com.arjuna.ats.arjuna.thread, org.quartz.jobs, org.hibernate.dialect, com.arjuna.ats.arjuna.logging, org.apache.log4j.config, org.apache.bsf.dbline, org.omg.PortableServer.portable, org.omg.CosConcurrencyControl, org.apache.commons.httpclient.methods, org.jboss.mq.server.jmx, org.jboss.remoting.samples.chat, org.jboss.ejb3.remoting, org.jacorb.poa.util, org.hibernate.annotations.common.reflection.java.generics, org.jboss.wsf.spi.tools.cmd, org.jboss.cache.loader, org.jacorb.ir.gui.typesystem.remote, org.jboss.ha.client.loadbalance.aop, org.jboss.tm.usertx.interfaces, org.jacorb.orb.factory, antlr.debug, org.hibernate.usertype, org.jboss.remoting.samples.transporter.multiple.client, org.jboss.messaging.core.impl.memory, org.jboss.jmx.connector.invoker.serializablepolicy, org.omg.CORBA.portable, org.jboss.jms.tx, org.jgroups.tests.perf, org.jacorb.imr.AdminPackage, javax.jws.soap, org.jboss.naming.interceptors, org.omg.ETF, org.jboss.ejb3.security, org.jboss.cache.pojo, org.jboss.jms.client.container, org.jboss.wsf.common.logging, org.hibernate.pretty, org.jboss.ejb3.entity, org.jboss.remoting.samples.transporter.custom.server, org.jboss.ejb.plugins.cmp.jdbc2, org.jboss.security.authorization.config, org.hibernate, org.jboss.security.plugins.identitytrust, org.hibernate.tool.instrument.javassist, org.jboss.ejb.plugins.keygenerator, org.jaxen.dom4j, org.jboss.security.identitytrust, org.jboss.security.authorization.modules.web, org.jboss.resource.adapter.jdbc.vendor, org.hibernate.tool.instrument, org.jboss.hibernate.jmx, org.jboss.mx.remoting.connector, javax.xml.ws, org.jboss.aspects.remoting, org.hibernate.loader.custom, org.jboss.resource.connectionmanager, javax.enterprise.deploy.spi, antlr.actions.csharp, org.jboss.deployment.remoting, javax.resource.spi.security, org.jboss.remoting.samples.transporter.multiple, org.jboss.varia.property, org.hibernate.cache.entry, META-INF.maven.org.slf4j.slf4j-api, org.jboss.jms.server.container, org.jacorb.orb.rmi, org.jboss.remoting.samples.chat.utility, org.jboss.cache.invocation, org.jboss.ejb3.stateless, org.jgroups.tests.perf.transports, META-INF.maven.org.hibernate.hibernate-jmx, org.quartz, com.arjuna.ats.internal.jbossatx.jta.jca, com.arjuna.ats.internal.jdbc, org.jboss.ha.jmx.examples, org.jboss.metadata.client.spec, org.jboss.ejb3.entity.hibernate, org.jboss.remoting.socketfactory, org.jboss.wsf.framework.deployment, META-INF.services, META-INF.maven.org.jboss.ejb3.jboss-ejb3-transactions, org.jacorb.notification.filter, org.apache.bsf.util.type, org.jacorb.security.sas, org.jacorb.poa.gui, org.jacorb.notification.impl, javax.mail.event, com.arjuna.ats.arjuna.common, org.jboss.annotation.javaee, org.jboss.ejb3.common.registrar.plugin.mc, org.jboss.ejb3.proxy.handler.stateful, org.jboss.wsf.framework.invocation, org.jboss.cache.loader.tcp, org.jboss.classloading.spi, org.jboss.remoting.marshal.encryption, org.jboss.util, org.jboss.security.xacml.jaxb, javax.xml.rpc.encoding, org.jboss.ha.jmx, org.jboss.ejb.txtimer, META-INF.maven.org.jboss.ejb3.jboss-ejb3-common, org.jboss.remoting.transport.http, javax.management.remote.rmi, org.jboss.ejb.plugins.jms, org.jboss.remoting.serialization.impl.java, com.arjuna.ats.internal.arjuna.coordinator, org.jboss.security.xacml.locators, org.apache.commons.httpclient.auth, org.omg.SecurityLevel2, org.hibernate.mapping, org.jboss.remoting.marshal.compress, com.arjuna.ats.internal.arjuna.objectstore, META-INF.maven.org.jboss.cache.jbosscache-pojo, org.quartz.utils.weblogic, org.hibernate.intercept.javassist, com.arjuna.common, org.jboss.invocation.jrmp.interfaces, com.arjuna.ats.internal.jta.utils, org.jgroups.jmx, org.jboss.wsf.spi.metadata.j2ee.serviceref, org.jboss.security.auth.callback, org.apache.avalon.framework.parameters, org.jboss.ejb3.interceptors.registry, org.omg.CosEventComm, org.hibernate.persister, org.hsqldb.sample, org.jboss.ejb.plugins.inflow, org.jboss.aspects.remoting.interceptors.marshall, org.hibernate.proxy.pojo.cglib, org.jboss.metatype.api.values, META-INF.maven.org.jboss.ws.jbossws-common, org.jboss.ejb3.pool, org.jboss.metadata.merge, org.jboss.metadata.web.jboss, org.jboss.metadata.annotation.creator.jboss, org.jacorb.orb.etf, schema, javax.security.auth.message, org.jacorb.orb.giop, org.jboss.ejb3.naming, org.jboss.ha.singleton.examples, org.jboss.remoting.marshal.http, org.omg.CosNotification, org.jboss.security.xacml.core, org.hibernate.cache.jbc2.access, org.jboss.monitor.services, org.apache.avalon.framework, org.jboss.profileservice.management, com.arjuna.common.internal.util.logging.jakarta, com.arjuna.common.internal.util.logging, org.jboss.remoting.transport.http.ssl, org.jboss.jms.message, org.jboss.ha.jndi, org.jboss.injection, org.hsqldb, org.jboss.security.xacml.sunxacml, org.jboss.ejb3.interceptors.util, org.apache.log4j.or, org.quartz.core, org.jacorb.orb.listener, org.jgroups.tests.stack, org.jboss.ejb3.common.lang, org.apache.log4j.lf5.viewer.categoryexplorer, org.hibernate.dialect.lock, com.arjuna.ats.arjuna.gandiva, org.jboss.security.identitytrust.config, javax.security.auth.message.callback, org.jboss.tm.usertx.client, org.jboss.security.plugins.javaee, org.jacorb.orb.dns, org.jboss.cache.pojo.eviction, org.jboss.remoting.serialization, org.jboss.jmx.adaptor.rmi, org.jboss.remoting.callback, org.hibernate.cache.jbc2.collection, org.apache.log4j.or.sax, javax.mail.util, org.jgroups.demos.applets, org.jboss.security, org.jboss.security.acl, org.jacorb.poa.policy, org.jacorb.notification.interfaces, org.hibernate.action, org.hibernate.proxy.pojo.javassist, org.hibernate.id, org.jboss.tm.iiop, org.apache.bcel.util, org.jboss.remoting.stream, org.jboss.cache.statetransfer, org.jboss.mx.remoting, org.omg.CosNotifyFilter, org.jacorb.imr, com.sun.mail.util, org.jboss.remoting.transport.sslrmi, org.jaxen.function, org.jboss.metadata.ear.jboss, org.jboss.ejb3.tx, org.jboss.jms.server.security, org.jboss.cache.pojo.util, javax.xml.ws.http, org.jboss.ejb3.cache, org.omg.PortableServer.POAPackage, javax.enterprise.deploy.model, org.jboss.ejb3.service, org.jnp.server, org.apache.bcel.classfile, org.jboss.ejb3.interceptors, org.hibernate.annotations.common.annotationfactory, org.apache.log4j.lf5.util, org.jboss.ejb3.interceptors.annotation.impl, org.jboss.ejb3.cache.grouped, org.jboss.invocation.http.server, org.quartz.xml, com.arjuna.ats.arjuna.coordinator, org.jboss.cache.interceptors, org.jboss.remoting.samples.transporter.complex, org.quartz.impl, org.jboss.cache.loader.jdbm, org.jboss.ejb.plugins.local, org.jboss.ejb3.cache.impl, org.jboss.ejb3.jms, org.jboss.metadata.javaee.support, org.jboss.cache.pojo.impl, org.jacorb.notification.engine, org.hibernate.engine.loading, javax.resource, org.jaxen.jdom, com.arjuna.ats.internal.arjuna.objectstore.jdbc, org.jboss.invocation.pooled.server, org.jboss.remoting.marshal.serializable, org.hibernate.ejb.util, org.hibernate.annotations.common.reflection.java, org.apache.avalon.framework.container, org.apache.commons.collections.functors, org.jboss.ejb.plugins.cmp.jdbc.metadata, org.jboss.iiop.codebase, javax.mail.search, org.jboss.proxy.compiler, META-INF.maven.org.jboss.ejb3.jboss-ejb3-ext-api-impl, org.hibernate.tool.instrument.cglib, org.jboss.remoting.transport.servlet, javax.mail.internet, com.arjuna.common.util.exceptions, com.arjuna.ats.internal.jta.resources.arjunacore, org.omg.CosNotifyComm, org.jacorb.ir, org.jgroups.persistence, com.arjuna.ats.arjuna.gandiva.inventory, org.omg.PortableServer.CurrentPackage, org.jboss.metadata.annotation.creator.ejb, org.omg.stub.javax.ejb, org.jboss.iiop.test, org.jboss.cache.pojo.jmx, org.jboss.verifier.strategy, org.jgroups.mux, org.jboss.jdbc, javax.enterprise.deploy.spi.status, org.jboss.serial.objectmetamodel.safecloning, com.arjuna.ats.arjuna.xa, org.jboss.remoting.marshal, org.jgroups.demos, com.arjuna.ats.jta.logging, org.omg.GIOP, org.jnp.interfaces, javax.xml.rpc.handler.soap, org.apache.commons.collections.collection, org.jboss.ha.client.loadbalance, org.jboss.ejb.plugins.cmp.jdbc2.bridge, org.jboss.iiop, dtd, org.jboss.ha.hasessionstate.server, org.jboss.cache.remoting.jgroups, org.jboss.wsf.spi.tools] <IMPORT-ALL>NON_EMPTY}
+12:17:45,702 DEBUG [BaseClassLoaderDomain] ClassLoaderDomain@4721c7{<DEFAULT>} registerClassLoader BaseClassLoader@f62f97{vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml}
+12:17:45,738 DEBUG [ServiceDeploymentDeployer] <server>
+ <!-- Load all jars from the JBOSS_DIST/server/<config>/lib directory. This
+     can be restricted to specific jars by specifying them in the archives
+     attribute.
+    -->
+ <classpath archives='*' codebase='${jboss.server.lib.url:lib}'/>
+ <!-- ==================================================================== -->
+ <!-- Main Deployer                                                        -->
+ <!-- ==================================================================== -->
+ <mbean code='org.jboss.deployment.MainDeployer' name='jboss.system:service=MainDeployer'>
+  <!-- This is used to delegate the deployment handling -->
+  <attribute name='KernelMainDeployer'>
+   <inject bean='MainDeployer'/>
+  </attribute>
+  <!-- This is used to validate incomplete deployments -->
+  <attribute name='Controller'>
+   <inject bean='jboss.kernel:service=Kernel' property='controller'/>
+  </attribute>
+ </mbean>
+ <!-- ==================================================================== -->
+ <!-- SAR Deployer                                                         -->
+ <!-- ==================================================================== -->
+ <mbean code='org.jboss.deployment.SARDeployer' name='jboss.system:service=ServiceDeployer'>
+  <depends>jboss.system:service=MainDeployer</depends>
+ </mbean>
+ <!-- ==================================================================== -->
+ <!-- JSR-77 Single JBoss Server Management Domain                         -->
+ <!-- ==================================================================== -->
+ <mbean code='org.jboss.management.j2ee.LocalJBossServerDomain' name='jboss.management.local:j2eeType=J2EEDomain,name=Manager'>
+  <attribute name='MainDeployer'>jboss.system:service=MainDeployer</attribute>
+  <attribute name='SARDeployer'>jboss.system:service=ServiceDeployer</attribute>
+  <attribute name='EARDeployer'>jboss.j2ee:service=EARDeployer</attribute>
+  <attribute name='EJBDeployer'>jboss.ejb:service=EJBDeployer</attribute>
+  <attribute name='RARDeployer'>jboss.jca:service=RARDeployer</attribute>
+  <attribute name='CMDeployer'>jboss.jca:service=ConnectionFactoryDeployer</attribute>
+  <attribute name='WARDeployer'>jboss.web:service=WebServer</attribute>
+  <attribute name='CARDeployer'>jboss.j2ee:service=ClientDeployer</attribute>
+  <attribute name='MailService'>jboss:service=Mail</attribute>
+  <attribute name='JMSService'>jboss.mq:service=DestinationManager</attribute>
+  <attribute name='JNDIService'>jboss:service=Naming</attribute>
+  <attribute name='JTAService'>jboss:service=TransactionManager</attribute>
+  <attribute name='UserTransactionService'>jboss:service=DistributedTransactionManager</attribute>
+  <attribute name='RMI_IIOPService'>jboss:service=CorbaORB</attribute>
+  <depends>jboss.system:service=MainDeployer</depends>
+ </mbean>
+ <!-- ==================================================================== -->
+ <!-- XMBean Persistence                                                   -->
+ <!-- ==================================================================== -->
+ <mbean code='org.jboss.system.pm.AttributePersistenceService' name='jboss:service=AttributePersistenceService' xmbean-dd='resource:xmdesc/AttributePersistenceService-xmbean.xml'>  <!-- the AttributePersistenceService is persistent, itself -->
+  <!--
+      <attribute name="AttributePersistenceManagerClass">org.jboss.system.pm.XMLAttributePersistenceManager</attribute>
+      <attribute name="AttributePersistenceManagerConfig">
+         <data-directory>data/xmbean-attrs</data-directory>
+      </attribute>
+      <attribute name="ApmDestroyOnServiceStop">false</attribute>
+      <attribute name="VersionTag"></attribute>
+      -->
+</mbean>
+ <!-- A Thread pool service -->
+ <mbean code='org.jboss.util.threadpool.BasicThreadPool' name='jboss.system:service=ThreadPool'>
+  <attribute name='Name'>JBoss System Threads</attribute>
+  <attribute name='ThreadGroupName'>System Threads</attribute>
+  <!-- How long a thread will live without any tasks in MS -->
+  <attribute name='KeepAliveTime'>60000</attribute>
+  <!-- The max number of threads in the pool -->
+  <attribute name='MaximumPoolSize'>10</attribute>
+  <!-- The max number of tasks before the queue is full -->
+  <attribute name='MaximumQueueSize'>1000</attribute>
+  <!-- The behavior of the pool when a task is added and the queue is full.
+      abort - a RuntimeException is thrown
+      run - the calling thread executes the task
+      wait - the calling thread blocks until the queue has room
+      discard - the task is silently discarded without being run
+      discardOldest - check to see if a task is about to complete and enque
+         the new task if possible, else run the task in the calling thread
+      -->
+  <attribute name='BlockingMode'>run</attribute>
+ </mbean>
+ <!-- ==================================================================== -->
+ <!-- Log4j Initialization                                                 -->
+ <!-- ==================================================================== -->
+ <mbean code='org.jboss.logging.Log4jService' name='jboss.system:type=Log4jService,service=Logging' xmbean-dd='resource:xmdesc/Log4jService-xmbean.xml'>
+  <attribute name='ConfigurationURL'>resource:jboss-log4j.xml</attribute>
+  <!-- Set the org.apache.log4j.helpers.LogLog.setQuiteMode. As of log4j1.2.8
+      this needs to be set to avoid a possible deadlock on exception at the
+      appender level. See bug#696819.
+      -->
+  <attribute name='Log4jQuietMode'>true</attribute>
+  <!-- How frequently in seconds the ConfigurationURL is checked for changes -->
+  <attribute name='RefreshPeriod'>60</attribute>
+ </mbean>
+ <!-- ==================================================================== -->
+ <!-- Active Alarm Table                                                   -->
+ <!-- ==================================================================== -->
+ <!--
+      | The ActiveAlarmTable service is a simple JMX notification listener
+      | that maintains a table with the received notifications (alarms).
+      | The alarms can be acknowledged through the jmx or the web console.
+      | Modify the SubscriptionList below to subscribe for any notification
+      | in the system and treat it as an alarm.
+      | The JMXNotificationAppender is a log4j Appender that can be configured
+      | in log4j.xml, that trasforms logging events to JMX notification so they
+      | can be fed back into the table. By storing the WARN or higher level logging
+      | events you can have a quick view of important system faults.
+      |
+      | The following attributes may be set:
+      |
+      | MaxTableSize (default 1000)
+      |  - set an upper limit to the number of stored alarms
+      | LogLevel (default DEBUG)
+      |  - the log level to use for received notification, can be set to NONE
+      | ServerId (default jboss)
+      |  - used to construct unique alarm ids
+      | SubscriptionList
+      |  - subscribe for the notifications to be stored in the table
+
+   <mbean code="org.jboss.monitor.services.ActiveAlarmTable"
+          name="jboss.monitor:service=ActiveAlarmTable">
+      <attribute name="SubscriptionList">
+         <subscription-list>
+            <mbean name="jboss.monitor:*">
+               <notification type="jboss.alarm"/>
+               <notification type="JBOSS_MONITOR_NOTIFICATION"/>
+            </mbean>
+            <mbean name="jboss.system:service=Logging,type=JMXNotificationAppender"/>
+         </subscription-list>
+      </attribute>
+   </mbean>
+   -->
+ <!-- ==================================================================== -->
+ <!-- JBoss RMI Classloader - only install when available                  -->
+ <!-- ==================================================================== -->
+ <mbean code='org.jboss.util.property.jmx.SystemPropertyClassValue' name='jboss.rmi:type=RMIClassLoader'>
+  <attribute name='Property'>java.rmi.server.RMIClassLoaderSpi</attribute>
+  <attribute name='ClassName'>org.jboss.system.JBossRMIClassLoader</attribute>
+ </mbean>
+ <!-- ==================================================================== -->
+ <!-- Service Binding                                                      -->
+ <!-- ==================================================================== -->
+ <!-- Automatically activated when generatting the clustering environment -->
+ <!-- @TESTSUITE_CLUSTER_CONFIG@ -->
+ <!--
+      | Binding service manager for port/host mapping. This is a sample
+      | config that demonstrates a JBoss instances with a server name 'jboss1'
+      | loading its bindings from an XML file using the ServicesStoreFactory
+      | implementation returned by the XMLServicesStoreFactory.
+      |
+      | ServerName: The unique name assigned to a JBoss server instance for
+      | lookup purposes. This allows a single ServicesStore to handle mulitiple
+      | JBoss servers.
+      |
+      | StoreURL: The URL string passed to org.jboss.services.binding.ServicesStore
+      | during initialization that specifies how to connect to the bindings store.
+      | StoreFactory: The org.jboss.services.binding.ServicesStoreFactory interface
+      | implementation to create to obtain the ServicesStore instance.
+
+   <mbean code="org.jboss.services.binding.ServiceBindingManager"
+     name="jboss.system:service=ServiceBindingManager">
+     <attribute name="ServerName">ports-01</attribute>
+     <attribute name="StoreURL">../docs/examples/binding-manager/sample-bindings.xml</attribute>
+     <attribute name="StoreFactoryClassName">
+       org.jboss.services.binding.XMLServicesStoreFactory
+     </attribute>
+   </mbean>
+
+   -->
+ <!-- ==================================================================== -->
+ <!-- Class Loading                                                        -->
+ <!-- ==================================================================== -->
+ <!-- A mini webserver used for dynamic and class and resource loading -->
+ <mbean code='org.jboss.web.WebService' name='jboss:service=WebService'>
+  <!-- The Bind address and Port -->
+  <attribute name='BindAddress'>${jboss.bind.address}</attribute>
+  <attribute name='Port'>8083</attribute>
+  <!--  The address to use for the host portion of the RMI codebase URL -->
+  <attribute name='Host'>${java.rmi.server.hostname}</attribute>
+  <!-- Should non-EJB .class files be downloadable -->
+  <attribute name='DownloadServerClasses'>true</attribute>
+  <!-- Should resources other than .class files be downloadable. Both
+         DownloadServerClasses and DownloadResources must be true for resources
+         to be downloadable. This is false by default because its generally a
+         bad idea as server configuration files that container security
+         information can be accessed.
+       -->
+  <attribute name='DownloadResources'>false</attribute>
+  <!-- Use the default thread pool for dynamic class loading -->
+  <depends optional-attribute-name='ThreadPool' proxy-type='attribute'>jboss.system:service=ThreadPool</depends>
+ </mbean>
+ <!-- ==================================================================== -->
+ <!-- JNDI                                                                 -->
+ <!-- ==================================================================== -->
+ <!-- A simple mbean wrapper around the jndi Naming object. This
+      only handles an in memory instance. The NamingService uses this
+      as the JNDI store and exposes it remotely.
+   -->
+ <mbean code='org.jnp.server.NamingBeanImpl' name='jboss:service=NamingBeanImpl' xmbean-dd='resource:xmdesc/NamingBean-xmbean.xml'></mbean>
+ <mbean code='org.jboss.naming.NamingService' name='jboss:service=Naming' xmbean-dd='resource:xmdesc/NamingService-xmbean.xml'>
+  <!-- The call by value mode. true if all lookups are unmarshalled using
+         the caller's TCL, false if in VM lookups return the value by reference.
+      -->
+  <attribute name='CallByValue'>false</attribute>
+  <!-- The listening port for the bootstrap JNP service. Set this to -1
+         to run the NamingService without the JNP invoker listening port.
+      -->
+  <attribute name='Port'>1099</attribute>
+  <!-- The bootstrap JNP server bind address. This also sets the default
+         RMI service bind address. Empty == all addresses
+      -->
+  <attribute name='BindAddress'>${jboss.bind.address}</attribute>
+  <!-- The port of the RMI naming service, 0 == anonymous -->
+  <attribute name='RmiPort'>1098</attribute>
+  <!-- The RMI service bind address. Empty == all addresses
+      -->
+  <attribute name='RmiBindAddress'>${jboss.bind.address}</attribute>
+  <!-- The thread pool service used to control the bootstrap lookups -->
+  <depends optional-attribute-name='LookupPool' proxy-type='attribute'>jboss.system:service=ThreadPool</depends>
+  <!-- An example of using the unifed invoker as the transport.
+         <depends optional-attribute-name="InvokerProxyFactory"
+         proxy-type="attribute">jboss:service=proxyFactory,type=unified,target=Naming</depends>
+      -->
+  <depends optional-attribute-name='Naming' proxy-type='attribute'>jboss:service=NamingBeanImpl</depends>
+ </mbean>
+ <mbean code='org.jboss.naming.JNDIView' name='jboss:service=JNDIView' xmbean-dd='resource:xmdesc/JNDIView-xmbean.xml'>
+  <!-- The HANamingService service name -->
+  <attribute name='HANamingService'>jboss:service=HAJNDI</attribute>
+ </mbean>
+ <!-- ==================================================================== -->
+ <!-- Security                                                             -->
+ <!-- ==================================================================== -->
+ <!-- JAAS security manager and realm mapping -->
+ <mbean code='org.jboss.security.plugins.JaasSecurityManagerService' name='jboss.security:service=JaasSecurityManager'>
+  <!-- A flag which indicates whether the SecurityAssociation server mode
+      is set on service creation. This is true by default since the
+      SecurityAssociation should be thread local for multi-threaded server
+      operation.
+      -->
+  <attribute name='ServerMode'>true</attribute>
+  <attribute name='SecurityManagerClassName'>org.jboss.security.plugins.JaasSecurityManager</attribute>
+  <attribute name='DefaultUnauthenticatedPrincipal'>anonymous</attribute>
+  <!-- DefaultCacheTimeout: Specifies the default timed cache policy timeout
+      in seconds.
+      If you want to disable caching of security credentials, set this to 0 to
+      force authentication to occur every time. This has no affect if the
+      AuthenticationCacheJndiName has been changed from the default value.
+      -->
+  <attribute name='DefaultCacheTimeout'>1800</attribute>
+  <!-- DefaultCacheResolution: Specifies the default timed cache policy
+      resolution in seconds. This controls the interval at which the cache
+      current timestamp is updated and should be less than the DefaultCacheTimeout
+      in order for the timeout to be meaningful. This has no affect if the
+      AuthenticationCacheJndiName has been changed from the default value.
+      -->
+  <attribute name='DefaultCacheResolution'>60</attribute>
+  <!-- DeepCopySubjectMode: This set the copy mode of subjects done by the
+      security managers to be deep copies that makes copies of the subject
+      principals and credentials if they are cloneable. It should be set to
+      true if subject include mutable content that can be corrupted when
+      multiple threads have the same identity and cache flushes/logout clearing
+      the subject in one thread results in subject references affecting other
+      threads.
+      -->
+  <attribute name='DeepCopySubjectMode'>false</attribute>
+ </mbean>
+ <!-- ==================================================================== -->
+ <!-- Remoting services                                                    -->
+ <!-- ==================================================================== -->
+ <!-- For detailed description of all these configuration attributes, please see the -->
+ <!-- JBoss Remoting User's Guide or wiki (http://www.jboss.org/wiki/Wiki.jsp?page=Remoting_configuration) -->
+ <!-- The NetworkRegistry contains all the local and remote -->
+ <!-- servers that it recognizes.  The remote ones registered -->
+ <!-- are dependant on the detectors running and which domains -->
+ <!-- they are configured to identify.                         -->
+ <mbean code='org.jboss.remoting.network.NetworkRegistry' name='jboss.remoting:service=NetworkRegistry'/>
+ <!-- The Connector is the core component of the remoting server service. -->
+ <!-- It binds the remoting invoker (transport protocol, callback configuration, -->
+ <!-- data marshalling, etc.) with the invocation handlers.  -->
+ <mbean code='org.jboss.remoting.transport.Connector' display-name='Socket transport Connector' name='jboss.remoting:service=Connector,transport=socket'>
+  <!-- Can either just specify the InvokerLocator attribute and not the invoker element in the -->
+  <!-- Configuration attribute, or do the full invoker configuration in the in invoker element -->
+  <!-- of the Configuration attribute. -->
+  <!-- Remember that if you do use more than one param on the uri, will have to include as a CDATA, -->
+  <!-- otherwise, parser will complain. -->
+  <!-- <attribute name="InvokerLocator"><![CDATA[socket://${jboss.bind.address}:4446/?datatype=invocation]]></attribute> -->
+  <attribute name='Configuration'>
+   <!-- Using the following <invoker> element instead of the InvokerLocator above because specific attributes needed. -->
+   <!-- If wanted to use any of the parameters below, can just add them as parameters to the url above if wanted use the InvokerLocator attribute. -->
+   <config>
+    <!-- Other than transport type and handler, none of these configurations are required (will just use defaults). -->
+    <invoker transport='socket'>
+     <attribute isParam='true' name='dataType'>invocation</attribute>
+     <attribute isParam='true' name='marshaller'>org.jboss.invocation.unified.marshall.InvocationMarshaller</attribute>
+     <attribute isParam='true' name='unmarshaller'>org.jboss.invocation.unified.marshall.InvocationUnMarshaller</attribute>
+     <!-- This will be port on which the marshall loader port runs on.  -->
+     <!-- <attribute name="loaderport" isParam="true">4447</attribute> -->
+     <!-- The following are specific to socket invoker -->
+     <!-- <attribute name="numAcceptThreads">1</attribute>-->
+     <!-- <attribute name="maxPoolSize">303</attribute>-->
+     <!-- <attribute name="clientMaxPoolSize" isParam="true">304</attribute>-->
+     <attribute isParam='true' name='socketTimeout'>600000</attribute>
+     <attribute name='serverBindAddress'>${jboss.bind.address}</attribute>
+     <attribute name='serverBindPort'>4446</attribute>
+     <!-- <attribute name="clientConnectAddress">216.23.33.2</attribute> -->
+     <!-- <attribute name="clientConnectPort">7777</attribute> -->
+     <attribute isParam='true' name='enableTcpNoDelay'>true</attribute>
+     <!-- <attribute name="backlog">200</attribute>-->
+     <!-- The following is for callback configuration and is independant of invoker type -->
+     <!-- <attribute name="callbackMemCeiling">30</attribute>-->
+     <!-- indicates callback store by fully qualified class name -->
+     <!-- <attribute name="callbackStore">org.jboss.remoting.CallbackStore</attribute>-->
+     <!-- indicates callback store by object name -->
+     <!-- <attribute name="callbackStore">jboss.remoting:service=CallbackStore,type=Serializable</attribute> -->
+     <!-- config params for callback store.  if were declaring callback store via object name, -->
+     <!-- could have specified these config params there. -->
+     <!-- StoreFilePath indicates to which directory to write the callback objects. -->
+     <!-- The default value is the property value of 'jboss.server.data.dir' and if this is not set, -->
+     <!-- then will be 'data'. Will then append 'remoting' and the callback client's session id. -->
+     <!-- An example would be 'data\remoting\5c4o05l-9jijyx-e5b6xyph-1-e5b6xyph-2'. -->
+     <!-- <attribute name="StoreFilePath">callback</attribute>-->
+     <!-- StoreFileSuffix indicates the file suffix to use for the callback objects written to disk. -->
+     <!-- The default value for file suffix is 'ser'. -->
+     <!-- <attribute name="StoreFileSuffix">cst</attribute>-->
+    </invoker>
+    <!-- At least one handler is required by the connector.  If have more than one, must decalre -->
+    <!-- different subsystem values.  Otherwise, all invocations will be routed to the only one -->
+    <!-- that is declared. -->
+    <handlers>
+     <!-- The JSR88 deployment service StreamingTarget handler -->
+     <handler subsystem='JSR88'>org.jboss.deployment.remoting.DeployHandler</handler>
+    </handlers>
+   </config>
+  </attribute>
+  <depends>jboss.remoting:service=NetworkRegistry</depends>
+ </mbean>
+ <!-- <mbean code="org.jboss.remoting.detection.jndi.JNDIDetector"-->
+ <!--      name="jboss.remoting:service=Detector,transport=jndi">-->
+ <!-- host to which the detector will connect to for the JNDI server. -->
+ <!-- <attribute name="Host">localhost</attribute>-->
+ <!-- port to which detector will connect to for the JNDI server. -->
+ <!-- <attribute name="Port">5555</attribute>-->
+ <!-- context factory string used when connecting to the JNDI server. -->
+ <!-- The default is org.jnp.interfaces.NamingContextFactory. -->
+ <!-- <attribute name="ContextFactory">org.acme.NamingContextFactory</attribute> -->
+ <!-- url package string to use when connecting to the JNDI server. -->
+ <!-- The default is org.jboss.naming:org.jnp.interfaces. -->
+ <!-- <attribute name="URLPackage">org.acme.naming</attribute> -->
+ <!-- Sets the number of detection iterations before manually pinging -->
+ <!-- remote server to make sure still alive. This is needed since remote server -->
+ <!-- could crash and yet still have an entry in the JNDI server, -->
+ <!-- thus making it appear that it is still there. The default value is 5. -->
+ <!-- <attribute name="CleanDetectionNumber">20</attribute>-->
+ <!-- Specifies the domains in which the detector will recognize -->
+ <!-- detections.  If servers are not configured to be in these -->
+ <!-- domains, they will not be added to NetworkRegistry. -->
+ <!--      <attribute name="Configuration">-->
+ <!--         <domains>-->
+ <!--            <domain>roxanne</domain>-->
+ <!--            <domain>sparky</domain>-->
+ <!--         </domains>-->
+ <!--      </attribute>-->
+ <!--   </mbean>-->
+ <!-- ==================================================================== -->
+ <!-- Monitoring and Management                                            -->
+ <!-- ==================================================================== -->
+ <!-- Uncomment to enable JMX monitoring of the bean cache
+   <mbean code="org.jboss.monitor.BeanCacheMonitor"
+          name="jboss.monitor:name=BeanCacheMonitor"/>
+   -->
+ <!-- Uncomment to enable JMX monitoring of the entity bean locking
+   <mbean code="org.jboss.monitor.EntityLockMonitor"
+          name="jboss.monitor:name=EntityLockMonitor"/>
+   -->
+ <!-- ==================================================================== -->
+ <!-- An MBean that is a registry for JDBC type-mapping metadata           -->
+ <!-- ==================================================================== -->
+ <mbean code='org.jboss.ejb.plugins.cmp.jdbc.metadata.MetaDataLibrary' name='jboss.jdbc:service=metadata'/>
+</server>
+12:17:45,756 DEBUG [AbstractDeploymentContext] Added component jboss.system:service=MainDeployer to vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml
+12:17:45,756 DEBUG [AbstractDeploymentContext] Added component jboss.system:service=ServiceDeployer to vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml
+12:17:45,756 DEBUG [AbstractDeploymentContext] Added component jboss.management.local:j2eeType=J2EEDomain,name=Manager to vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml
+12:17:45,756 DEBUG [AbstractDeploymentContext] Added component jboss:service=AttributePersistenceService to vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml
+12:17:45,756 DEBUG [AbstractDeploymentContext] Added component jboss.system:service=ThreadPool to vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml
+12:17:45,756 DEBUG [AbstractDeploymentContext] Added component jboss.system:service=Logging,type=Log4jService to vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml
+12:17:45,756 DEBUG [AbstractDeploymentContext] Added component jboss.rmi:type=RMIClassLoader to vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml
+12:17:45,756 DEBUG [AbstractDeploymentContext] Added component jboss:service=WebService to vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml
+12:17:45,756 DEBUG [AbstractDeploymentContext] Added component jboss:service=NamingBeanImpl to vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml
+12:17:45,756 DEBUG [AbstractDeploymentContext] Added component jboss:service=Naming to vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml
+12:17:45,756 DEBUG [AbstractDeploymentContext] Added component jboss:service=JNDIView to vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml
+12:17:45,756 DEBUG [AbstractDeploymentContext] Added component jboss.security:service=JaasSecurityManager to vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml
+12:17:45,756 DEBUG [AbstractDeploymentContext] Added component jboss.remoting:service=NetworkRegistry to vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml
+12:17:45,756 DEBUG [AbstractDeploymentContext] Added component jboss.remoting:service=Connector,transport=socket to vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml
+12:17:45,756 DEBUG [AbstractDeploymentContext] Added component jboss.jdbc:service=metadata to vfsfile:/Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/conf/jboss-service.xml
+12:17:45,764 DEBUG [ServiceCreator] About to create bean: jboss.system:service=MainDeployer with code: org.jboss.deployment.MainDeployer
+12:17:45,786 DEBUG [ServiceCreator] Created mbean: jboss.system:service=MainDeployer
+12:17:45,790 DEBUG [ServiceConfigurator] KernelMainDeployer set to org.jboss.deployers.plugins.main.MainDeployerImpl@5fc8b9 in jboss.system:service=MainDeployer
+12:17:45,791 DEBUG [ServiceConfigurator] Controller set to AbstractKernelController@e39e84{} in jboss.system:service=MainDeployer
+12:17:45,792 DEBUG [ServiceController] Creating service jboss.system:service=MainDeployer
+12:17:45,792 DEBUG [MainDeployer] Creating jboss.system:service=MainDeployer
+12:17:45,793 DEBUG [Files] Failed to delete dir: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/tmp/deploy
+12:17:45,794 DEBUG [MainDeployer] Created jboss.system:service=MainDeployer
+12:17:45,794 DEBUG [ServiceController] starting service jboss.system:service=MainDeployer
+12:17:45,794 DEBUG [MainDeployer] Starting jboss.system:service=MainDeployer
+12:17:45,794 DEBUG [MainDeployer] Started jboss.system:service=MainDeployer
+12:17:45,795 DEBUG [ServiceCreator] About to create bean: jboss.system:service=ServiceDeployer with code: org.jboss.deployment.SARDeployer
+12:17:45,827 DEBUG [ServiceCreator] Created mbean: jboss.system:service=ServiceDeployer
+12:17:45,827 DEBUG [ServiceController] Creating service jboss.system:service=ServiceDeployer
+12:17:45,827 DEBUG [SARDeployer] Creating jboss.system:service=ServiceDeployer
+12:17:45,840 DEBUG [SARDeployer] Created jboss.system:service=ServiceDeployer
+12:17:45,840 DEBUG [ServiceController] starting service jboss.system:service=ServiceDeployer
+12:17:45,840 DEBUG [SARDeployer] Starting jboss.system:service=ServiceDeployer
+12:17:45,840 DEBUG [MainDeployer] Adding deployer: org.jboss.deployment.SARDeployer@49bbdf
+12:17:45,844 DEBUG [SARDeployer] Started jboss.system:service=ServiceDeployer
+12:17:45,845 DEBUG [ServiceCreator] About to create bean: jboss.management.local:j2eeType=J2EEDomain,name=Manager with code: org.jboss.management.j2ee.LocalJBossServerDomain
+12:17:45,859 DEBUG [ServiceCreator] Created mbean: jboss.management.local:j2eeType=J2EEDomain,name=Manager
+12:17:45,862 DEBUG [ServiceConfigurator] MainDeployer set to jboss.system:service=MainDeployer in jboss.management.local:j2eeType=J2EEDomain,name=Manager
+12:17:45,863 DEBUG [ServiceConfigurator] SARDeployer set to jboss.system:service=ServiceDeployer in jboss.management.local:j2eeType=J2EEDomain,name=Manager
+12:17:45,864 DEBUG [ServiceConfigurator] EARDeployer set to jboss.j2ee:service=EARDeployer in jboss.management.local:j2eeType=J2EEDomain,name=Manager
+12:17:45,865 DEBUG [ServiceConfigurator] EJBDeployer set to jboss.ejb:service=EJBDeployer in jboss.management.local:j2eeType=J2EEDomain,name=Manager
+12:17:45,866 DEBUG [ServiceConfigurator] RARDeployer set to jboss.jca:service=RARDeployer in jboss.management.local:j2eeType=J2EEDomain,name=Manager
+12:17:45,867 DEBUG [ServiceConfigurator] CMDeployer set to jboss.jca:service=ConnectionFactoryDeployer in jboss.management.local:j2eeType=J2EEDomain,name=Manager
+12:17:45,868 DEBUG [ServiceConfigurator] WARDeployer set to jboss.web:service=WebServer in jboss.management.local:j2eeType=J2EEDomain,name=Manager
+12:17:45,869 DEBUG [ServiceConfigurator] CARDeployer set to jboss.j2ee:service=ClientDeployer in jboss.management.local:j2eeType=J2EEDomain,name=Manager
+12:17:45,870 DEBUG [ServiceConfigurator] MailService set to jboss:service=Mail in jboss.management.local:j2eeType=J2EEDomain,name=Manager
+12:17:45,871 DEBUG [ServiceConfigurator] JMSService set to jboss.mq:service=DestinationManager in jboss.management.local:j2eeType=J2EEDomain,name=Manager
+12:17:45,871 DEBUG [ServiceConfigurator] JNDIService set to jboss:service=Naming in jboss.management.local:j2eeType=J2EEDomain,name=Manager
+12:17:45,872 DEBUG [ServiceConfigurator] JTAService set to jboss:service=TransactionManager in jboss.management.local:j2eeType=J2EEDomain,name=Manager
+12:17:45,873 DEBUG [ServiceConfigurator] UserTransactionService set to jboss:service=DistributedTransactionManager in jboss.management.local:j2eeType=J2EEDomain,name=Manager
+12:17:45,874 DEBUG [ServiceConfigurator] RMI_IIOPService set to jboss:service=CorbaORB in jboss.management.local:j2eeType=J2EEDomain,name=Manager
+12:17:45,875 DEBUG [ServiceController] Creating service jboss.management.local:j2eeType=J2EEDomain,name=Manager
+12:17:45,875 DEBUG [LocalJBossServerDomain] Creating jboss.management.local:j2eeType=J2EEDomain,name=Manager
+12:17:45,875 DEBUG [LocalJBossServerDomain] setupJ2EEMBeans(), create J2EEServer instance
+12:17:45,884 DEBUG [J2EEDomain] ctor, name: jboss.management.local:name=jboss.management.local,j2eeType=J2EEDomain
+12:17:45,888 DEBUG [J2EEDomain] postRegister(), parent: null
+12:17:45,894 DEBUG [J2EEServer] postRegister(), parent: jboss.management.local:j2eeType=J2EEDomain,name=jboss.management.local
+12:17:45,928 DEBUG [JVM] postRegister(), parent: jboss.management.local:j2eeType=J2EEServer,name=Local
+12:17:45,940 DEBUG [LocalJBossServerDomain] Registered as listener of: jboss.system:service=ServiceController
+12:17:45,961 DEBUG [LocalJBossServerDomain] Registering with all deployers, mainDeployer=jboss.system:service=MainDeployer
+12:17:45,962 DEBUG [LocalJBossServerDomain] Getting current deployers
+12:17:45,962 DEBUG [LocalJBossServerDomain] Registering as listener of deployer: jboss.system:service=ServiceDeployer
+12:17:45,962 DEBUG [LocalJBossServerDomain] Created jboss.management.local:j2eeType=J2EEDomain,name=Manager
+12:17:45,963 DEBUG [LocalJBossServerDomain] handleNotification: javax.management.Notification[source=jboss.system:service=ServiceController][type=org.jboss.system.ServiceMBean.create][message=]
+12:17:45,963 DEBUG [DefaultManagedObjectFactoryMap] Failed to find factory for event: javax.management.Notification[source=jboss.system:service=ServiceController][type=org.jboss.system.ServiceMBean.create][message=]
+12:17:45,963 DEBUG [ServiceController] starting service jboss.management.local:j2eeType=J2EEDomain,name=Manager
+12:17:45,963 DEBUG [LocalJBossServerDomain] handleNotification: javax.management.Notification[source=jboss.system:service=ServiceController][type=org.jboss.system.ServiceMBean.start][message=]
+12:17:45,964 DEBUG [ServiceCreator] About to create xmbean object: jboss:service=AttributePersistenceService with code: org.jboss.system.pm.AttributePersistenceService with descriptor: resource:xmdesc/AttributePersistenceService-xmbean.xml
+12:17:46,035 DEBUG [ModelMBeanInvoker] Loaded persistence mgr: org.jboss.mx.persistence.ObjectStreamPersistenceManager
+12:17:46,035 DEBUG [ObjectStreamPersistenceManager] load, resource:org.jboss.system.pm.AttributePersistenceService@2b0942
+12:17:46,035 DEBUG [ObjectStreamPersistenceManager] Store file is: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/data/xmbean-attrs/AttributePersistenceService.ser
+12:17:46,035 DEBUG [ServiceCreator] Created mbean: jboss:service=AttributePersistenceService
+12:17:46,035 DEBUG [ServiceController] Creating service jboss:service=AttributePersistenceService
+12:17:46,035 DEBUG [AttributePersistenceService] Creating jboss:service=AttributePersistenceService
+12:17:46,035 DEBUG [AttributePersistenceService] Created jboss:service=AttributePersistenceService
+12:17:46,035 DEBUG [LocalJBossServerDomain] handleNotification: javax.management.Notification[source=jboss.system:service=ServiceController][type=org.jboss.system.ServiceMBean.create][message=]
+12:17:46,035 DEBUG [DefaultManagedObjectFactoryMap] Failed to find factory for event: javax.management.Notification[source=jboss.system:service=ServiceController][type=org.jboss.system.ServiceMBean.create][message=]
+12:17:46,036 DEBUG [ServiceController] starting service jboss:service=AttributePersistenceService
+12:17:46,036 DEBUG [AttributePersistenceService] Starting jboss:service=AttributePersistenceService
+12:17:46,040 DEBUG [XMLAttributePersistenceManager] Constructed
+12:17:46,041 DEBUG [XMLAttributePersistenceManager] Using data directory: /Users/bob/checkouts/rubyunderground/aujroras/java/jboss-5.0.0.CR1/server/all/data/xmbean-attrs
+12:17:46,041 DEBUG [AttributePersistenceService] Started jboss:service=AttributePersistenceService
+12:17:46,041 DEBUG [LocalJBossServerDomain] handleNotification: javax.management.Notification[source=jboss.system:service=ServiceController][type=org.jboss.system.ServiceMBean.start][message=]
+12:17:46,042 DEBUG [ServiceCreator] About to create bean: jboss.system:service=ThreadPool with code: org.jboss.util.threadpool.BasicThreadPool
+12:17:46,050 DEBUG [ServiceCreator] Created mbean: jboss.system:service=ThreadPool
+12:17:46,052 DEBUG [ServiceConfigurator] Name set to JBoss System Threads in jboss.system:service=ThreadPool
+12:17:46,052 DEBUG [ServiceConfigurator] ThreadGroupName set to System Threads in jboss.system:service=ThreadPool
+12:17:46,053 DEBUG [ServiceConfigurator] KeepAliveTime set to 60000 in jboss.system:service=ThreadPool
+12:17:46,053 DEBUG [ServiceConfigurator] MaximumPoolSize set to 10 in jboss.system:service=ThreadPool
+12:17:46,053 DEBUG [ServiceConfigurator] MaximumQueueSize set to 1000 in jboss.system:service=ThreadPool
+12:17:46,055 DEBUG [ServiceConfigurator] BlockingMode set to run in jboss.system:service=ThreadPool
+12:17:46,055 DEBUG [ServiceController] Creating service jboss.system:service=ThreadPool
+12:17:46,055 DEBUG [LocalJBossServerDomain] handleNotification: javax.management.Notification[source=jboss.system:service=ServiceController][type=org.jboss.system.ServiceMBean.create][message=]
+12:17:46,055 DEBUG [DefaultManagedObjectFactoryMap] Failed to find factory for event: javax.management.Notification[source=jboss.system:service=ServiceController][type=org.jboss.system.ServiceMBean.create][message=]
+12:17:46,055 DEBUG [ServiceController] starting service jboss.system:service=ThreadPool
+12:17:46,055 DEBUG [LocalJBossServerDomain] handleNotification: javax.management.Notification[source=jboss.system:service=ServiceController][type=org.jboss.system.ServiceMBean.start][message=]
+12:17:46,056 DEBUG [ServiceCreator] About to create xmbean object: jboss.system:type=Log4jService,service=Logging with code: org.jboss.logging.Log4jService with descriptor: resource:xmdesc/Log4jService-xmbean.xml
+12:17:46,080 DEBUG [ServiceCreator] Created mbean: jboss.system:type=Log4jService,service=Logging
+12:17:46,081 DEBUG [ServiceConfigurator] ConfigurationURL set to resource:jboss-log4j.xml in jboss.system:type=Log4jService,service=Logging
+12:17:46,082 DEBUG [ServiceConfigurator] Log4jQuietMode set to true in jboss.system:type=Log4jService,service=Logging
+12:17:46,082 DEBUG [ServiceConfigurator] RefreshPeriod set to 60 in jboss.system:type=Log4jService,service=Logging
+12:17:46,082 DEBUG [ServiceController] Creating service jboss.system:type=Log4jService,service=Logging
+12:17:46,082 DEBUG [Log4jService] Creating jboss.system:type=Log4jService,service=Logging
+12:17:46,083 DEBUG [Log4jService$URLWatchTimerTask] Configuring from URL: resource:jboss-log4j.xml

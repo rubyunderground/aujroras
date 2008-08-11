@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+   The list of configurations used to bootstrap the server
+   using a repository for the profile service
+-->
+<bootstrap xmlns="urn:jboss:bootstrap:1.0">
+
+   <url>classloader.xml</url>
+   <url>aop.xml</url>
+   <url>jmx.xml</url>
+   <url>deployers.xml</url>
+   <url>profile-service-repository.xml</url>
+
+</bootstrap>

@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.6.2
+Created-By: 1.5.0_15-b04 (Sun Microsystems Inc.)
+Specification-Title: JBoss
+Specification-Version: 5.0.0.CR1
+Specification-Vendor: JBoss (http://www.jboss.org/)
+Implementation-Title: JBoss [Morpheus]
+Implementation-URL: http://www.jboss.org/
+Implementation-Version: 5.0.0.CR1 (build: SVNTag=JBoss_5_0_0_CR1 date=
+ 200806301254)
+Implementation-Vendor: JBoss Inc.
+Implementation-Vendor-Id: http://www.jboss.org/
+

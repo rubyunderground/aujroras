@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   JBoss EJB3Deployer
+   
+   $Id: jboss-service.xml 41488 2006-02-25 00:14:09Z dimitris $
+-->
+<server>
+
+   <mbean code="org.jboss.remoting.transport.Connector"
+          name="jboss.remoting:type=Connector,name=DefaultEjb3Connector,handler=ejb3">
+      <attribute name="InvokerLocator">socket://${jboss.bind.address}:3873</attribute>
+      <attribute name="Configuration">
+         <handlers>
+            <handler subsystem="AOP">org.jboss.aspects.remoting.AOPRemotingInvocationHandler</handler>
+         </handlers>
+      </attribute>
+   </mbean>
+
+</server>

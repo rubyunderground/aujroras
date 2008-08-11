@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<deployment xmlns="urn:jboss:bean-deployer:2.0">
+
+   <!-- Factory/registry for JBoss Cache and PojoCache instances used in the AS -->
+   <bean name="CacheManager" class="org.jboss.ha.cachemanager.CacheManager">
+
+      <annotation>@org.jboss.aop.microcontainer.aspects.jmx.JMX(name="jboss.cache:service=CacheManager", exposedInterface=org.jboss.ha.cachemanager.CacheManagerMBean.class, registerDirectly=true)</annotation>
+
+      <!-- This doesn't seem to work, so the service binds itself for now
+      <annotation>@org.jboss.aop.microcontainer.aspects.jndi.JndiBinding(name="java:CacheManager")</annotation>
+      -->
+      <property name="jndiName">java:CacheManager</property>
+      
+      <property name="configurationRegistry">
+          <bean name="CacheConfigurationRegistry" class="org.jboss.ha.cachemanager.DependencyInjectedConfigurationRegistry">
+             <property name="configResource">META-INF/jboss-cache-configs.xml</property>
+          </bean>
+      </property>
+      
+      <property name="channelFactory"><inject bean="JChannelFactory"/></property>
+      
+      <!-- Aliases for cache names. Allows caches to be shared across different client types -->
+      <property name="configAliases">
+         <map keyClass="java.lang.String" valueClass="java.lang.String">
+            <!-- Use the HAPartition cache for ClusteredSSO caching -->
+            <entry>
+               <key>clustered-sso</key>
+               <value>ha-partition</value>
+            </entry>
+            <!-- Handle the legacy name for the EJB3 SFSB cache -->
+            <entry>
+               <key>jboss.cache:service=EJB3SFSBClusteredCache</key>
+               <value>sfsb-cache</value>
+            </entry>
+            <!-- Handle the legacy name for the EJB3 Entity cache -->
+            <entry>
+               <key>jboss.cache:service=EJB3EntityTreeCache</key>
+               <value>pessimistic-shared</value>
+            </entry>
+         </map>
+      </property>
+      
+      <!-- Start these caches as part of the start of this CacheManager
+      <property name="eagerStartCaches">
+         <set>
+            <value>ha-partition</value>
+         </set>
+      </property>
+      -->
+      
+   </bean>
+    
+</deployment>
