@@ -40,8 +40,10 @@ Aujroras::Lemur::Patch.new("Rails::Initializer.initialize_database") do
             when 'postgresql'
             when 'mysql'
             when 'sqlite3'
+              driver_jar = File.dirname( __FILE__ ) + '/../../vendor/gems/activerecord-jdbc-0.8.2/drivers/sqlite3/lib/sqlite-3.5.8.jar'
+              require driver_jar
               conf['adapter'] = 'jdbc'
-              conf['driver'] = 'SQLite.JDBCDriver'
+              conf['driver'] = 'org.sqlite.JDBC'
               conf['url'] = "jdbc:sqlite:#{conf['database']}"
           end
         end
