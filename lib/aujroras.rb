@@ -1,0 +1,1 @@
+require 'aujroras/monkey'
